@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>AI 前沿科技站 · 论文追踪与领域聚焦</title>
+<style>
+  :root{
+    --bg:#eef3fb;
+    --panel:#ffffff;
+    --ink:#0f2540;
+    --ink-soft:#4a6485;
+    --line:#d4e2f4;
+    --accent:#1f6feb;
+    --accent-soft:#e8f1ff;
+  --shadow:0 6px 24px rgba(31,111,235,.10);
+  --radius:16px;
+  }
+  /* ---------- 三站互通顶部导航 ---------- */
+  .sitenav{position:sticky;top:0;z-index:50;background:rgba(15,59,120,.96);
+    backdrop-filter:blur(6px);box-shadow:0 2px 14px rgba(15,59,120,.25)}
+  .sitenav .inner{max-width:1180px;margin:0 auto;padding:0 20px;
+    display:flex;align-items:center;gap:10px;height:52px;flex-wrap:wrap}
+  .sitenav .brand{color:#fff;font-weight:700;font-size:15px;margin-right:6px;white-space:nowrap}
+  .sitenav .links{display:flex;gap:8px;flex-wrap:wrap}
+  .sitenav a{color:#dceaff;text-decoration:none;font-size:13.5px;font-weight:600;
+    padding:7px 14px;border-radius:9px;border:1px solid rgba(255,255,255,.22);
+    background:rgba(255,255,255,.08);transition:all .2s;white-space:nowrap}
+  .sitenav a:hover{background:#fff;color:var(--accent)}
+  .sitenav a.cur{background:#fff;color:var(--accent);border-color:#fff}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    background:linear-gradient(180deg,#eaf1fc 0%,#eef3fb 40%,#f5f8fd 100%);
+    color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased;padding-bottom:60px;
+  }
+  .wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+
+  header{
+    background:linear-gradient(120deg,#0f3b78 0%,#1f6feb 60%,#3f8efc 100%);
+    color:#fff;padding:38px 0 30px;position:relative;overflow:hidden;
+    box-shadow:0 10px 30px rgba(15,59,120,.25);
+  }
+  header::after{content:"";position:absolute;right:-80px;top:-80px;width:280px;height:280px;
+    background:radial-gradient(circle,rgba(255,255,255,.18),transparent 70%);border-radius:50%;}
+  .brand{display:flex;align-items:center;gap:12px;position:relative;z-index:1;flex-wrap:wrap}
+  .brand .logo{width:42px;height:42px;border-radius:12px;background:rgba(255,255,255,.16);
+    display:grid;place-items:center;font-size:22px;border:1px solid rgba(255,255,255,.35);}
+  .brand h1{font-size:22px;font-weight:700;letter-spacing:.5px}
+  .brand .sub{font-size:13px;opacity:.85;font-weight:400;margin-top:2px}
+  .stats{display:flex;flex-wrap:wrap;gap:14px;margin-top:22px;position:relative;z-index:1}
+  .stat{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);
+    border-radius:12px;padding:12px 18px;min-width:130px;backdrop-filter:blur(4px);}
+  .stat .k{font-size:12px;opacity:.85;letter-spacing:.5px}
+  .stat .v{font-size:20px;font-weight:700;margin-top:2px}
+  .stat .v small{font-size:12px;font-weight:400;opacity:.85}
+  .legend{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px;position:relative;z-index:1}
+  .legend .lab{font-size:12px;opacity:.85;align-self:center;margin-right:2px}
+  .legend .chip{font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;
+    background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.3);}
+
+  .layout{display:flex;gap:30px;margin-top:34px;align-items:flex-start}
+  .timeline{flex:0 0 210px;position:sticky;top:18px;align-self:flex-start;
+    background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+    padding:20px 18px;box-shadow:var(--shadow);}
+  .timeline h2{font-size:13px;color:var(--ink-soft);letter-spacing:1px;margin-bottom:16px;font-weight:600}
+  .rail{position:relative;padding-left:22px}
+  .rail::before{content:"";position:absolute;left:6px;top:6px;bottom:6px;width:2px;background:var(--line)}
+  .node{position:relative;padding:10px 8px;margin:0 -8px;border-radius:8px;cursor:pointer;
+    transition:background .15s ease}
+  .node:hover{background:var(--accent-soft)}
+  .node:hover .d{color:var(--accent)}
+  .node.active{background:var(--accent-soft)}
+  .node.active .d{color:var(--accent)}
+  .node.active .dot{background:#fff;box-shadow:0 0 0 2px var(--accent)}
+  .node .dot{position:absolute;left:-14px;top:14px;width:12px;height:12px;border-radius:50%;
+    background:var(--accent);border:3px solid #fff;box-shadow:0 0 0 2px var(--accent-soft);}
+  .node .d{font-size:14px;font-weight:700;color:var(--ink)}
+  .node .w{font-size:12px;color:var(--ink-soft)}
+  .node .c{font-size:11px;color:var(--accent);font-weight:600;margin-top:1px}
+
+  .content{flex:1;min-width:0}
+  .day-label{display:flex;align-items:baseline;gap:10px;margin:6px 0 16px;padding-left:4px}
+  .day-label .dl-date{font-size:17px;font-weight:700;color:var(--ink)}
+  .day-label .dl-week{font-size:13px;color:var(--ink-soft)}
+  .day-label .dl-count{font-size:12px;color:var(--accent);background:var(--accent-soft);
+    padding:2px 10px;border-radius:20px;font-weight:600}
+
+  .card{background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--accent);
+    border-radius:14px;padding:18px 20px;margin-bottom:16px;box-shadow:var(--shadow);
+    opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease;}
+  .card.visible{opacity:1;transform:none}
+  .card .top{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:8px}
+  .card .num{flex:0 0 30px;height:30px;border-radius:9px;background:var(--accent-soft);
+    color:var(--accent);font-weight:700;display:grid;place-items:center;font-size:14px;}
+  .badge{font-size:12px;font-weight:600;padding:3px 11px;border-radius:20px;border:1px solid;white-space:nowrap}
+  .badge.src{background:hsl(var(--h),72%,94%);color:hsl(var(--h),55%,32%);border-color:hsl(var(--h),55%,84%)}
+  .badge.domain{background:#fff4e6;color:#b45309;border-color:#fcd9a8}
+  .card .rel{margin-left:auto;font-size:12px;color:var(--ink-soft)}
+  .card h3{font-size:16.5px;font-weight:700;line-height:1.45;margin:4px 0 8px;color:var(--ink)}
+  .card p{font-size:14px;color:#33485f;line-height:1.7;margin-bottom:12px}
+  .card .foot{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+  .card .src{font-size:12px;color:var(--ink-soft)}
+  .card a.link{font-size:13px;font-weight:600;color:var(--accent);text-decoration:none;
+    border:1px solid var(--accent);padding:6px 14px;border-radius:9px;transition:all .2s;}
+  .card a.link:hover{background:var(--accent);color:#fff}
+  .card a.link.sub{font-size:12px;padding:5px 11px;opacity:.85}
+  .card button.link{cursor:pointer;font-family:inherit;background:#0f3b78;color:#fff;border-color:#0f3b78}
+  .card button.link:hover{background:#1f6feb;border-color:#1f6feb}
+
+  .points{margin-top:6px;border-top:1px dashed var(--line);padding-top:12px}
+  .points > summary{cursor:pointer;font-size:13px;font-weight:600;color:var(--accent);
+    list-style:none;user-select:none;display:flex;align-items:center;gap:6px}
+  .points > summary::-webkit-details-marker{display:none}
+  .points > summary::before{content:"▸";font-size:12px;transition:transform .2s;display:inline-block}
+  .points[open] > summary::before{content:"▾"}
+  .points .grid{margin-top:10px;display:grid;gap:8px}
+  .points .row{display:flex;gap:10px;font-size:13px;line-height:1.65}
+  .points .row .k{flex:0 0 58px;font-weight:700;color:#0f3b78;text-align:justify;text-align-last:justify}
+  .points .row .v{color:#33485f;flex:1}
+
+  .badge.kind.social{background:#f3e8ff;color:#7c3aed;border-color:#e9d5ff}
+  .badge.kind.news{background:#fff7e6;color:#d97706;border-color:#fde68a}
+  .badge.kind.paper{background:#e6f7ef;color:#2f9e6e;border-color:#b7e4d3}
+  .badge.kind.featured{background:#fff7ed;color:#c2410c;border-color:#fed7aa}
+  .badge.kind.hf{background:#eef2ff;color:#4338ca;border-color:#c7d2fe}
+  .module-h{display:flex;align-items:center;gap:12px;font-size:20px;font-weight:800;color:var(--ink);
+    margin:40px 0 18px;padding-bottom:12px;border-bottom:2px solid var(--line)}
+  .module-h .ico{flex:0 0 38px;height:38px;border-radius:11px;background:var(--accent-soft);
+    display:grid;place-items:center;font-size:19px}
+  .module-h .desc{font-size:12.5px;color:var(--ink-soft);font-weight:500;margin-top:2px}
+  .module-h .cnt{margin-left:auto;font-size:12.5px;color:var(--accent);background:var(--accent-soft);
+    padding:4px 12px;border-radius:20px;font-weight:700;white-space:nowrap}
+  .extra-list{display:flex;flex-direction:column;gap:8px}
+  .xcard{display:flex;align-items:center;gap:8px;flex-wrap:wrap;background:var(--panel);
+    border:1px solid var(--line);border-radius:12px;padding:12px 16px;text-decoration:none;
+    box-shadow:var(--shadow);transition:border-color .2s}
+  .xcard:hover{border-color:var(--accent)}
+  .xcard .xt{font-size:14px;font-weight:600;color:var(--ink);flex:1;min-width:200px}
+  .xcard .xd{font-size:12px;color:var(--ink-soft);white-space:nowrap}
+  .ncard{background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--accent);
+    border-radius:14px;padding:16px 20px;margin-bottom:14px;box-shadow:var(--shadow)}
+  .ncard .top{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:8px}
+  .ncard .badge.src{background:hsl(var(--h),72%,94%);color:hsl(var(--h),55%,32%);border-color:hsl(var(--h),55%,84%)}
+  .ncard h3{font-size:16px;font-weight:700;line-height:1.45;margin:4px 0 8px;color:var(--ink)}
+  .ncard .label{font-size:13px;font-weight:700;color:#0f3b78;margin:10px 0 4px}
+  .ncard .interpret{font-size:14px;color:#33485f;line-height:1.8}
+  .ncard .foot{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-top:12px}
+  .ncard .src{font-size:12px;color:var(--ink-soft)}
+  .ncard a.link{font-size:13px;font-weight:600;color:#fff;background:#0f3b78;text-decoration:none;
+    border:1px solid #0f3b78;padding:6px 14px;border-radius:9px;transition:all .2s}
+  .ncard a.link:hover{background:var(--accent);border-color:var(--accent)}
+  .filters{display:flex;flex-wrap:wrap;gap:6px;margin:4px 0 10px}
+  .secbar{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line);box-shadow:0 2px 14px rgba(15,59,120,.06)}
+  .secbar .wrap{display:flex;align-items:center;gap:8px;padding:9px 0;overflow-x:auto}
+  .secbar .lab{font-size:12px;color:var(--ink-soft);font-weight:600;white-space:nowrap;margin-right:2px}
+  .secbar a{font-size:13px;font-weight:600;color:var(--ink-soft);text-decoration:none;padding:6px 14px;
+    border-radius:20px;white-space:nowrap;transition:all .2s}
+  .secbar a:hover{color:var(--accent);background:var(--accent-soft)}
+  .secbar a.on{background:var(--accent);color:#fff}
+  .kwsearch{flex:1;min-width:120px;max-width:280px;font-size:12.5px;padding:6px 12px;border:1px solid var(--line);
+    border-radius:20px;outline:none;background:#f6f9ff;color:var(--ink);transition:border-color .2s}
+  .kwsearch:focus{border-color:var(--accent)}
+  .tagbtn{font-size:12px;font-weight:600;padding:5px 11px;border-radius:20px;cursor:pointer;
+    border:1px solid var(--line);background:#fff;color:var(--ink-soft);transition:all .2s;user-select:none}
+  .tagbtn:hover{border-color:var(--accent);color:var(--accent)}
+  .tagbtn.on{background:var(--accent);color:#fff;border-color:var(--accent)}
+  .sec-nav{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 14px;padding-bottom:12px;border-bottom:1px solid var(--line)}
+  .sec-nav .lab{font-size:12px;color:var(--ink-soft);align-self:center;margin-right:2px}
+  .sec-nav a{font-size:12px;font-weight:600;color:var(--accent);text-decoration:none;background:var(--accent-soft);
+    padding:4px 10px;border-radius:16px;transition:all .2s}
+  .sec-nav a:hover{background:var(--accent);color:#fff}
+  .sec-nav a.on{background:var(--accent);color:#fff}
+  .gh-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:12px}
+  .gh-card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px 16px;
+    box-shadow:var(--shadow);text-decoration:none;display:block;transition:border-color .2s}
+  .gh-card:hover{border-color:var(--accent)}
+  .gh-card .gt{display:flex;align-items:center;gap:8px;margin-bottom:6px}
+  .gh-card .gname{font-size:14px;font-weight:700;color:var(--ink);flex:1;min-width:0;
+    overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .gh-card .gstar{font-size:12px;color:#b45309;background:#fff7e6;padding:2px 8px;border-radius:20px;font-weight:700;white-space:nowrap}
+  .gh-card .gdesc{font-size:12.5px;color:var(--ink-soft);line-height:1.6;margin-bottom:6px}
+  .gh-card .gmeta{font-size:11.5px;color:var(--ink-soft)}
+  details.abs-fold{margin-top:10px}
+  details.abs-fold summary{font-size:13px;font-weight:600;color:var(--accent);cursor:pointer;user-select:none}
+  details.abs-fold .abs-body{font-size:13px;color:#33485f;line-height:1.75;margin-top:6px;background:#f6f9ff;
+    border:1px dashed var(--line);border-radius:10px;padding:10px 12px}
+  footer{text-align:center;color:var(--ink-soft);font-size:12px;margin-top:40px;line-height:1.8}
+  @media(max-width:860px){
+    .layout{flex-direction:column}
+    .timeline{position:static;flex:none;width:100%}
+    .rail{display:flex;gap:6px;overflow-x:auto;padding-left:0;padding-bottom:6px}
+    .rail::before{display:none}
+    .node{padding:6px 4px;margin:0;flex:0 0 auto;text-align:center}
+    .node .dot{display:none}
+  }
+</style>
+</head>
+<body>
+<nav class="sitenav">
+  <div class="inner">
+    <span class="brand">🧠 前沿科技站</span>
+    <div class="links">
+      <a href="https://jan-jianhao-liu.github.io" target="_blank" rel="noopener">个人主页</a>
+      <a class="cur" href="https://jan-jianhao-liu.github.io/ai-frontier-station/" target="_blank" rel="noopener">前沿科技站</a>
+      <a href="https://jan-jianhao-liu.github.io/plain-talk/" target="_blank" rel="noopener">科普解读站</a>
+    </div>
+  </div>
+</nav>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <div class="logo">🧠</div>
+      <div>
+        <h1>AI 前沿科技站 · 论文追踪与领域聚焦</h1>
+        <div class="sub">每日更新 · 历史累积 · 认知算法 / LLM / AI Agent / 世界模型 / 虚拟仿真社会 / 具身智能</div>
+      </div>
+    </div>
+    <div class="stats" id="stats"></div>
+    <div class="legend" id="legend"></div>
+  </div>
+</header>
+
+<!-- 栏目切换导航条（置顶固定，打开即见） -->
+<nav class="secbar" id="secbar">
+  <div class="wrap">
+    <span class="lab">栏目切换</span>
+    <input class="kwsearch" id="kwsearch" type="text" placeholder="🔍 搜索论文关键词…">
+    <a href="#papers-anchor" data-sec="0">📚 精选论文</a>
+    <a href="#gh-sec" data-sec="1">📦 热门 GitHub</a>
+    <a href="#community-sec" data-sec="2">🔥 科研社区资讯</a>
+  </div>
+</nav>
+
+<div class="wrap">
+  <div class="layout" id="papers-anchor">
+    <aside class="timeline">
+      <h2>时间轴</h2>
+      <div class="filters" id="pfilter"></div>
+      <div class="rail" id="rail"></div>
+    </aside>
+    <main class="content" id="content"></main>
+  </div>
+  <div id="gh-sec"></div>
+  <div id="community-sec"></div>
+  <footer id="footer"></footer>
+</div>
+
+<script>
+const DATA = /*__DATA__*/;
+
+function relTime(iso){
+  const t = new Date(iso).getTime();
+  let s = Math.floor((Date.now()-t)/1000);
+  if(s<60) return '刚刚';
+  let m=Math.floor(s/60); if(m<60) return m+' 分钟前';
+  let h=Math.floor(m/60); if(h<24) return h+' 小时前';
+  let d=Math.floor(h/24); if(d<30) return d+' 天前';
+  let mo=Math.floor(d/30); return mo+' 个月前';
+}
+
+document.getElementById('stats').innerHTML = `
+  <div class="stat"><div class="k">论文总数</div><div class="v">${DATA.total} <small>篇</small></div></div>
+  <div class="stat"><div class="k">今日精选</div><div class="v">${DATA.featured_count} <small>篇</small></div></div>
+  <div class="stat"><div class="k">GitHub 项目</div><div class="v">${DATA.gh.length} <small>个</small></div></div>
+  <div class="stat"><div class="k">社区热门</div><div class="v">${DATA.community_count} <small>条</small></div></div>
+  <div class="stat"><div class="k">累计周期</div><div class="v" style="font-size:16px">${DATA.start_date} <small>至</small> ${DATA.end_date}</div></div>
+  <div class="stat"><div class="k">覆盖领域</div><div class="v">${DATA.domains.length} <small>个</small></div></div>
+  <div class="stat"><div class="k">已生成要点</div><div class="v">${DATA.points_count} <small>篇</small></div></div>
+`;
+document.getElementById('legend').innerHTML =
+  '<span class="lab">领域：</span>' + DATA.domains.map(d=>`<span class="chip">${d}</span>`).join('');
+
+const rail = document.getElementById('rail');
+const weekOf = {};
+DATA.timeline.forEach(t=>weekOf[t.date]=t.weekday);
+function esc(s){ return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+function kindBadge(r){
+  if(r.featured_date) return '<span class="badge kind featured">⭐ 每日精选</span>';
+  if(r.kind==='social') return '<span class="badge kind social">💬 社媒解读</span>';
+  if(r.kind==='news') return '<span class="badge kind news">📰 行业资讯</span>';
+  if((r.source||'').indexOf('HuggingFace Daily Papers') >= 0) return '<span class="badge kind hf">🤗 HF Daily</span>';
+  return '<span class="badge kind paper">📄 论文</span>';
+}
+// 科研社区热门资讯区（X 社区 / 行业资讯，通俗解读卡）
+const cEl = document.getElementById('community-sec');
+if(DATA.community && DATA.community.length){
+  cEl.innerHTML = `
+    <div class="module-h"><span class="ico">🔥</span><div>科研社区热门资讯
+      <div class="desc">X 社区 / 行业资讯 · 通俗解读（非论文本体，作线索参考）</div></div>
+      <span class="cnt">${DATA.community_count} 条</span></div>
+    ${DATA.community.map(g=>`
+      <div class="day-label"><span class="dl-date">${g.date}</span><span class="dl-week">${g.weekday||''}</span>
+        <span class="dl-count">${g.items.length} 条</span></div>
+      ${g.items.map(e=>`
+        <article class="ncard">
+          <div class="top">
+            ${kindBadge(e)}
+            <span class="badge src" style="--h:${e.hue}">${esc(e.sourceShort)}</span>
+            <span class="badge domain">${esc(e.domain)}</span>
+          </div>
+          <h3>${esc(e.title_cn || e.title)}</h3>
+          <div class="label">💡 解读</div>
+          <div class="interpret">${esc(e.interpret || '（解读生成中，稍后更新）')}</div>
+          <div class="foot">
+            <span class="src">来源：${esc(e.source)} · ${e.date}</span>
+            ${e.link?`<a class="link" href="${esc(e.link)}" target="_blank" rel="noopener">阅读原文 ↗</a>`:''}
+          </div>
+        </article>`).join('')}`).join('')}`;
+}
+
+// 每日热门 GitHub 项目区（按 6 领域）
+const gEl = document.getElementById('gh-sec');
+if(DATA.gh && DATA.gh.length){
+  gEl.innerHTML = `
+    <div class="module-h"><span class="ico">📦</span><div>每日热门 GitHub 项目
+      <div class="desc">按六大领域检索的热门开源仓库 · ${DATA.gh_date||''}</div></div>
+      <span class="cnt">${DATA.gh.length} 个</span></div>
+    <div class="gh-list">${DATA.gh.map(p=>`
+      <a class="gh-card" href="${esc(p.url)}" target="_blank" rel="noopener">
+        <div class="gt">
+          <span class="badge domain">${esc(p.domain)}</span>
+          <span class="gname">${esc(p.full_name)}</span>
+          <span class="gstar">⭐ ${p.stars}</span>
+        </div>
+        <div class="gdesc">${esc(p.desc || '（暂无简介）')}</div>
+        <div class="gmeta">${esc(p.lang || '')} · GitHub 热门</div>
+      </a>`).join('')}</div>`;
+}
+
+// 栏目切换导航条（顶部固定）：滚动高亮当前栏目 + 点击平滑跳转
+const secbarEl = document.getElementById('secbar');
+const SEC_SELS = [['#papers-anchor',0],['#gh-sec',1],['#community-sec',2]];
+function scrollspy(){
+  let cur = 0;
+  SEC_SELS.forEach(([sel,i])=>{
+    const el = document.querySelector(sel);
+    if(el && el.getBoundingClientRect().top <= 140) cur = i;
+  });
+  secbarEl.querySelectorAll('a').forEach(a=>a.classList.toggle('on', Number(a.dataset.sec) === cur));
+}
+window.addEventListener('scroll', scrollspy, {passive:true});
+scrollspy();
+
+// 关键词搜索（栏目切换条内）
+document.getElementById('kwsearch').addEventListener('input', ()=>{
+  const kw = document.getElementById('kwsearch').value.trim();
+  document.getElementById('kwsearch').placeholder = kw ? '🔍 搜索中…' : '🔍 搜索论文关键词…';
+  renderPapers();
+});
+
+// 时间轴领域筛选（过滤论文卡片 + 时间轴节点）
+const pfilter = document.getElementById('pfilter');
+let activeDomain = '全部';
+['全部'].concat(DATA.domains).forEach(d=>{
+  const b = document.createElement('span');
+  b.className = 'tagbtn' + (d==='全部'?' on':'');
+  b.textContent = d;
+  b.onclick = ()=>{ activeDomain = d; document.querySelectorAll('#pfilter .tagbtn').forEach(x=>x.classList.remove('on')); b.classList.add('on'); renderPapers(); };
+  pfilter.appendChild(b);
+});
+
+function pointsHtml(r){
+  const p = r.points||{};
+  const order = [['类别','类别'],['背景','背景'],['贡献','贡献'],['合理性','合理性'],['清晰度','清晰度']];
+  const rows = order.filter(([k])=>p[k]).map(([k])=>
+    `<div class="row"><span class="k">${k}</span><span class="v">${esc(p[k])}</span></div>`).join('');
+  if(!rows) return '';
+  return `<details class="points"><summary>📋 论文要点（五问阅读法）</summary><div class="grid">${rows}</div></details>`;
+}
+
+// 论文时间轴渲染（支持领域筛选）：重建卡片 + 时间轴节点
+const content = document.getElementById('content');
+const io = new IntersectionObserver((es)=>{
+  es.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('visible'); io.unobserve(e.target); } });
+},{threshold:0.12});
+function renderPapers(){
+  const kw = (document.getElementById('kwsearch').value || '').trim().toLowerCase();
+  const recs = DATA.records.filter(r=>{
+    if(activeDomain!=='全部' && r.domain!==activeDomain) return false;
+    if(!kw) return true;
+    return ((r.title_cn||r.title)+' '+(r.abstract_cn||r.summary_cn||'')+' '+(r.domain||'')+' '+(r.source||'')).toLowerCase().indexOf(kw) >= 0;
+  });
+  const byDay = {};
+  recs.forEach(r=>{ (byDay[r.date]=byDay[r.date]||[]).push(r); });
+  const days = Object.keys(byDay).sort((a,b)=>b.localeCompare(a)); // 日期降序
+  // 每组内：每日精选排最前
+  Object.values(byDay).forEach(list=>list.sort((a,b)=>(b.featured_date?1:0)-(a.featured_date?1:0)));
+  rail.innerHTML = days.map(day=>{
+    const t = DATA.timeline.find(x=>x.date===day);
+    return `<div class="node" data-target="day-${day}" title="点击跳转到 ${day} 的论文">
+      <span class="dot"></span>
+      <div class="d">${day.slice(5)}</div>
+      <div class="w">${t?t.weekday:''}</div>
+      <div class="c">${byDay[day].length} 篇</div>
+    </div>`;
+  }).join('');
+  content.innerHTML = days.map(day=>{
+    const list = byDay[day];
+    const cards = list.map(r=>`
+      <article class="card">
+        <div class="top">
+          <span class="num">${r.num}</span>
+          <span class="badge src" style="--h:${r.hue}">${esc(r.sourceShort)}</span>
+          ${kindBadge(r)}
+          <span class="badge domain">${esc(r.domain)}</span>
+          <span class="rel">${relTime(r.ts)}</span>
+        </div>
+        <h3>${esc(r.title_cn || r.title)}</h3>
+        ${r.interpret?`<div class="label">💡 解读</div><div class="interpret">${esc(r.interpret)}</div>`:''}
+        <details class="abs-fold"><summary>📄 学术摘要</summary>
+          <div class="abs-body">${esc(r.abstract_cn || r.summary_cn || r.summary)}</div></details>
+        ${pointsHtml(r)}
+        <div class="foot">
+          <span class="src">来源：${esc(r.source)}</span>
+          <a class="link" href="${esc(r.link)}" target="_blank" rel="noopener">阅读原文 ↗</a>
+        </div>
+      </article>`).join('');
+    return `<section id="day-${day}">
+      <div class="day-label">
+        <span class="dl-date">${day}</span>
+        <span class="dl-week">${weekOf[day]||''}</span>
+        <span class="dl-count">${list.length} 篇</span>
+      </div>${cards}</section>`;
+  }).join('');
+  rail.querySelectorAll('.node').forEach(n=>{
+    n.addEventListener('click', ()=>{
+      const el = document.getElementById(n.dataset.target);
+      if(el) el.scrollIntoView({behavior:'smooth', block:'start'});
+    });
+  });
+  document.querySelectorAll('.content section').forEach(s=>secObserver.observe(s));
+  document.querySelectorAll('.card').forEach(c=>io.observe(c));
+  rail.querySelectorAll('.node').forEach(n=>n.classList.remove('active'));
+}
+const secObserver = new IntersectionObserver((es)=>{
+  es.forEach(e=>{
+    if(e.isIntersecting){
+      rail.querySelectorAll('.node').forEach(n=>n.classList.remove('active'));
+      const n = rail.querySelector(`.node[data-target="${e.target.id}"]`);
+      if(n) n.classList.add('active');
+    }
+  });
+},{rootMargin:'-20% 0px -70% 0px', threshold:0});
+
+renderPapers();
+
+document.getElementById('footer').innerHTML =
+  `数据由 AI HOT 公开精选池 + arXiv API 按研究领域检索整理 · 论文 ${DATA.total} 篇（含每日精选 ${DATA.featured_count} 篇 / GitHub 项目 ${DATA.gh.length} 个 / 社区热门 ${DATA.community_count} 条）· 累计 ${DATA.days} 天（${DATA.start_date} 至 ${DATA.end_date}）<br>` +
+  `每日自动追加当日新论文与 GitHub 热门项目，时间轴持续累积增长 · 覆盖：AI 认知算法 / LLM / AI Agent / 世界模型 / 虚拟仿真社会 / 具身智能<br>` +
+  `论文标题与摘要均已中文化，原文链接保留可溯源 · 要点由本机模型按 Keshav 五问法生成 · 版权归原作者与平台所有`;
+
+</script>
+</body>
+</html>
