@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://cdn.jsdelivr.net/gh/Jan-Jianhao-Liu/Jan-Jianhao-Liu/assets/waifu_ai_paper_banner.jpg" width="100%" alt="AI 论文学术档案库 · 魔导学院档案女馆员" />
+  <img src="https://cdn.jsdelivr.net/gh/Jan-Jianhao-Liu/Jan-Jianhao-Liu.github.io/assets/waifu_ai_paper_banner.jpg" width="100%" alt="AI 论文学术档案库 · 魔导学院档案女馆员" />
 </p>
 
 馆内藏卷万册，皆由我为您检索、翻译、归档为一座零依赖的单页圣典。想看哪一篇？
