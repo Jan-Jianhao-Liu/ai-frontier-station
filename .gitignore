@@ -1,0 +1,8 @@
+# 每日运行日志（本地留档，不入库）
+update_*.log
+
+# archive_store.json 的历史备份快照
+archive_store.json.bak_*
+
+# WorkBuddy 会话/记忆/自动化数据（本地私有）
+.workbuddy/

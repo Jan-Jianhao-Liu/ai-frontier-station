@@ -40,6 +40,25 @@ POINTS_MODEL = 'qwen3.5:4b'
 STORE = 'archive_store.json'
 OLD_CACHE = 'points_cache.json'   # 仅首跑播种时复用，迁移完成后不再需要
 
+# ---------- Ollama 可用性探活与降级开关 ----------
+OLLAMA_OK = True
+def probe_ollama():
+    """预热/探活：仅用于触发模型加载并打印状态，不因单次失败关闭生成
+    （真实调用若失败会自行点亮降级开关；避免冷加载首请求超时被误判为不可用）。"""
+    global OLLAMA_OK
+    try:
+        req = urllib.request.Request(OLLAMA, data=json.dumps({
+            'model': POINTS_MODEL, 'think': False, 'stream': False,
+            'messages': [{'role': 'user', 'content': 'ping'}]
+        }).encode('utf-8'), headers={'Content-Type': 'application/json'})
+        with urllib.request.urlopen(req, timeout=60) as r:
+            r.read()
+        OLLAMA_OK = True
+        print('[ollama] 探活成功，正常生成要点/解读', flush=True)
+    except Exception as e:
+        # 仅预热失败：不关闭生成，首次真实调用失败后再降级（避免冷加载误判）
+        print(f'[ollama] 探活超时/失败（仍尝试生成，首次真实调用失败后再降级）：{e}', flush=True)
+
 SKIP_HOSTS = ('x.com', 'twitter.com', 'www.x.com', 'mp.weixin.qq.com', 't.co')
 
 # ---------- 来源类型判定（严谨性分级） ----------
@@ -149,6 +168,9 @@ def extract_text(html):
     return re.sub(r'\s+', ' ', txt).strip()
 
 def ollama_points(title, text):
+    global OLLAMA_OK
+    if not OLLAMA_OK:
+        return {}
     if not text or len(text) < 30:
         return {}
     text = text[:3000]
@@ -160,8 +182,13 @@ def ollama_points(title, text):
         ]
     }).encode('utf-8')
     req = urllib.request.Request(OLLAMA, data=body, headers={'Content-Type': 'application/json'})
-    with urllib.request.urlopen(req, timeout=180) as r:
-        d = json.load(r)
+    try:
+        with urllib.request.urlopen(req, timeout=90) as r:
+            d = json.load(r)
+    except Exception as e:
+        OLLAMA_OK = False
+        print(f'  ollama 调用失败，降级跳过：{e}', flush=True)
+        return {}
     out = d.get('message', {}).get('content', '').strip()
     return parse_points(out) if out else {}
 
@@ -402,25 +429,58 @@ GITHUB_QUERIES = {
     '具身智能': 'embodied AI OR embodied intelligence',
 }
 
-def fetch_github_projects(per_domain=3):
-    out = []
+def ollama_complete(prompt, timeout=120):
+    """通用 Ollama 补全（GitHub 中文一句话介绍等）；失败返回空，不关闭全局生成开关。"""
+    body = json.dumps({
+        'model': POINTS_MODEL, 'think': False, 'stream': False,
+        'messages': [{'role': 'user', 'content': prompt}]
+    }).encode('utf-8')
+    req = urllib.request.Request(OLLAMA, data=body, headers={'Content-Type': 'application/json'})
+    try:
+        with urllib.request.urlopen(req, timeout=timeout) as r:
+            return json.load(r).get('message', {}).get('content', '').strip()
+    except Exception as e:
+        print(f'  ollama 调用失败（github intro）：{e}', flush=True)
+        return ''
+
+def fetch_github_projects(top_n=5, exclude=None):
+    """当日 Top-N AI 领域仓库：每领域取 stars 最高若干，合并去重后按 stars 取前 N。
+    生成中文一句话介绍(cn_intro)：类型 + 用途；无翻译则留空（不阻塞）。
+    exclude: 已收录的 full_name 集合，传入后优先挑选「尚未收录」的仓库，
+             使每日追加的都是新仓库，多日累积后板块内容持续充实。"""
+    exclude = exclude or set()
+    merged = {}
     for dom, q in GITHUB_QUERIES.items():
         url = ('https://api.github.com/search/repositories?q='
-               + urllib.parse.quote(q) + '&sort=stars&order=desc&per_page=' + str(per_domain))
+               + urllib.parse.quote(q) + '&sort=stars&order=desc&per_page=4')
         try:
             req = urllib.request.Request(url, headers={'User-Agent': ua, 'Accept': 'application/vnd.github+json'})
             with urllib.request.urlopen(req, timeout=30) as r:
                 d = json.load(r)
-            for it in d.get('items', [])[:per_domain]:
-                out.append({
-                    'domain': dom, 'name': it.get('name', ''), 'full_name': it.get('full_name', ''),
+            for it in d.get('items', [])[:4]:
+                fn = it.get('full_name', '')
+                if not fn or fn in merged or fn in exclude:
+                    continue
+                merged[fn] = {
+                    'domain': dom, 'name': it.get('name', ''), 'full_name': fn,
                     'url': it.get('html_url', ''), 'stars': it.get('stargazers_count', 0),
-                    'lang': it.get('language'), 'desc': (it.get('description') or '')[:120],
-                })
+                    'lang': it.get('language'), 'desc': (it.get('description') or '')[:160],
+                    'cn_intro': '',
+                }
+            time.sleep(6)  # 未认证 GitHub Search API 限流 10 次/分钟，逐域减速
         except Exception as e:
             print(f'  github fetch fail ({dom}): {e}', flush=True)
-            time.sleep(1)
-    return out
+            time.sleep(3)
+    ranked = sorted(merged.values(), key=lambda x: x.get('stars', 0), reverse=True)[:top_n]
+    for r in ranked:
+        if not r['cn_intro']:
+            prompt = (f'请用一句话（不超过40字）中文介绍这个GitHub开源仓库：'
+                      f'先说明它是什么类型（如 框架/工具/课程/数据集/应用），再说明主要用途。'
+                      f'只输出这句话本身，不要引号、序号、解释。\n'
+                      f'仓库名：{r["name"]}\n简介：{r["desc"]}\n地址：{r["url"]}')
+            out = ollama_complete(prompt)
+            r['cn_intro'] = out.strip().strip('"').strip("'").strip() if out else ''
+    return ranked
 
 # ---------- 持久化存储 ----------
 def load_store():
@@ -453,6 +513,43 @@ def badge_hue(name):
 
 def primary(dom_list, freq):
     return min(dom_list, key=lambda d: (freq[d], DOMAINS.index(d)))
+
+def dedupe_papers(papers):
+    """按规范键(arxiv id / 归一化标题)去重，保留信息更完整者。返回移除条数。
+    解决「精选文章」重复的根因：同一论文以不同来源(id)入库时只保留一条。"""
+    def canon(rec):
+        link = rec.get('link', '') or ''
+        m = re.search(r'arxiv\.org/abs/([\d\.]+)', link)
+        if m:
+            return 'arxiv:' + m.group(1)
+        t = (rec.get('title_cn') or rec.get('title', '') or '').lower()
+        t = re.sub(r'[^\w\u4e00-\u9fff]+', '', t)
+        return 't:' + t if t else None
+    def rich(rec):
+        return sum([bool(rec.get('abstract_cn')), bool(rec.get('points')),
+                    bool(rec.get('interpret')), bool(rec.get('title_cn')),
+                    len(rec.get('summary', '') or '')])
+    kept = {}
+    removed = 0
+    for pid, rec in list(papers.items()):
+        k = canon(rec)
+        if not k:
+            kept[pid] = rec
+            continue
+        if k in kept:
+            removed += 1
+            old = kept[k]
+            if rich(rec) > rich(old):
+                rec.setdefault('featured_date', old.get('featured_date'))
+                kept[k] = rec
+            else:
+                old.setdefault('featured_date', rec.get('featured_date'))
+        else:
+            kept[k] = rec
+    papers.clear()
+    for pid, rec in kept.items():
+        papers[pid] = rec
+    return removed
 
 # ---------- arXiv 补充源（严谨论文源，按领域检索） ----------
 def fetch_arxiv(domain, n=10):
@@ -492,6 +589,7 @@ def fetch_arxiv(domain, n=10):
 
 # ---------- 主流程 ----------
 def main():
+    probe_ollama()
     store = load_store()
     papers = store.setdefault('papers', {})
     meta = store.setdefault('meta', {})
@@ -647,6 +745,11 @@ def main():
                 print(f'  interpret {idn}/{len(need_int)}', flush=True)
         print(f'[community] 完成 {idn} 条解读', flush=True)
 
+    # 精选文章去重（根因修复：同一论文多来源入库只保留一条）
+    removed = dedupe_papers(papers)
+    if removed:
+        print(f'[dedupe] 移除重复精选文章 {removed} 条', flush=True)
+
     meta['last_run'] = now.isoformat()
     if 'first_run' not in meta:
         meta['first_run'] = now.isoformat()
@@ -665,12 +768,25 @@ def main():
             r['interpret'] = gen_featured_interpret(r.get('title', ''), r.get('abstract') or r.get('summary') or '')
             r['interpret_v'] = 3
         print(f'[featured] 精选解读完成', flush=True)
-    # 每日热门 GitHub 项目（当天未拉取则拉，6 领域各 top3）
+    # 每日热门 GitHub：累积式快照（保留历史，板块按多日累积展示）。
+    # 仅覆盖当日；当日优先挑选「其他日尚未收录」的仓库，使每日自动追加新内容，
+    # 多日累积后板块自然呈现约 15 条且不重复。保留近 60 天防止无限增长。
     gh_store = store.setdefault('github', {})
-    if today not in gh_store:
-        print('[github] 拉取 6 领域热门仓库...', flush=True)
-        gh_store[today] = fetch_github_projects()
-        print(f'[github] 拉到 {len(gh_store[today])} 个项目', flush=True)
+    cutoff = (datetime.strptime(today, '%Y-%m-%d') - timedelta(days=60)).strftime('%Y-%m-%d')
+    for k in list(gh_store):
+        if k < cutoff:
+            del gh_store[k]
+    others = set()
+    for d, items in gh_store.items():
+        if d == today:
+            continue
+        for p in items:
+            fn = p.get('full_name') or p.get('name', '')
+            if fn:
+                others.add(fn)
+    print(f'[github] 生成当日 Top-5（已收录 {len(others)} 个，优先追加新仓库）...', flush=True)
+    gh_store[today] = fetch_github_projects(5, exclude=others)
+    print(f'[github] 写入 {len(gh_store[today])} 个仓库（含中文介绍）', flush=True)
     save_store(store)
 
     # 全量排序（最新在前）

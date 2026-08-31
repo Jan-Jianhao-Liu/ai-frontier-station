@@ -19,3 +19,6 @@ else
   git push
   echo "已推送，GitHub Pages 将自动更新。"
 fi
+
+echo "同步到微信云开发数据库（papers/github/science/news）..."
+"$PY" ../ai-miniapp/scripts/sync_to_cloud.py || echo "[warn] 云库同步失败，下次运行会自动重试"
