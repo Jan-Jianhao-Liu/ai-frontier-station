@@ -232,6 +232,7 @@ def translate_cn(title, summary, tries=2):
     text = f'标题：{t_in}\n摘要：{s_in}'[:3500]
     body = json.dumps({
         'model': POINTS_MODEL, 'think': False, 'stream': False,
+        'options': {'num_ctx': 4096},
         'messages': [
             {'role': 'system', 'content': '你是专业学术翻译。把英文论文标题与摘要翻译成简体中文，保持学术准确、通顺自然，禁止添加任何解释或补充。只输出两行：\n标题：<中文标题>\n摘要：<中文摘要>'},
             {'role': 'user', 'content': text}
@@ -381,6 +382,7 @@ def gen_community_interpret(title, abstract, tries=2):
     text = f'标题：{title}\n内容：{(abstract or title or "")[:900]}'
     body = json.dumps({
         'model': POINTS_MODEL, 'think': False, 'stream': False,
+        'options': {'num_ctx': 4096},
         'messages': [
             {'role': 'system', 'content': '你是科研内容编辑。为科研论文/资讯写 150-300 字中文解读：客观概括核心内容、说明研究背景与意义、点出关键发现与影响。保持专业准确，同时用通俗易懂的表述照顾非专业读者——必要术语可以保留但要顺带解释，不堆砌晦涩词汇，不刻意大白话。直接输出解读正文，不要标题、不要任何前缀。'},
             {'role': 'user', 'content': text}
@@ -403,6 +405,7 @@ def gen_featured_interpret(title, abstract, tries=2):
     text = f'标题：{title}\n内容：{(abstract or title or "")[:1500]}'
     body = json.dumps({
         'model': POINTS_MODEL, 'think': False, 'stream': False,
+        'options': {'num_ctx': 4096},
         'messages': [
             {'role': 'system', 'content': '你是科研内容编辑。把这篇论文写成 150-300 字中文解读：客观概括研究问题、方法与贡献，说明其意义。保持专业准确，同时用通俗易懂的表述照顾非专业读者——必要术语可以保留但要顺带解释，不堆砌晦涩词汇，不刻意大白话。直接输出解读正文，不要标题、不要任何前缀。'},
             {'role': 'user', 'content': text}
