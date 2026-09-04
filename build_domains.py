@@ -176,6 +176,7 @@ def ollama_points(title, text):
     text = text[:3000]
     body = json.dumps({
         'model': POINTS_MODEL, 'think': False, 'stream': False,
+        'options': {'num_ctx': 4096},
         'messages': [
             {'role': 'system', 'content': SYS_PROMPT},
             {'role': 'user', 'content': f'标题：{title}\n内容：{text}'}
@@ -433,6 +434,7 @@ def ollama_complete(prompt, timeout=120):
     """通用 Ollama 补全（GitHub 中文一句话介绍等）；失败返回空，不关闭全局生成开关。"""
     body = json.dumps({
         'model': POINTS_MODEL, 'think': False, 'stream': False,
+        'options': {'num_ctx': 4096},
         'messages': [{'role': 'user', 'content': prompt}]
     }).encode('utf-8')
     req = urllib.request.Request(OLLAMA, data=body, headers={'Content-Type': 'application/json'})
