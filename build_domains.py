@@ -726,7 +726,12 @@ def main():
         for iid, rec in papers.items():
             if rec.get('kind') != 'paper':
                 continue
-            rec['points'] = ollama_points(rec.get('title', ''), rec.get('abstract') or rec.get('summary') or '') or {}
+            new_pts = ollama_points(rec.get('title', ''), rec.get('abstract') or rec.get('summary') or '')
+            if new_pts:
+                rec['points'] = new_pts
+            elif 'points' not in rec:
+                # Ollama 不可用（降级）时保留既有要点，仅对新论文补空 dict，避免全量覆盖成空导致历史要点丢失
+                rec['points'] = {}
             pd += 1
             if pd % 10 == 0:
                 print(f'  points {pd}/{len(papers_p)}', flush=True)
