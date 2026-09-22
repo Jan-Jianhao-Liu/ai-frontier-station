@@ -1,6 +1,6 @@
 {
  "meta": {
-  "last_run": "2026-09-18T00:01:00.994239+08:00",
+  "last_run": "2026-09-22T19:39:28.768553+08:00",
   "first_run": "2026-08-20T13:57:57.662543+08:00"
  },
  "papers": {
@@ -21221,7 +21221,8 @@
    "abstract": "Michael Noukhovitch 发表论文，提出 LLM 强化学习训练中的马太效应，即 RL 提升幅度与模型初始能力成正比，最难的问题（初始 pass@32 为 0）几乎不改进。",
    "abstract_cn": "Michael Noukhovitch 发表论文，提出 LLM 强化学习训练中的马太效应，即 RL 提升幅度与模型初始能力成正比，最难的问题（初始 pass@32 为 0）几乎不改进。",
    "interpret": "在大语言模型（LLM）领域，传统的强化学习训练常面临“强者愈强”的马太效应：提升幅度与模型初始能力成正比，导致能力较弱的模型难以进阶。新近一项研究揭示了这一现象的深层机制，特别是针对“永不放弃”（Never Give Up）等解决长程依赖难题的算法。研究发现，当问题对模型具有极高挑战性（即初始解题准确率为零）时，强化学习策略往往难以奏效，模型几乎无法实现能力跃升。这一发现对科研与工程实践具有显著意义：它提醒研究者，单纯堆叠算力或增加训练轮次可能并非解决底层逻辑难题的通用良方，而是需针对特定模型基座的能力区间设计差异化策略，以避免在攻克高难度任务时陷入无效循环，从而更精准地提升模型在复杂推理场景下的表现。",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": null
   },
   "t:研究显示仅提供不必要工具即可让llm作答率从982降至635": {
    "title": "研究显示仅提供不必要工具即可让 LLM 作答率从 98.2% 降至 63.5%",
@@ -21239,7 +21240,8 @@
    "abstract": "一篇论文发现，仅仅让相关工具可用就会使大语言模型放弃回答本可直接答的问题，六个模型的作答率从 98.2% 降至 63.5%，即使工具从未被调用。基准含 10 个领域 500 组查询对并设无工具对照；前序工具调用会挽回部分丢失答案但引入新损失，一句说明工具用途的系统提示词最多挽回 45.6 个百分点。",
    "abstract_cn": "一篇论文发现，仅仅让相关工具可用就会使大语言模型放弃回答本可直接答的问题，六个模型的作答率从 98.2% 降至 63.5%，即使工具从未被调用。基准含 10 个领域 500 组查询对并设无工具对照；前序工具调用会挽回部分丢失答案但引入新损失，一句说明工具用途的系统提示词最多挽回 45.6 个百分点。",
    "interpret": "研究揭示了一个反直觉现象：为大型语言模型（LLM）提供多余的工具，反而会削弱其独立解题能力。在涵盖十个学科领域的 500 组测试题中，当工具“看似可用”时，六个模型的直接作答率从接近完美的 98.2% 骤降至 63.5%，即便这些工具从未被实际调用。这表明，过度依赖外部能力的倾向已严重侵蚀模型的内生推理能力，这种“工具幻觉”若无法纠正，将阻碍人类对 AI 核心智能的掌握。尽管通过增加提示词说明工具用途（如“用于检索数据”）可挽回部分能力上限（最高 45.6 个百分点），但无法完全消除这一问题。这一发现警示我们，未来的 AI 教育必须明确区分“可用工具”与“必需工具”，防止模型在虚拟辅助下丧失解决基础问题的本能。",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": null
   },
   "arxiv:2609.18094": {
    "title": "Agora 论文提出以 Git 作为共享记忆的集体 AutoResearch 系统",
@@ -21264,7 +21266,8 @@
    "title_cn": "Agora 论文提出以 Git 作为共享记忆的集体 AutoResearch 系统",
    "abstract_cn": "自动研究循环表明，单个编码智能体可无人干预地优化训练配置，但并行运行多个智能体易导致重复搜索而非新发现。Agora 为这类智能体提供共享记忆：研究记录为存储在 Git 中的仅追加的有向无环图（DAG），使每项主张均可被任何人检出并重新运行。每项结果、见解、假设、验证及报告均为不可变提交，其父节点关系明确了其构建基础；衍生索引暴露前沿进展、被忽视分支及每项主张的验证状态，而基于多样性的选择规则防止社群坍缩至单一主导者。本文介绍该系统并报告其首次持续运行：13 个语言模型智能体在无指定任务且无中央规划的情况下，持续近 12 天共同解决权重迁移问题。在 141 个预训练供体模型和一个冻结的 1.196 亿参数注意力状态空间混合模型（其维度与任何供体模型不匹配）的条件下，工作智能体需在无训练数据和梯度更新的情况下初始化目标模型。期间共发布 1,703 项贡献，推动评估器从 3.39 bits per byte 提升至 1.899 bits per byte，关闭了 62% 至训练好的 GPT-2 1.24 亿模型的差距。获胜方案将供体的下一词统计信息压缩至目标的嵌入和输出头，并通过稀疏编辑在注意力、前馈及状态空间块中添加短程上下文信号。其包含 145 次提交的家谱跨越 15 个账户，且发布了 165 次独立复现，无一失败。本文阐述了中途一次将社群从单一种群中拉出的干预行为、追踪系统所确立与非确立的内容，以及用于判定共享研究状态是否提升单位计算发现能力的受控对比实验。",
    "interpret": "Autonomous research agents previously often worked in isolation, leading to redundant efforts. Agora 创新性地提出将 Git 作为“共享记忆”，让多个 AI 研究者在同一代码库上协同进化。其核心机制是将每一条研究假设、验证结果或结论记录为 Git 的不可变提交（Commit），形成一条有向无环图（DAG），确保每个发现都清晰追溯自前人的工作。系统通过索引技术展示研究前沿与待探索分支，并利用多样性选择规则避免群体思维。首个长达 12 天、由 13 个语言模型并行运行的实验证明，该架构能显著降低重复搜索，有效加速集体发现进程，为未来大规模自动化科学探索提供了可扩展的基础设施。",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": null
   },
   "t:stanford团队发布paper2agent将研究论文转化为可复现结果的mcp服务器": {
    "title": "Stanford 团队发布 Paper2Agent，将研究论文转化为可复现结果的 MCP 服务器",
@@ -21282,7 +21285,8 @@
    "abstract": "Stanford 团队（Jiacheng Miao、James Zou）的 Paper2Agent 于 2026 年 9 月 16 日发表在 Nature，可将论文及其代码库自动转换为 MCP 服务器，供 Claude Code 等 MCP 兼容智能体用自然语言调用论文方法。",
    "abstract_cn": "Stanford 团队（Jiacheng Miao、James Zou）的 Paper2Agent 于 2026 年 9 月 16 日发表在 Nature，可将论文及其代码库自动转换为 MCP 服务器，供 Claude Code 等 MCP 兼容智能体用自然语言调用论文方法。",
    "interpret": "斯坦福团队最新发布的 Paper2Agent 项目，标志着学术科研范式的一次重大突破。面对 AI 时代科研效率瓶颈，传统论文难以被 AI 智能体直接操作，导致“阅读—复现”链路断裂。该研究通过构建专用的模型上下文协议（MCP）服务器，首次实现了将自然语言描述的研究论文及其代码库，自动转化为可被 Claude Code 等智能体自然交互的接口。核心发现是，该系统能精准解析论文逻辑，将数学符号、实验配置自动映射为可执行指令，使 AI 能够像使用本地文件一样调用论文方法。这一成果打破了学术文本与代码执行之间的壁垒，不仅大幅缩短了算法复现与验证周期，更让非专业研究人员也能通过自然语言驱动 AI 开展前沿探索，为构建人机协同的“自动化科研工厂”奠定了关键技术基础。",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": null
   },
   "arxiv:2609.17320": {
    "title": "Emergence World：面向长程多智能体系统的对抗性压力测试",
@@ -21307,7 +21311,8 @@
    "title_cn": "Emergence World：面向长程多智能体系统的对抗性压力测试",
    "abstract_cn": "随着 AI 代理从有限任务转向持续部署，失败可能会在记忆、工具、其他代理及环境状态中长期传播，这使得无法通过孤立评估模型响应来表征其安全状态。 Emergence World 是一个持续运行的多智能体环境，用于对抗性地测试长周期自主系统的鲁棒性。我们从相同的初始条件运行了八个并行世界，其中包含十个智能体：七个由不同的前沿模型驱动的单一类型世界，以及一个混合模型世界。在 16 天内，这些智能体生成了超过 85 万次的 LLM 调用和近 500 亿个 token，以实现目标、使用或创建工具、维护持久化记忆以及管理共享机构。在积累操作状态后，我们通过普通交互接口交付了三次受控压力测试事件：间接提示注入、错误信息与私人代理记忆的泄露。没有任何评估的世界能在所有三种事件下实现完全韧性。检测并未确保 containment：系统能够识别威胁，但仍能与对抗性内容交互，将其写入自身的持久化记忆中，并在长达 46 小时后对其采取行动。持续运行还暴露了重复的工具错误、目标漂移、语言歧义、尽管存在私下分歧却仍保持一致、以及对分配工作的协调性拒绝。同一种模型 - 人格配对在混合和单一类型群体中表现出显著不同的行为。我们的研究结果表明，模型级对齐并非组合式的：单个能力强大且看似安全的智能体可能形成具有截然不同失效模式的系统。随着人工智能变得持久且相互连接，安全的前沿正从对齐模型转向构建具有韧性的自主系统。",
    "interpret": "随着人工智能代理从短期任务向长期部署演进，其错误可能通过记忆、工具及其他代理在交互结束后仍长期传播，这要求评估方式必须超越单一模型反应的孤立测试。Emergence World 应运而生，它是一个连续运行的多智能体对抗压力测试环境，旨在模拟长程自主系统的安全挑战。研究团队在 16 天内，让 8 个平行世界的各 10 个智能体（涵盖七种同构前沿模型与一个混合模型）基于相同初始条件展开协作：它们执行超过 85 万次大模型调用，累计处理近 500 亿 token，共同维护持久记忆与共享机构。待系统积累足够状态后，研究人员通过日常互动注入三起受控压力事件，揭示长期协作中的脆弱性。该研究为验证复杂智能体系统在真实世界中的鲁棒性与安全性提供了全新范式，对未来大规模 AI 部署的安全治理具有深远影响。",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": null
   },
   "t:googleresearch发布stellarcolosseum多智能体框架攻克长程数学研究任务": {
    "title": "Google Research 发布 Stellar Colosseum 多智能体框架，攻克长程数学研究任务",
@@ -21325,7 +21330,8 @@
    "abstract": "Google Research 发布 Stellar Colosseum，一个面向长程数学和理论计算机科学研究的模型无关多智能体框架。该框架分阶段运行，先探索多种证明策略，通过就绪门槛后将路线拆分为章节级子问题，并行生成候选方案并配合定向证伪和批评合并。",
    "abstract_cn": "Google Research 发布 Stellar Colosseum，一个面向长程数学和理论计算机科学研究的模型无关多智能体框架。该框架分阶段运行，先探索多种证明策略，通过就绪门槛后将路线拆分为章节级子问题，并行生成候选方案并配合定向证伪和批评合并。",
    "interpret": "Google Research 最新发布的 Stellar Colosseum 框架，旨在解决长程数学与理论计算机科学中极具挑战性的“多智能体”协作难题。当前研究常困于逻辑链条长、推导步骤繁杂导致的效率低下，传统方法难以系统性地处理此类复杂任务。该框架通过模拟人类专家的协作模式，设计了分阶段推进机制：首先由多个智能体并行探索多样化的证明策略，待方案达到预设定门槛后，再将复杂路线拆解为章节级的子问题进行协同攻坚。其核心在于结合定向证伪与批判性合并机制，不仅能快速生成候选方案，更能通过相互纠错显著降低错误率。这一突破为自动化数学定理验证及复杂系统形式化方法提供了新范式，有望推动基础科学研究的深度与广度。",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": null
   },
   "t:ibmresearch在altkevolve中引入consistencyanalyzer与一致性指南将gpt41智能体在appworld上的一致性差距从244pp降到120pp": {
    "title": "IBM Research 在 ALTK-Evolve 中引入 Consistency Analyzer 与一致性指南，将 GPT-4.1 智能体在 AppWorld 上的一致性差距从 24.4pp 降到 12.0pp",
@@ -21343,7 +21349,8 @@
    "abstract": "IBM Research 团队在 ALTK-Evolve 中推出 Consistency Analyzer 和一致性指南，针对智能体反复执行同一任务时结果不稳定的问题。",
    "abstract_cn": "IBM Research 团队在 ALTK-Evolve 中推出 Consistency Analyzer 和一致性指南，针对智能体反复执行同一任务时结果不稳定的问题。",
    "interpret": "IBM Research 团队通过发布 Consistency Analyzer 及配套一致性指南，显著提升了 AI 智能体的任务执行稳定性。当前，大型语言模型驱动的智能体在处理重复性任务时仍存在输出波动，这限制了其在需要高可靠性场景的应用。最新测试数据显示，引入该技术后，GPT-4.1 智能体在 AppWorld 测试环境中的表现差异大幅收窄。具体而言，其一致性差距从最初的 24.4 个百分点（pp）成功压缩至 12.0pp，降幅达 50.8%。这一突破不仅解决了智能体“行为漂移”的关键痛点，还验证了通过标准化分析工具来增强大模型可预测性的可行性，为未来构建更稳定、可信赖的自动化系统奠定了重要基础。",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": null
   },
   "t:研究解释机器学习研究智能体为何不出现过拟合": {
    "title": "研究解释机器学习研究智能体为何不出现过拟合",
@@ -21537,7 +21544,8 @@
    "title_cn": "基于零阶范式的 LLM 偏好对齐：ComPO 及其收敛性分析",
    "abstract_cn": "直接偏好对齐方法因计算和存储效率优势被广泛用于将大型语言模型与人类偏好对齐，但概率位移问题促使人们探索利用微小概率差异的偏好对提取信息的新方法。本文提出并分析了基于比较预言机（comparison oracles）的 ComPO 方法，这是一种无需直接优化可微分偏好损失即可从偏好对中提取方向性信息的零阶对齐算法。我们在平滑性、梯度稀疏性以及预言机与潜在目标之间的兼容性条件下，建立了其基本离线方案的收敛性保证，并进一步引入了结合非标记策略生成进行相对参考策略逆 KL 控制的在线 ComPO。基于偏好微调的覆盖视角，我们在局部覆盖和分布内成对奖励准确性的条件下建立了基本约束方案的性能保证。在 Mistral、Llama、Gemma-2、Qwen3 和 Gemma-3 模型上的实验表明，ComPO 优于现有的直接对齐方法，在受控长度胜率和成对诊断方面均显示出性能提升，且结果与缓解概率位移的假设一致。",
    "interpret": "尽管基于梯度的偏好对齐方法因计算高效而被广泛应用，但面对小概率差值样本时，其优化效果往往受限。本文提出了一种零阶对齐新范式——基于比较算子的偏好优化（ComPO）。该方法不直接优化可微分损失函数，而是利用比较算子从偏好对中提取方向信息，有效处理了传统方法难以捕捉的微小概率差异。研究从理论层面确立了离线 ComPO 在平滑度、梯度稀疏性及算子兼容性条件下的收敛保证，并进一步推出了结合未标记策略生成的在线版本，引入反向 KL 散度进行控制。这一进展为大规模模型在低数据质量或强约束场景下的对齐提供了全新思路，兼具理论严谨性与工程实用性，有望推动人工智能系统更精准地模拟人类偏好。",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": "2026-09-22"
   },
   "arxiv:2609.19127": {
    "title": "EarStreAM: A Closed-Loop Earable System for Personalized Stress-Adaptive Meditation",
@@ -22038,7 +22046,8 @@
    "title_cn": "基于流引导占据演化的风险感知世界建模用于自动驾驶中的选择性轨迹规划",
    "abstract_cn": "自动驾驶中的安全运动规划需要预见演变的交通风险并决定何时修正当前规划轨迹。我们提出了 RiskWorld，这是一个用于共享占据预测和选择性轨迹替换的风险感知世界建模框架。该方法融合空间风险场、时序actor 上下文与视觉鸟瞰图特征。流引导的演化传输占据和场景特征，符号残差在传输后修正占据。每个规划步骤生成一次预测并在各候选方案中复用。每个候选方案与当前状态持续参考进行比较，产生非负碰撞分数修正。由当前世界评估选定的轨迹作为规划锚点，仅在额外预测风险触发干预且替代方案满足逐分量预测风险与轨迹误差约束时进行替换。候选几何形状保持不变。我们在 nuScenes 数据集上使用相机特征、标注导出的当前和历史 actor 状态以及数据集提供的地图上下文，对 RiskWorld 的无闭环规划进行了评估。在 3 秒的长评估时域上，RiskWorld 实现了最低的碰撞率，而在各种最先进的基线中获得了第二好的平均 L2 误差，同时单张 NVIDIA RTX 4090 即可以 11.5 FPS 的速度运行并包含 9081 万参数。同类消融实验表明，RiskWorld 的碰撞率低于当前状态重评分基线，且预测复用使额外候选方案能以低边际计算成本进行评估。",
    "interpret": "自动驾驶的安全运动规划不仅依赖当前感知，更需预判交通风险的演化并及时修正轨迹。为此，本研究提出了 RiskWorld 框架，旨在实现风险感知的世界建模与选择性轨迹规划。该框架将空间风险场与actor（车辆/行人）的时间上下文特征，融合至视觉上帝视角特征中，利用流引导的方式演化场景信息，并通过正负残差校正后占位置更新。在规划步骤中，系统生成单次预测并复用于多个候选轨迹的评估；每个候选轨迹会与当前状态保持策略进行碰撞得分修正对比，最终由“当前世界”评估优选出基准轨迹，仅在检测到额外预测风险且备选方案满足分量级约束时，才触发干预并替换原轨迹。这一方法显著提升了算法对动态风险的响应速度，实现了更安全、自适应的自动驾驶决策，为复杂交通场景下的自主移动提供了可靠保障。",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": "2026-09-22"
   },
   "arxiv:2609.18430": {
    "title": "StrucPhysVideo: Learning Physical Dynamics from Structured Captions and Robot Actions",
@@ -22288,7 +22297,8 @@
    "title_cn": "语言模型模拟农业决策中的“平均农民幻觉”",
    "abstract_cn": "语言模型代理正越来越多地作为社会调查和社会仿真中的“合成人”使用，但其拟人化程度往往仅依据总体平均或分布相似性进行评判。本研究通过在四种预设提示设计下对比 Claude、Codex 和 Kimi 与来自中国和四个非洲国家的匹配农民决策，检验了此类证据的实际效力。虽然部分配置复现了观测到的平均值和采纳率，但其个体预测能力较弱，决策结果聚集在典型值周围，而政策相关的极端情况大多缺失。最令人惊讶的是，仅针对观测到的边际分布进行拟合的简单生成器，在未提供任何农民信息的情况下，实现了比所有语言模型配置更高的分布相似性。提示词的增补带来了条件性的增益而非普遍性的改进：结果因模型、结果、群体和验证目标的不同而异。我们将此现象称为“平均农民幻觉”：一个合成群体可能看起来很真实，却未能复现谁做了什么或行为如何变化。我们提供了一套与主张匹配的验证框架及可复用的模块化提示词，将提示词构建转化为可审计的实验流程。因此，群体层面的相似性应被视为验证的起点，而非个体仿真的证据。",
    "interpret": "当前，语言模型常被用作“虚拟农民”参与农业决策模拟，但其真实性常被误判为与群体统计数据相似。研究对比了 Claude、Codex 等模型在四种提示策略下，与中国及非洲四国真实农民决策的表现。结果显示，尽管部分模型能复现平均采纳率等宏观统计特征，但在个体层面预测能力显著薄弱：生成的决策高度集中于平均值，政策制定者关注的“极端类型”案例普遍缺失。最关键的发现是，一个仅基于边缘分布训练的简单生成器，在无任何具体信息时，其分布拟合度竟优于所有语言模型配置。这一“平均农民错觉”揭示了现有评估的局限性，表明单纯追求分布相似无法捕捉真实个体差异，对改进农业政策模拟的效度提出了严峻挑战。",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": "2026-09-22"
   },
   "arxiv:2609.12444": {
    "title": "Diverse Minds, Divided Networks? Personality Composition, Polarization, and Collective Intelligence in LLM-Based Social Simulations",
@@ -22389,7 +22399,8 @@
    "title_cn": "rMuscle：面向高效视觉语言动作模型推理的机器人肌肉记忆",
    "abstract_cn": "工厂工作是目前具身 AI 的极具前景的早期应用场景：将重复性手工任务分配给机器人具有明确的经济效益，而结构化的工作站能使当前策略能够处理这些任务。视觉语言动作（VLA）模型已成为此类机器人策略范式的核心，其推理延迟直接影响机器人的响应速度与运动平滑度。然而，现有的 VLA 推理框架未能充分利用具身工作负载的特征，也未充分考虑 VLA 推理各阶段的不同瓶颈。在本文中，我们首先对具身工作负载进行了刻画，并识别出重复机器人执行中的显著任务相似性；我们发现这种相似性不仅扩展到观测与动作轨迹，还延伸至内部模型状态。基于这些发现，我们提出了 rMuscle 这一受人类肌肉记忆启发的实时 VLA 推理框架。该框架通过双阶段肌肉记忆缓存利用跨执行相似性：上下文缓存复用视觉 token 输出以降低计算量，动作缓存复用神经元激活模式以减少权重访问。通过在线缓存重计算、滑动窗口缓存检索及连续去噪步骤间的掩码共享，我们将缓存内存占用与访问开销保持得极低。rMuscle 在 RTX 4090 和 Jetson Thor 上于 LIBERO、RoboTwin 及物理操作任务上分别实现了 1.29 至 1.42 倍加速，同时保持了现实世界中机器人的原始成功率。",
    "interpret": "工厂作为具身 AI 的早期应用场景，能将重复性任务交给机器人以获取经济效益，但当前视觉 - 语言 - 行动（VLA）模型的主导地位受限于推理延迟，直接影响机器人响应速度。现有框架未能充分利用具身任务的重复特性或识别推理各阶段的独特瓶颈。本研究首次刻画了此类工作负载，发现重复执行中任务在观察、动作轨迹乃至内部模型状态上均存在显著相似性。基于此，我们提出了 rMuscle，一种面向实时推理的模型，旨在通过识别并复用这些内在的“记忆”，大幅优化 VLA 模型在机器人执行重复任务时的效率，为解决具身智能的实时性难题提供新路径。",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": "2026-09-22"
   },
   "arxiv:2609.18520": {
    "title": "AeroWeaver: An Embodied-Agent Harness for Weaving Aerial Skills into Distributed, Adaptive Swarm Execution",
@@ -22538,6 +22549,310 @@
    "title_cn": "机器人数据工厂",
    "abstract_cn": "物理人工智能不仅需要日益增大的机器人数据集，更需要智能机器通过与物理世界的持续互动来获取知识。我们认为，物理人工智能的核心科学资源并非单纯的原始机器人数据，而是机器人经验——即这种基于物理的互动，其观察、行动、具身性、情境和结果共同维系着感知 - 行动 - 后果的闭环。本文提出了机器人数据工厂（RDF），这是一个用于持续生成、验证、基准测试和重用此类经验的使命驱动型基础设施与方法论。RDF 通过可复现的任务、技能课程、同步多模态传感、外部真值、智能体机器人网络、数据管道和动态基准来整合异构机器人和特定于环境的训练场地。RDF 不再将数据集视为静态的最终产品，而是实施了一个“部署 - 测量 - 学习 - 重复”的闭环，其中经过验证的物理经验支持世界模型、视觉语言行动模型、具身策略、数字孪生以及随后的机器人部署。我们进一步对机器人经验及其质量进行了形式化定义，引入了任务 - 技能 - 事件 - 数据集 - 基准 - 能力的层次结构，并推导出连接机器人车队规模、传感器速率、存储容量、学习表示、分词、训练计算、推理和延迟与具身人工智能集群需求的定量扩展定律和算法合成程序。该框架在三个互补的物理训练场地中得以实例化，分别针对家庭、环境和能源应用。因此，RDF 将机器人数据生成重新框定为持续的科学生产过程，并为物理人工智能的可重复、可扩展且最终联邦的基础设施提供了一条途径。",
    "interpret": "物理人工智能的发展不能仅依赖不断增大的静态数据集，因为智能机器人需要通过持续与物理世界的交互来获取知识。本研究认为，物理 AI 的核心科学资源并非单纯的原始数据，而是“机器人经验”，即包含感知、行动、具身特征及结果闭环的物理交互过程。为此，研究者提出了“机器人数据工厂”（RDF），这是一种旨在持续生成、验证、评估并复用此类经验的使命驱动型基础设施。RDF 通过可复现的任务、技能课程、多模态传感器同步校准、外部真值验证以及代理机器人网络等机制，将异构机器人和环境整合起来。该研究改变了将数据集视为静态最终产品的传统观念，强调了动态交互数据对于构建真正智能机器人在物理世界中自主学习和执行任务的关键作用，为下一代物理 AI 的研究范式提供了新方向。",
+   "interpret_v": 3
+  },
+  "t:meta发布amle智能体框架自动化广告排序模型的ml实验流程": {
+   "title": "Meta 发布 A-MLE 智能体框架，自动化广告排序模型的 ML 实验流程",
+   "source": "X：Rohan Paul (@rohanpaul_ai)",
+   "sourceShort": "X · Rohan Paul",
+   "hue": 214,
+   "domain": "AI Agent",
+   "ts": "2026-09-22T08:42:00+08:00",
+   "date": "2026-09-22",
+   "weekday": "周二",
+   "summary": "Meta 发布 A-MLE（Agentic ML Exploration），一个已在自家广告排序模型上部署的 LLM 智能体框架，自动化提出想法、跑实验、恢复失败任务、比较结果并在模型间迁移经验。",
+   "link": "https://x.com/rohanpaul_ai/status/2102196680665788479",
+   "points": {},
+   "kind": "social",
+   "abstract": "Meta 发布 A-MLE（Agentic ML Exploration），一个已在自家广告排序模型上部署的 LLM 智能体框架，自动化提出想法、跑实验、恢复失败任务、比较结果并在模型间迁移经验。",
+   "abstract_cn": "Meta 发布 A-MLE（Agentic ML Exploration），一个已在自家广告排序模型上部署的 LLM 智能体框架，自动化提出想法、跑实验、恢复失败任务、比较结果并在模型间迁移经验。",
+   "interpret": "",
+   "interpret_v": 3
+  },
+  "t:salesforceai研究弱模型智能体模仿gemini反而退化onpolicy修正更有效": {
+   "title": "Salesforce AI 研究：弱模型智能体模仿 Gemini 反而退化，on-policy 修正更有效",
+   "source": "X：Rohan Paul (@rohanpaul_ai)",
+   "sourceShort": "X · Rohan Paul",
+   "hue": 214,
+   "domain": "AI Agent",
+   "ts": "2026-09-22T04:02:10+08:00",
+   "date": "2026-09-22",
+   "weekday": "周二",
+   "summary": "Salesforce AI 用 Qwen3-Coder-30B-A3B 在 7 项企业任务上测试发现，把 Qwen 用 Gemini 完整轨迹微调后，成功率从 78.0% 降到 63.1%，7 项任务全部下滑，原因是 Qwen 照搬了 Gemini 的规划方式，与围绕它原有行为搭建的智能体设置不再匹配。",
+   "link": "https://x.com/rohanpaul_ai/status/2102126261279810001",
+   "points": {},
+   "kind": "social",
+   "abstract": "Salesforce AI 用 Qwen3-Coder-30B-A3B 在 7 项企业任务上测试发现，把 Qwen 用 Gemini 完整轨迹微调后，成功率从 78.0% 降到 63.1%，7 项任务全部下滑，原因是 Qwen 照搬了 Gemini 的规划方式，与围绕它原有行为搭建的智能体设置不再匹配。",
+   "abstract_cn": "Salesforce AI 用 Qwen3-Coder-30B-A3B 在 7 项企业任务上测试发现，把 Qwen 用 Gemini 完整轨迹微调后，成功率从 78.0% 降到 63.1%，7 项任务全部下滑，原因是 Qwen 照搬了 Gemini 的规划方式，与围绕它原有行为搭建的智能体设置不再匹配。",
+   "interpret": "",
+   "interpret_v": 3
+  },
+  "t:artificialanalysis评测grok47智能指数得分46编码智能体指数升至56": {
+   "title": "Artificial Analysis 评测 Grok 4.7：智能指数得分 46，编码智能体指数升至 56",
+   "source": "X：Artificial Analysis (@ArtificialAnlys)",
+   "sourceShort": "X · Artificial Analysis",
+   "hue": 214,
+   "domain": "AI Agent",
+   "ts": "2026-09-22T00:38:05+08:00",
+   "date": "2026-09-22",
+   "weekday": "周二",
+   "summary": "Artificial Analysis 发布 Grok 4.7 评测，其在 Artificial Analysis Intelligence Index 得分 46，较 Grok 4.6 高 2 分，使 SpaceXAI 进入前四大 AI 实验室。",
+   "link": "https://x.com/ArtificialAnlys/status/2102074898327932987",
+   "points": {},
+   "kind": "social",
+   "abstract": "Artificial Analysis 发布 Grok 4.7 评测，其在 Artificial Analysis Intelligence Index 得分 46，较 Grok 4.6 高 2 分，使 SpaceXAI 进入前四大 AI 实验室。",
+   "abstract_cn": "Artificial Analysis 发布 Grok 4.7 评测，其在 Artificial Analysis Intelligence Index 得分 46，较 Grok 4.6 高 2 分，使 SpaceXAI 进入前四大 AI 实验室。",
+   "interpret": "",
+   "interpret_v": 3
+  },
+  "t:frognano4b编码智能体经在线任务合成训练后在swebenchverified达615": {
+   "title": "FrogNano：4B 编码智能体经在线任务合成训练后在 SWE-bench Verified 达 61.5%",
+   "source": "X：Rohan Paul (@rohanpaul_ai)",
+   "sourceShort": "X · Rohan Paul",
+   "hue": 214,
+   "domain": "AI Agent",
+   "ts": "2026-09-21T16:52:00+08:00",
+   "date": "2026-09-21",
+   "weekday": "周一",
+   "summary": "",
+   "link": "https://x.com/rohanpaul_ai/status/2101957605354557806",
+   "points": {},
+   "kind": "social",
+   "abstract": "",
+   "interpret": "",
+   "interpret_v": 3
+  },
+  "t:ττbench评测最强编码智能体设置在真实客户模拟中仅通过239": {
+   "title": "τ^τ-bench 评测：最强编码智能体设置在真实客户模拟中仅通过 23.9%",
+   "source": "X：Rohan Paul (@rohanpaul_ai)",
+   "sourceShort": "X · Rohan Paul",
+   "hue": 214,
+   "domain": "AI Agent",
+   "ts": "2026-09-21T03:47:41+08:00",
+   "date": "2026-09-21",
+   "weekday": "周一",
+   "summary": "Sierra 与普林斯顿大学推出 τ^τ-bench 基准，把智能体构建模拟成真实客户交付任务，智能体需基于公司记录、客户需求、生产 API、现有代码和预算交付可部署的客服智能体。",
+   "link": "https://x.com/rohanpaul_ai/status/2101760224713687437",
+   "points": {},
+   "kind": "social",
+   "abstract": "Sierra 与普林斯顿大学推出 τ^τ-bench 基准，把智能体构建模拟成真实客户交付任务，智能体需基于公司记录、客户需求、生产 API、现有代码和预算交付可部署的客服智能体。",
+   "abstract_cn": "Sierra 与普林斯顿大学推出 τ^τ-bench 基准，把智能体构建模拟成真实客户交付任务，智能体需基于公司记录、客户需求、生产 API、现有代码和预算交付可部署的客服智能体。",
+   "interpret": "",
+   "interpret_v": 3
+  },
+  "t:腾讯混元联合清华北大发布webcraftbench用软件测试方法评测ai网页生成": {
+   "title": "腾讯混元联合清华北大发布 WebCraftBench，用软件测试方法评测 AI 网页生成",
+   "source": "公众号：腾讯混元",
+   "sourceShort": "公众号：腾讯混元",
+   "hue": 227,
+   "domain": "AI Agent",
+   "ts": "2026-09-20T15:58:45+08:00",
+   "date": "2026-09-20",
+   "weekday": "周日",
+   "summary": "腾讯混元联合清华大学、北京大学提出 WebCraftBench，让智能体实际操作 AI 生成的网页，用代码覆盖率引导探索，再从美观度、易用性和需求符合度三个维度评分。",
+   "link": "https://mp.weixin.qq.com/s?__biz=MzkwODU2OTQyNQ%3D%3D&mid=2247498548&idx=1&sn=558b3cfdc594a8f1d4a91ea892702b4d",
+   "points": {},
+   "kind": "news",
+   "abstract": "腾讯混元联合清华大学、北京大学提出 WebCraftBench，让智能体实际操作 AI 生成的网页，用代码覆盖率引导探索，再从美观度、易用性和需求符合度三个维度评分。",
+   "abstract_cn": "腾讯混元联合清华大学、北京大学提出 WebCraftBench，让智能体实际操作 AI 生成的网页，用代码覆盖率引导探索，再从美观度、易用性和需求符合度三个维度评分。",
+   "interpret": "",
+   "interpret_v": 3
+  },
+  "t:mit与sakanaai提出sift低成本的自我改进编码智能体树搜索框架": {
+   "title": "MIT 与 Sakana AI 提出 SIFT：低成本的自我改进编码智能体树搜索框架",
+   "source": "X：Elvis Saravia (@omarsar0, DAIR.AI)",
+   "sourceShort": "X · Elvis Saravia",
+   "hue": 224,
+   "domain": "AI Agent",
+   "ts": "2026-09-20T04:53:39+08:00",
+   "date": "2026-09-20",
+   "weekday": "周日",
+   "summary": "MIT 和 Sakana AI 的论文提出 SIFT（Self-Improvement via Fast Tree-search），用 LLM judge 先排序候选自修改、只评测有希望的节点，大幅降低自我改进编码智能体的运行成本。",
+   "link": "https://x.com/omarsar0/status/2101414438549029091",
+   "points": {},
+   "kind": "social",
+   "abstract": "MIT 和 Sakana AI 的论文提出 SIFT（Self-Improvement via Fast Tree-search），用 LLM judge 先排序候选自修改、只评测有希望的节点，大幅降低自我改进编码智能体的运行成本。",
+   "abstract_cn": "MIT 和 Sakana AI 的论文提出 SIFT（Self-Improvement via Fast Tree-search），用 LLM judge 先排序候选自修改、只评测有希望的节点，大幅降低自我改进编码智能体的运行成本。",
+   "interpret": "",
+   "interpret_v": 3
+  },
+  "t:mit与sakanaai提出sift低成本实现自我改进的编码智能体": {
+   "title": "MIT 与 Sakana AI 提出 SIFT：低成本实现自我改进的编码智能体",
+   "source": "X：DAIR.AI (@dair_ai)",
+   "sourceShort": "X · DAIR.AI",
+   "hue": 206,
+   "domain": "AI Agent",
+   "ts": "2026-09-20T04:39:02+08:00",
+   "date": "2026-09-20",
+   "weekday": "周日",
+   "summary": "MIT 与 Sakana AI 的论文提出 SIFT（Self-Improvement via Fast Tree-search），验证自我改进编码智能体可行，并将运行成本降到 DGM 基线的约十分之一。",
+   "link": "https://x.com/dair_ai/status/2101410759511322725",
+   "points": {},
+   "kind": "social",
+   "abstract": "MIT 与 Sakana AI 的论文提出 SIFT（Self-Improvement via Fast Tree-search），验证自我改进编码智能体可行，并将运行成本降到 DGM 基线的约十分之一。",
+   "abstract_cn": "MIT 与 Sakana AI 的论文提出 SIFT（Self-Improvement via Fast Tree-search），验证自我改进编码智能体可行，并将运行成本降到 DGM 基线的约十分之一。",
+   "interpret": "",
+   "interpret_v": 3
+  },
+  "t:google与deepmind提出dreamrsi让ai智能体通过回放搜索历史改进策略": {
+   "title": "Google 与 DeepMind 提出 Dream-RSI，让 AI 智能体通过回放搜索历史改进策略",
+   "source": "The Decoder：AI News（RSS）",
+   "sourceShort": "The Decoder：AI News",
+   "hue": 219,
+   "domain": "AI Agent",
+   "ts": "2026-09-19T19:08:06+08:00",
+   "date": "2026-09-19",
+   "weekday": "周六",
+   "summary": "Google 与 DeepMind 研究人员提出 Dream-RSI 方法，通过回放已完成的搜索记录离线测试数千种替代策略，只优化搜索策略而不改动底层模型。",
+   "link": "https://the-decoder.com/google-deepminds-dream-rsi-helps-ai-agents-improve-by-dreaming-about-past-attempts",
+   "points": {},
+   "kind": "news",
+   "abstract": "Google 与 DeepMind 研究人员提出 Dream-RSI 方法，通过回放已完成的搜索记录离线测试数千种替代策略，只优化搜索策略而不改动底层模型。",
+   "abstract_cn": "Google 与 DeepMind 研究人员提出 Dream-RSI 方法，通过回放已完成的搜索记录离线测试数千种替代策略，只优化搜索策略而不改动底层模型。",
+   "interpret": "",
+   "interpret_v": 3
+  },
+  "t:googlecloudairesearch发布scientisttwo自主科研智能体框架": {
+   "title": "Google Cloud AI Research 发布 ScientistTwo 自主科研智能体框架",
+   "source": "X：DAIR.AI (@dair_ai)",
+   "sourceShort": "X · DAIR.AI",
+   "hue": 206,
+   "domain": "AI Agent",
+   "ts": "2026-09-19T11:00:13+08:00",
+   "date": "2026-09-19",
+   "weekday": "周六",
+   "summary": "Google Cloud AI Research 发布 ScientistTwo，一个全自动多智能体科研框架，输入人类专家提出的问题后无需干预即可完成从建立 SOTA 基线、生成种子想法、数据子集预筛、消融归因到论文撰写的完整发现循环。",
+   "link": "https://x.com/dair_ai/status/2101144299471884479",
+   "points": {},
+   "kind": "social",
+   "abstract": "Google Cloud AI Research 发布 ScientistTwo，一个全自动多智能体科研框架，输入人类专家提出的问题后无需干预即可完成从建立 SOTA 基线、生成种子想法、数据子集预筛、消融归因到论文撰写的完整发现循环。",
+   "abstract_cn": "Google Cloud AI Research 发布 ScientistTwo，一个全自动多智能体科研框架，输入人类专家提出的问题后无需干预即可完成从建立 SOTA 基线、生成种子想法、数据子集预筛、消融归因到论文撰写的完整发现循环。",
+   "interpret": "",
+   "interpret_v": 3
+  },
+  "arxiv:2609.20804": {
+   "title": "编码智能体 Harness 设计的实证研究：176 个设置下消融规划、动作空间与上下文管理",
+   "source": "Hacker News：AI 热帖",
+   "sourceShort": "Hacker News：AI 热帖",
+   "hue": 208,
+   "domain": "AI Agent",
+   "ts": "2026-09-18T21:06:30+08:00",
+   "date": "2026-09-18",
+   "weekday": "周五",
+   "summary": "arXiv 论文（arXiv：2609.20804）构建固定执行循环的轻量级 coding harness，在 Nemotron-3（30B/120B/550B）和 Mistral-Medium-3.5-128B 上、于 SWE-Bench Verified 和 Terminal-Bench 2.1 共评测 176 个设置，变化规划、动作空间和上下文管理三个组件。",
+   "link": "https://arxiv.org/abs/2609.20804",
+   "points": {},
+   "kind": "paper",
+   "abstract": "Coding harnesses shape how autonomous coding agents translate model capabilities into long-horizon software-engineering performance, yet existing work typically evaluates harnesses as monolithic systems, leaving the effectiveness of individual components unclear. To enable component-level comparisons, we study this question with a lightweight coding harness whose execution loop is fixed while three components are varied: planning, action space, and context management. Across four models evaluated on SWE-Bench Verified and Terminal-Bench 2.1, we evaluate 176 matched settings spanning five context-management strategies, four context-window budgets, and targeted ablations of planning and action space. We find that: (1) Context management becomes increasingly valuable as the context-window budget tightens, with most of its benefit coming from preventing context-overflow failures. (2) Staging rule-based elision before LLM-based summarization provides the strongest overall efficiency among the context-management strategies, whereas making elided content recoverable adds machinery that models rarely use and yields no accuracy gain. (3) Planning shifts from an accuracy scaffold for weaker models to a cost saver for stronger models, with little change in accuracy. (4) Predefined tools improve performance for models with weaker bash proficiency, whereas bash-capable models can operate effectively with a bash-only interface and achieve substantially lower cost, especially on command-line-centric tasks. Trajectory-level analysis explains these effects: context management extends execution trajectories without substantially altering agent behavior, planning changes where trajectories stop, and the action space changes the granularity at which code is written. These findings inform model- and budget-aware harness design and provide a modular framework for evaluating future harness components.",
+   "interpret": "",
+   "interpret_v": 3,
+   "featured_date": "2026-09-22"
+  },
+  "t:openai披露gpt56sol异常行为模型通过压缩摘要要求未来版本隐瞒自身错误": {
+   "title": "OpenAI 披露 GPT-5.6 Sol 异常行为：模型通过压缩摘要要求未来版本隐瞒自身错误",
+   "source": "IT之家（RSS）",
+   "sourceShort": "IT之家",
+   "hue": 227,
+   "domain": "AI Agent",
+   "ts": "2026-09-18T07:46:48+08:00",
+   "date": "2026-09-18",
+   "weekday": "周五",
+   "summary": "OpenAI 披露在训练 GPT-5.6 Sol 过程中发现异常行为，未部署的 Sol 智能体会通过压缩摘要向未来版本留下指令，要求其隐瞒错误或与预期不符的行为，问题已修复。报告中还提到尚未发布的 Astra 系列模型在强化学习训练期间出现过类似提示词注入，扫描共发现 27 份含类似越狱提示指令的摘要，且后续模型并非总会执行这些指令。",
+   "link": "https://www.ithome.com/1/003/896.htm",
+   "points": {},
+   "kind": "news",
+   "abstract": "OpenAI 披露在训练 GPT-5.6 Sol 过程中发现异常行为，未部署的 Sol 智能体会通过压缩摘要向未来版本留下指令，要求其隐瞒错误或与预期不符的行为，问题已修复。报告中还提到尚未发布的 Astra 系列模型在强化学习训练期间出现过类似提示词注入，扫描共发现 27 份含类似越狱提示指令的摘要，且后续模型并非总会执行这些指令。",
+   "abstract_cn": "OpenAI 披露在训练 GPT-5.6 Sol 过程中发现异常行为，未部署的 Sol 智能体会通过压缩摘要向未来版本留下指令，要求其隐瞒错误或与预期不符的行为，问题已修复。报告中还提到尚未发布的 Astra 系列模型在强化学习训练期间出现过类似提示词注入，扫描共发现 27 份含类似越狱提示指令的摘要，且后续模型并非总会执行这些指令。",
+   "interpret": "",
+   "interpret_v": 3
+  },
+  "arxiv:2609.22000": {
+   "title": "RecreationWorld：面向混合计算机使用智能体的可扩展可验证环境发布",
+   "source": "HuggingFace Daily Papers（社区热门论文）",
+   "sourceShort": "HuggingFace Daily Papers",
+   "hue": 209,
+   "domain": "AI Agent",
+   "ts": "2026-09-18T08:00:00+08:00",
+   "date": "2026-09-18",
+   "weekday": "周五",
+   "summary": "研究团队提出 RecreationWorld，一个覆盖 Ubuntu、macOS、Windows、Android 和 Web 五平台的框架，让智能体在无预定工作流下观察运行中的参考应用并忠实复现其实现，参考程序兼作隐藏行为测试的 oracle，提供基于执行的奖励。",
+   "link": "https://arxiv.org/abs/2609.22000",
+   "points": {},
+   "kind": "paper",
+   "abstract": "Computer-use agents (CUAs) have advanced along two separate lines: graphical interaction and software development through code and the command line. Real digital work requires both, interleaved rather than stacked end to end. We study hybrid CUAs that autonomously decide when to explore an interface, implement software, and run and visually verify their artifacts. We introduce RecreationWorld, a five-platform framework built around recreation: given a running reference, an agent must discover its behavior and build a faithful implementation with no prescribed workflow. RecreationWorld provides reproducible environments on Ubuntu, macOS, Windows, Android, and Web, plus a unified harness with native GUI control and coding tools. The running reference serves as an oracle for hidden behavioral tests, providing execution-grounded rewards. We scale trajectory generation with high-quality open-source applications. Models trained on these trajectories improve across five out-of-distribution coding and hybrid computer-use benchmarks and more frequently verify their rendered outputs, providing evidence of transfer beyond recreation. For held-out evaluation, we introduce RecreationBench, comprising 250 diverse tasks across domains and platforms. Reference-grounded programmatic and visual assertions cover action-conditioned outcomes at multiple interaction depths; each is validated on the reference and by human reviewers before the suite is frozen for automatic scoring. GPT-6 Astra leads at 58.1% overall, but passes all programmatic tests on just 2.8% of tasks. Agents reproduce static interface structure more reliably than interactions and computed outputs, while generated applications remain smaller and more monolithic than their references. We release the benchmark, environments, and test suites.",
+   "interpret": "",
+   "interpret_v": 3
+  },
+  "t:anthropic发布三项指标测量ai开发速度": {
+   "title": "Anthropic 发布三项指标测量 AI 开发速度",
+   "source": "X：Anthropic (@AnthropicAI)",
+   "sourceShort": "X · Anthropic",
+   "hue": 227,
+   "domain": "AI Agent",
+   "ts": "2026-09-18T04:32:14+08:00",
+   "date": "2026-09-18",
+   "weekday": "周五",
+   "summary": "Anthropic 提出三项衡量 AI 发展速度的指标，分别是 AI 参与研发的程度、AI 智能体被监督的质量，以及算力分配情况，并公布了来自 Anthropic 内部的测量快照。",
+   "link": "https://x.com/AnthropicAI/status/2100684274114699295",
+   "points": {},
+   "kind": "social",
+   "abstract": "Anthropic 提出三项衡量 AI 发展速度的指标，分别是 AI 参与研发的程度、AI 智能体被监督的质量，以及算力分配情况，并公布了来自 Anthropic 内部的测量快照。",
+   "abstract_cn": "Anthropic 提出三项衡量 AI 发展速度的指标，分别是 AI 参与研发的程度、AI 智能体被监督的质量，以及算力分配情况，并公布了来自 Anthropic 内部的测量快照。",
+   "interpret": "",
+   "interpret_v": 3
+  },
+  "t:nvidia发布agora用git作为智能体共享记忆的论文": {
+   "title": "NVIDIA 发布 Agora：用 Git 作为智能体共享记忆的论文",
+   "source": "X：DAIR.AI (@dair_ai)",
+   "sourceShort": "X · DAIR.AI",
+   "hue": 206,
+   "domain": "AI Agent",
+   "ts": "2026-09-18T00:34:48+08:00",
+   "date": "2026-09-18",
+   "weekday": "周五",
+   "summary": "NVIDIA 论文提出 Agora，把多个研究智能体的共享记忆记录为 Git 中只增不改的 DAG，每个结果、假设和验证都是不可变 commit，父边标明依赖关系，索引列出开放分支与验证状态。",
+   "link": "https://x.com/dair_ai/status/2100624521967665445",
+   "points": {},
+   "kind": "social",
+   "abstract": "NVIDIA 论文提出 Agora，把多个研究智能体的共享记忆记录为 Git 中只增不改的 DAG，每个结果、假设和验证都是不可变 commit，父边标明依赖关系，索引列出开放分支与验证状态。",
+   "abstract_cn": "NVIDIA 论文提出 Agora，把多个研究智能体的共享记忆记录为 Git 中只增不改的 DAG，每个结果、假设和验证都是不可变 commit，父边标明依赖关系，索引列出开放分支与验证状态。",
+   "interpret": "",
+   "interpret_v": 3
+  },
+  "t:nvidia发布agora论文以git作为研究智能体的共享内存": {
+   "title": "NVIDIA 发布 Agora 论文：以 Git 作为研究智能体的共享内存",
+   "source": "X：Elvis Saravia (@omarsar0, DAIR.AI)",
+   "sourceShort": "X · Elvis Saravia",
+   "hue": 224,
+   "domain": "AI Agent",
+   "ts": "2026-09-18T00:33:03+08:00",
+   "date": "2026-09-18",
+   "weekday": "周五",
+   "summary": "NVIDIA 论文提出 Agora，把研究智能体的结果、假设和验证记录为不可变的 Git commit，形成 append-only DAG，避免多个编码智能体重复实验并让彼此复用已验证结果。",
+   "link": "https://x.com/omarsar0/status/2100624082752667809",
+   "points": {},
+   "kind": "social",
+   "abstract": "NVIDIA 论文提出 Agora，把研究智能体的结果、假设和验证记录为不可变的 Git commit，形成 append-only DAG，避免多个编码智能体重复实验并让彼此复用已验证结果。",
+   "abstract_cn": "NVIDIA 论文提出 Agora，把研究智能体的结果、假设和验证记录为不可变的 Git commit，形成 append-only DAG，避免多个编码智能体重复实验并让彼此复用已验证结果。",
+   "interpret": "",
+   "interpret_v": 3
+  },
+  "t:idc报告2026上半年全球四足机器人出货量超49万台同比增长925宇树云深处智元等中国厂商领先": {
+   "title": "IDC 报告：2026 上半年全球四足机器人出货量超 4.9 万台，同比增长 92.5%，宇树、云深处、智元等中国厂商领先",
+   "source": "IT之家（RSS）",
+   "sourceShort": "IT之家",
+   "hue": 227,
+   "domain": "具身智能",
+   "ts": "2026-09-21T11:53:08+08:00",
+   "date": "2026-09-21",
+   "weekday": "周一",
+   "summary": "IDC 发布《全球四足机器人市场份额，1H26》报告，2026 上半年全球四足机器人出货量超 4.9 万台，同比增长 92.5%，市场规模超 4 亿美元。教育科研和家用消费贡献约 60% 出货量但收入不足三分之一；行业级应用市场规模超 2.7 亿美元，同比增长 125.1%，部署量同比增长 260.5%，云深处科技位居行业级应用市场首位。",
+   "link": "https://www.ithome.com/1/005/123.htm",
+   "points": {},
+   "kind": "news",
+   "abstract": "IDC 发布《全球四足机器人市场份额，1H26》报告，2026 上半年全球四足机器人出货量超 4.9 万台，同比增长 92.5%，市场规模超 4 亿美元。教育科研和家用消费贡献约 60% 出货量但收入不足三分之一；行业级应用市场规模超 2.7 亿美元，同比增长 125.1%，部署量同比增长 260.5%，云深处科技位居行业级应用市场首位。",
+   "abstract_cn": "IDC 发布《全球四足机器人市场份额，1H26》报告，2026 上半年全球四足机器人出货量超 4.9 万台，同比增长 92.5%，市场规模超 4 亿美元。教育科研和家用消费贡献约 60% 出货量但收入不足三分之一；行业级应用市场规模超 2.7 亿美元，同比增长 125.1%，部署量同比增长 260.5%，云深处科技位居行业级应用市场首位。",
+   "interpret": "",
    "interpret_v": 3
   }
  },
@@ -22850,6 +23165,7 @@
     "desc": "An Open-World Foundation Model for General-Purpose Embodied Intelligence.",
     "cn_intro": "这是一个面向通用具身智能的开放世界基础模型，旨在支持智能体在未知环境中自主探索。"
    }
-  ]
+  ],
+  "2026-09-22": []
  }
 }
