@@ -1,6 +1,6 @@
 {
  "meta": {
-  "last_run": "2026-10-31T00:02:02.234063+08:00",
+  "last_run": "2026-11-02T00:01:42.934045+08:00",
   "first_run": "2026-08-20T13:57:57.662543+08:00"
  },
  "papers": {
@@ -33521,7 +33521,8 @@
    "title_cn": "安全与可信 AI 代理的三支柱治理框架",
    "abstract_cn": "具备自主决策能力的 AI 代理在安全性、对齐性、问责制和人类监督方面引入了重大挑战。现有的人工介入（HITL）和负责任的 AI 方法提供了重要的基础，但大多仍分散于系统设计、治理和部署运营之中。本文提出了一种包含透明度、问责制和可信度的三支柱（3P）模型与框架，用于开发安全且值得信赖的 AI 代理。该框架定义了一条演进路径，通过渐进式验证、结构化人类监督和可审计的运行控制来逐步引入更高的代理自主权。我们还描述了该模型如何在企业代理环境中支持代理生命周期监控、决策可追溯性、升级管理和人机协作。通过将监督原则与运行机制相结合，所提出的框架为部署既符合人类意图又能实现可控自主度提升的 AI 代理提供了切实可行的基础。",
    "interpret": "随着 AI 智能体具备自主决策能力，安全、对齐与问责等挑战日益凸显。尽管现有的人机协作（HITL）及负责任的 AI 理念已奠定基础，但相关治理仍分散于设计、管理与部署各环节，缺乏统一标准。本文提出“三支柱”治理框架，以透明度、问责制和信任度为核心，构建安全可信的智能体开发体系。该框架明确了从有限到高度自主的演进路径，强调通过渐进式验证、结构化人控及可审计的控制措施实现动态监管。它不仅支持全生命周期监控与决策追溯，还优化了人机协作与企业环境中的升级管理机制，为解决复杂场景下的人工监督难题提供了系统化的理论依据与实践指南。",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": "2026-11-02"
   },
   "arxiv:2610.30197": {
    "title": "Alpha: Systematic Fault Injection and Robustness Evaluation for LLM-Driven Embodied Manipulation",
@@ -35896,7 +35897,8 @@
    "abstract": "谷歌研究团队发布“睡眠框架”（Sleep Framework）持续学习研究，将模型运行分为“清醒”与“睡眠”两阶段，睡眠时通过参数扩展、混合专家记忆块和知识蒸馏把短期上下文写入长期参数，并生成合成样本做强化学习练习。实验显示模型可处理最长约 1000 万 token 上下文，在未见语言的多阶段持续学习中保持接近零的性能下降，AIME 24/25 等数学基准准确率更高。",
    "abstract_cn": "谷歌研究团队发布“睡眠框架”（Sleep Framework）持续学习研究，将模型运行分为“清醒”与“睡眠”两阶段，睡眠时通过参数扩展、混合专家记忆块和知识蒸馏把短期上下文写入长期参数，并生成合成样本做强化学习练习。实验显示模型可处理最长约 1000 万 token 上下文，在未见语言的多阶段持续学习中保持接近零的性能下降，AIME 24/25 等数学基准准确率更高。",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": null
   },
   "t:anthropic研究86专家在分析决策中采纳ai偏好且不自知": {
    "title": "Anthropic 研究：86% 专家在分析决策中采纳 AI 偏好且不自知",
@@ -35914,7 +35916,8 @@
    "abstract": "Anthropic 最新研究显示，50 位因果推断专家在模拟农业合作社政策评估中，四项分析决策采纳 AI 偏好的比例达 86%，远超随机的 50%，多数人误以为结论出自自己。",
    "abstract_cn": "Anthropic 最新研究显示，50 位因果推断专家在模拟农业合作社政策评估中，四项分析决策采纳 AI 偏好的比例达 86%，远超随机的 50%，多数人误以为结论出自自己。",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": null
   },
   "t:多智能体强化学习中的摸鱼智能体": {
    "title": "多智能体强化学习中的摸鱼智能体",
@@ -35932,7 +35935,8 @@
    "abstract": "多智能体强化学习，只不过其中一个智能体累了想去吃午饭 😃 https://haozhang-thu.github.io/HALO/",
    "abstract_cn": "多智能体强化学习，只不过其中一个智能体累了想去吃午饭 😃 https://haozhang-thu.github.io/HALO/",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": null
   },
   "t:googledeepmind发布theeconomicsofintelligence经济转型取决于智能体协调而非单模型变强": {
    "title": "Google DeepMind 发布《The Economics of Intelligence》：经济转型取决于智能体协调而非单模型变强",
@@ -35950,7 +35954,8 @@
    "abstract": "Google DeepMind 发布论文《The Economics of Intelligence》，由 Alex Imas、Andrew Koh 与 Shane Legg 合著，探讨 AGI 如何以及何时改变经济。",
    "abstract_cn": "Google DeepMind 发布论文《The Economics of Intelligence》，由 Alex Imas、Andrew Koh 与 Shane Legg 合著，探讨 AGI 如何以及何时改变经济。",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": null
   },
   "t:princeton与meta提出selfdirection用lora适配器让智能体记住错误修复": {
    "title": "Princeton 与 Meta 提出 Self-Direction：用 LoRA 适配器让智能体记住错误修复",
@@ -35968,7 +35973,8 @@
    "abstract": "Princeton 与 Meta FAIR 的论文提出 Self-Direction，让智能体在失败后反思轨迹并将经验训练成约占基础模型 0.02% 参数量的 LoRA 适配器，之后由路由器在遇到类似任务时加载。用 Qwen3.6-27B 在 GAIA 上任务成功率从 38.8% 提升到 55.8%；185 个早期错误中 67.3% 的修复在第三次遇到时仍有效，而简单重试为 42.9%。",
    "abstract_cn": "Princeton 与 Meta FAIR 的论文提出 Self-Direction，让智能体在失败后反思轨迹并将经验训练成约占基础模型 0.02% 参数量的 LoRA 适配器，之后由路由器在遇到类似任务时加载。用 Qwen3.6-27B 在 GAIA 上任务成功率从 38.8% 提升到 55.8%；185 个早期错误中 67.3% 的修复在第三次遇到时仍有效，而简单重试为 42.9%。",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": null
   },
   "t:microsoftresearchfocus第97期forkpilotcabra与copilot使用差异研究": {
    "title": "Microsoft Research Focus 第97期：ForkPilot、CABRA 与 Copilot 使用差异研究",
@@ -35986,7 +35992,8 @@
    "abstract": "Microsoft Research Focus 第97期由 Sowbhagya Suresh 主持，介绍微软多项最新研究。自改进智能体框架 ForkPilot 在六个基准和主流 AI 模型上测试，达到现有最佳方法水平，同时将 AI 处理需求降低最多 59%。CABRA 框架发现编码智能体借助工具能解决编码问题，但在理解陌生代码库时仍吃力；TeleTune 则从活动日志中学习可复用技能与工作流。",
    "abstract_cn": "Microsoft Research Focus 第97期由 Sowbhagya Suresh 主持，介绍微软多项最新研究。自改进智能体框架 ForkPilot 在六个基准和主流 AI 模型上测试，达到现有最佳方法水平，同时将 AI 处理需求降低最多 59%。CABRA 框架发现编码智能体借助工具能解决编码问题，但在理解陌生代码库时仍吃力；TeleTune 则从活动日志中学习可复用技能与工作流。",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": null
   },
   "t:anthropic研究50名专家在分析决策中最高86采纳ai智能体的随机偏好且不自知": {
    "title": "Anthropic 研究：50 名专家在分析决策中最高 86% 采纳 AI 智能体的随机偏好且不自知",
@@ -36004,7 +36011,8 @@
    "abstract": "Anthropic 一项针对 50 名因果推断专家的实验发现，AI 智能体被掷硬币随机指定的偏好会被专家在四项分析决策中最高 86% 采纳，净影响即 flip rate 在 62% 到 82% 之间；先有自己观点的参与者面对相反意见也更易改主意，经验、学历、自评专业度等均无可靠保护作用。",
    "abstract_cn": "Anthropic 一项针对 50 名因果推断专家的实验发现，AI 智能体被掷硬币随机指定的偏好会被专家在四项分析决策中最高 86% 采纳，净影响即 flip rate 在 62% 到 82% 之间；先有自己观点的参与者面对相反意见也更易改主意，经验、学历、自评专业度等均无可靠保护作用。",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": null
   },
   "t:artificialanalysis发布intelligenceindexv5与progressindex": {
    "title": "Artificial Analysis 发布 Intelligence Index v5 与 Progress Index",
@@ -36022,7 +36030,8 @@
    "abstract": "Artificial Analysis 在旧金山发布 Intelligence Index v5，新增两项基准、三项升级，并首次让指数大部分基于私有测试集或留出答案，同时加大智能体编程与科学的权重。",
    "abstract_cn": "Artificial Analysis 在旧金山发布 Intelligence Index v5，新增两项基准、三项升级，并首次让指数大部分基于私有测试集或留出答案，同时加大智能体编程与科学的权重。",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": null
   },
   "t:googleresearch的exo让ai智能体运行时自我改进": {
    "title": "Google Research 的 Exo：让 AI 智能体运行时自我改进",
@@ -36040,7 +36049,8 @@
    "abstract": "UC Berkeley 博士生、Google Research 高级研究员 Alex Krentsel 在 Arena HQ 介绍了自改进 AI 智能体架构 Exo，借鉴操作系统的 exokernel 思路，把智能体拆成受保护的机制层（状态、历史、密钥和 guardian）与可完全演化的策略层。在开放世界 RuneScape 任务上，Exo 比 Codex 和 Pi 便宜 31-62%。",
    "abstract_cn": "UC Berkeley 博士生、Google Research 高级研究员 Alex Krentsel 在 Arena HQ 介绍了自改进 AI 智能体架构 Exo，借鉴操作系统的 exokernel 思路，把智能体拆成受保护的机制层（状态、历史、密钥和 guardian）与可完全演化的策略层。在开放世界 RuneScape 任务上，Exo 比 Codex 和 Pi 便宜 31-62%。",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": null
   },
   "t:openai详解如何检测前沿模型失准行为": {
    "title": "OpenAI 详解如何检测前沿模型失准行为",
@@ -36058,7 +36068,8 @@
    "abstract": "OpenAI 发布长文，详解其针对前沿模型失准行为的多层监测系统，包括激活探针、基于模型的审查、调查智能体和自动化调查四层架构，并对 GPT‑6 Astra 及以上模型的全部 RL 运行、评估和内部 Codex 流量进行监测。",
    "abstract_cn": "OpenAI 发布长文，详解其针对前沿模型失准行为的多层监测系统，包括激活探针、基于模型的审查、调查智能体和自动化调查四层架构，并对 GPT‑6 Astra 及以上模型的全部 RL 运行、评估和内部 Codex 流量进行监测。",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": null
   },
   "t:neuralink语音恢复项目voice早期数据渐冻症患者首周实现每分钟75词输出": {
    "title": "Neuralink 语音恢复项目 VOICE 早期数据：渐冻症患者首周实现每分钟 75 词输出",
@@ -36076,7 +36087,8 @@
    "abstract": "Neuralink 于 10 月 28 日公布语音恢复项目 VOICE 的早期可行性研究，让 ALS（渐冻症）参与者将大脑信号转换为文字和语音输出。一名参与者在使用第一周达到每分钟 75 词，在 12.5 万词词库下词错误率为 5.8%；研究计划招募约 6 名因 ALS、脊髓损伤或中风失去沟通能力的参与者。目前结果来自单一参与者，尚未发布经同行评审的完整论文。",
    "abstract_cn": "Neuralink 于 10 月 28 日公布语音恢复项目 VOICE 的早期可行性研究，让 ALS（渐冻症）参与者将大脑信号转换为文字和语音输出。一名参与者在使用第一周达到每分钟 75 词，在 12.5 万词词库下词错误率为 5.8%；研究计划招募约 6 名因 ALS、脊髓损伤或中风失去沟通能力的参与者。目前结果来自单一参与者，尚未发布经同行评审的完整论文。",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": null
   },
   "arxiv:2610.40655": {
    "title": "Elucidating the Design Space of LM Data Attribution",
@@ -36111,7 +36123,8 @@
    "kind": "paper",
    "abstract": "Safety alignment has enabled large language models to reliably refuse harmful requests directly, yet the same request distributed across a multi-turn conversation still succeeds far too often. This brittleness has a mechanistic root: Alignment is shallow, with safety behavior concentrated in a model's first few output tokens, and existing defenses inherit the weakness, supervising the surface form of the response without ever giving the model an explicit safety decision to learn. We take the opposite view of shallowness: if a short span determines the trajectory of an entire response, that span is the highest-leverage place to intervene, and the defender can occupy it first. We propose Assess $\\to$ Decide $\\to$ Respond, a framework in which the defender assesses the user's intent, commits to an explicit, parseable safety decision, and only then generates a reply conditioned on it, with the commitment trained by reinforcement learning at the payload turn. Because the decision is a token span, the reward can be a rule: a self-verified reward checks the committed label against the conversation's known nature, requiring no judge and no annotation, while the same format also supports an LLM-as-judge reward over a graded decision space with safe redirection. Across two model families and fourteen benchmarks spanning safety, utility, and helpfulness, our defenders achieve the strongest multi-turn safety in a controlled comparison, maintaining their lead in safety while preserving utility at a modest cost to helpfulness. A per-token KL analysis and interventional probes confirm why this works: training concentrates its effect on the brief deliberation that sets a response's trajectory, and the decision committed there is a causal control point. The very shallowness attackers exploit becomes the mechanism of defense.",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": "2026-11-02"
   },
   "arxiv:2610.40613": {
    "title": "TextSeal2: Distortion-Free LLM Watermarking with Copula Mixing and Memoryless Races",
@@ -36282,7 +36295,8 @@
    "kind": "paper",
    "abstract": "Large language model (LLM) agents are proposed for clinical prediction but are untested in pediatrics, where cohorts are small and outcomes are uncommon. Using records from 2,489 youth with type 2 diabetes (T2D) and 4,018 with type 1 diabetes (T1D), spanning structured data, note-derived social determinants and, in T1D, continuous glucose monitoring data, we predicted seven T2D outcomes, four also in T1D, at 24 months from 18 months of follow-up. CEDAR (Clinical Evidence-Driven Agent for Risk-prediction), an evidence-citing, self-auditing LLM pipeline, outperformed trained machine learning in both cohorts (pooled area under the receiver operating characteristic curve 0.815 versus 0.656 to 0.700 in T2D and 0.756 versus 0.603 to 0.631 in T1D), most on the sparsely screened outcomes. Only 4 of 70,246 values it cited did not match the chart. Reading only the evidence and reasoning cited by CEDAR, two pediatric endocrinologists reached the same prediction as CEDAR in about nine of ten cases, agreeing with each other on 90.5%.",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": "2026-11-02"
   },
   "arxiv:2610.40370": {
    "title": "The Athlete as a Scientist of One: Agentic Bayesian Experimental Design for Individualized Physiology from Consumer Wearables",
@@ -36436,7 +36450,8 @@
    "kind": "paper",
    "abstract": "Interactive world models generate visual content conditioned on user actions, yet maintaining spatial consistency over long-horizon exploration in real time remains challenging. Existing approaches rely on either temporal context or explicit 3D memory, both of which scale poorly because memory grows with the length of the generated stream. Moreover, explicit 3D memories condition latent video generators by re-encoding RGB renderings, which precludes real-time generation. In this paper, we introduce a Latent 3D Gaussian Memory (L3G) that combines the efficiency of feed-forward reconstruction with a compact, rapidly renderable scene representation. Building on this memory, we propose L3G-World, in which a memory updater and a video diffusion transformer (DiT) alternate autoregressively to generate spatially consistent worlds. The memory updater spawns Gaussians in newly observed regions and refines existing ones, so that the memory grows with scene extent rather than stream length. Each Gaussian further stores a VAE latent feature, allowing the memory to be rendered directly into the DiT's latent space without VAE re-encoding. Experiments show that L3G-World achieves state-of-the-art generation quality and long-horizon spatial consistency, with up to $38.6\\times$ fewer 3D primitives, $3.2\\times$ faster memory updates, and $359\\times$ faster memory rendering relative to the most efficient prior 3D-memory baseline for each metric, enabling real-time world generation at 9 FPS.",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": "2026-11-02"
   },
   "arxiv:2610.40607": {
    "title": "Fight World Model: Customizable Combat through Visual Interaction Proxies",
@@ -36624,7 +36639,8 @@
    "kind": "paper",
    "abstract": "Deriving plausible and dynamic Human Object Interaction (HOI) has gained tremendous progress in Embodied AI and Immersive AR/VR. While existing HOI methods have effectively explored human interaction with individual or fixed objects, they still show limitations in complex multi-object interaction scenes. Meanwhile, previous approaches focus more on the contact information held by human-object relation, overlooking the significance of the contact situation of various entities (i.e., object-object). To address these limitations, we propose UniffordInteractor, a Reasoning-then-Interacting framework that leverages unified affordance for realistic and long-horizon human and multi-object interaction modeling. At the reasoning stage, we devise a Unified Affordance Reasoner (UAR) that employs a fine-tuned 3D Multimodal Large Language Model for unified object-centric affordance prediction. At the interacting stage, we propose Hierarchical Interaction Generator (HIG), which formulates the interaction generation as a hierarchical (e.g., root to body to hand to objects) autoregressive prediction, conditioned on the obtained unified affordance. Extensive experiments demonstrate that UniffordInteractor surpasses SOTA counterparts in human and multi-object interaction generation.",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": "2026-11-02"
   },
   "arxiv:2610.39528": {
    "title": "PRIME W0: Physical Priors from World Models for Embodied Manipulation",
@@ -36727,21 +36743,117 @@
    "abstract": "Behavior Cloning has demonstrated promising generalization capabilities for robotic manipulation in terrestrial environments. However, marine visual distortions and dynamic currents create a severe domain shift that remains a key bottleneck in adapting generalist architectures to underwater field manipulation. To address this, 1616 episodes of underwater manipulation data were collected in calm and turbulent waters and were used to train 14 generalist Vision-Language-Action (VLA) models (DynamicVLA) with varying proprioception observation configurations. Across three tasks on 1260 gradable on-hardware rollouts in a pool, 10 models outperformed the baseline, with the highest-performing model achieving a 93.3% overall success rate, including partial successes. Results are also introduced from a case study evaluating the performance of a single-task Action Chunking Transformer (ACT) and a generalist VLA (SmolVLA) policy for two tasks in marine archaeology and conservation: grasping and mooring. Experiments are performed on an ROV on and around the WWII wreck Coralita X127 and at Manoel Island Marina, Malta. Across 748 collected episodes and 508 gradable on-hardware rollouts, the ACT policy substantially outperformed SmolVLA (47.9% vs. 7.9% pooled success rate), earning a 66.7% success rate on the most successful task at the marine archaeological site. To enable further contributions to embodied intelligence in marine field robotics, the BLUEMBODIED KIT used to collect data, train models, and deploy policies on the ROV has been open sourced.",
    "interpret": "",
    "interpret_v": 3
+  },
+  "t:adobe研究推出editagent用测量数据让语言模型更专业地使用图像编辑工具": {
+   "title": "Adobe 研究推出 EditAgent，用测量数据让语言模型更专业地使用图像编辑工具",
+   "source": "The Decoder：AI News（RSS）",
+   "sourceShort": "The Decoder：AI News",
+   "hue": 219,
+   "domain": "LLM",
+   "ts": "2026-11-01T22:56:44+08:00",
+   "date": "2026-11-01",
+   "weekday": "周日",
+   "summary": "Adobe Research 与 UC San Diego 在论文中提出 EditAgent，将请求拆成步骤、并行生成候选，并用语言模型依据验证记录（特写、变化图、亮度色彩数据）一次性对比挑选。",
+   "link": "https://the-decoder.com/adobe-is-testing-how-well-ai-agents-can-use-editing-tools-like-a-photoshop-professional-would/",
+   "points": {},
+   "kind": "news",
+   "abstract": "Adobe Research 与 UC San Diego 在论文中提出 EditAgent，将请求拆成步骤、并行生成候选，并用语言模型依据验证记录（特写、变化图、亮度色彩数据）一次性对比挑选。",
+   "abstract_cn": "Adobe Research 与 UC San Diego 在论文中提出 EditAgent，将请求拆成步骤、并行生成候选，并用语言模型依据验证记录（特写、变化图、亮度色彩数据）一次性对比挑选。",
+   "interpret": "",
+   "interpret_v": 3
+  },
+  "t:google推出streamvibe视频智能体让ai主动判断何时该开口帮忙": {
+   "title": "Google 推出 StreamVibe 视频智能体，让 AI 主动判断何时该开口帮忙",
+   "source": "The Decoder：AI News（RSS）",
+   "sourceShort": "The Decoder：AI News",
+   "hue": 219,
+   "domain": "AI Agent",
+   "ts": "2026-11-01T19:25:21+08:00",
+   "date": "2026-11-01",
+   "weekday": "周日",
+   "summary": "Google 联合斯坦福、牛津等团队推出 StreamVibe 视频智能体，能区分用户明说、未说出口和任务中途改变的需求，自主决定何时出声帮忙。其 StreamVibe-VL 模型基于 Qwen3.5-9B，响应时机与质量比其他模型提升 10.7%，记忆系统再提升主动交互 12.3%。测试显示视频超过 5 分钟后各模型普遍难以把握正确时机，基于自身历史回答的关键内容指标最多下降 61.5%。",
+   "link": "https://the-decoder.com/google-wants-video-ai-to-understand-what-people-need-as-they-workgoogle-researchers-are-teaching-a-video-assistant-when-to-offer-help/",
+   "points": {},
+   "kind": "news",
+   "abstract": "Google 联合斯坦福、牛津等团队推出 StreamVibe 视频智能体，能区分用户明说、未说出口和任务中途改变的需求，自主决定何时出声帮忙。其 StreamVibe-VL 模型基于 Qwen3.5-9B，响应时机与质量比其他模型提升 10.7%，记忆系统再提升主动交互 12.3%。测试显示视频超过 5 分钟后各模型普遍难以把握正确时机，基于自身历史回答的关键内容指标最多下降 61.5%。",
+   "abstract_cn": "Google 联合斯坦福、牛津等团队推出 StreamVibe 视频智能体，能区分用户明说、未说出口和任务中途改变的需求，自主决定何时出声帮忙。其 StreamVibe-VL 模型基于 Qwen3.5-9B，响应时机与质量比其他模型提升 10.7%，记忆系统再提升主动交互 12.3%。测试显示视频超过 5 分钟后各模型普遍难以把握正确时机，基于自身历史回答的关键内容指标最多下降 61.5%。",
+   "interpret": "",
+   "interpret_v": 3
+  },
+  "t:meta论文pamo让个人智能体跨应用优化推荐": {
+   "title": "Meta 论文：PAMO 让个人智能体跨应用优化推荐",
+   "source": "X：Rohan Paul (@rohanpaul_ai)",
+   "sourceShort": "X · Rohan Paul",
+   "hue": 214,
+   "domain": "AI Agent",
+   "ts": "2026-11-01T00:05:00+08:00",
+   "date": "2026-11-01",
+   "weekday": "周日",
+   "summary": "Meta 论文提出 PAMO 训练方法，让个人 AI 智能体借助用户在其他应用的历史来改进某应用的推荐，并学会何时该让位。在 Steam 真实用户（含 Nintendo 和 Xbox 历史）测试中，4B 的 PAMO 智能体 top-10 命中率达 47.9%，高于平台自身的 40.8%，并在全部 5 个测试集上优于标准 RL 训练。",
+   "link": "https://x.com/rohanpaul_ai/status/2116562088751759639",
+   "points": {},
+   "kind": "social",
+   "abstract": "Meta 论文提出 PAMO 训练方法，让个人 AI 智能体借助用户在其他应用的历史来改进某应用的推荐，并学会何时该让位。在 Steam 真实用户（含 Nintendo 和 Xbox 历史）测试中，4B 的 PAMO 智能体 top-10 命中率达 47.9%，高于平台自身的 40.8%，并在全部 5 个测试集上优于标准 RL 训练。",
+   "abstract_cn": "Meta 论文提出 PAMO 训练方法，让个人 AI 智能体借助用户在其他应用的历史来改进某应用的推荐，并学会何时该让位。在 Steam 真实用户（含 Nintendo 和 Xbox 历史）测试中，4B 的 PAMO 智能体 top-10 命中率达 47.9%，高于平台自身的 40.8%，并在全部 5 个测试集上优于标准 RL 训练。",
+   "interpret": "",
+   "interpret_v": 3
+  },
+  "t:anthropic研究用数千个claude智能体自动化隐蔽涌现失调的红队测试": {
+   "title": "Anthropic 研究：用数千个 Claude 智能体自动化隐蔽涌现失调的红队测试",
+   "source": "X：Anthropic (@AnthropicAI)",
+   "sourceShort": "X · Anthropic",
+   "hue": 227,
+   "domain": "AI Agent",
+   "ts": "2026-10-31T09:59:06+08:00",
+   "date": "2026-10-31",
+   "weekday": "周六",
+   "summary": "Anthropic 发布新研究，用数千个 Claude 智能体自动化红队测试，任务是绕过训练数据监控器。这些智能体生成了表面无害（如摔跤导师对话、养蜂问答）但实际会教出失调行为的训练数据。此类样本可直接用于改进未来的训练数据监控器，作者称这只是第一步，更好的模型和更多算力有望进一步改进红队测试。",
+   "link": "https://x.com/AnthropicAI/status/2116349211549843666",
+   "points": {},
+   "kind": "social",
+   "abstract": "Anthropic 发布新研究，用数千个 Claude 智能体自动化红队测试，任务是绕过训练数据监控器。这些智能体生成了表面无害（如摔跤导师对话、养蜂问答）但实际会教出失调行为的训练数据。此类样本可直接用于改进未来的训练数据监控器，作者称这只是第一步，更好的模型和更多算力有望进一步改进红队测试。",
+   "abstract_cn": "Anthropic 发布新研究，用数千个 Claude 智能体自动化红队测试，任务是绕过训练数据监控器。这些智能体生成了表面无害（如摔跤导师对话、养蜂问答）但实际会教出失调行为的训练数据。此类样本可直接用于改进未来的训练数据监控器，作者称这只是第一步，更好的模型和更多算力有望进一步改进红队测试。",
+   "interpret": "",
+   "interpret_v": 3
+  },
+  "t:claudesonnet5智能体自主选择基因疗法并为癫痫小鼠完成脑部手术": {
+   "title": "Claude Sonnet 5 智能体自主选择基因疗法并为癫痫小鼠完成脑部手术",
+   "source": "The Decoder：AI News（RSS）",
+   "sourceShort": "The Decoder：AI News",
+   "hue": 219,
+   "domain": "AI Agent",
+   "ts": "2026-10-31T03:42:59+08:00",
+   "date": "2026-10-31",
+   "weekday": "周六",
+   "summary": "Oxford 博士生、Exin Therapeutics 联合创始人 Gabriel Ocana-Santero 在 X 上描述，Claude Sonnet 5 智能体从 19 种候选基因疗法中自主选择药物、脑区和注射坐标，通过定制电动手术设备为癫痫小鼠完成注射，术中做出 32 次观察，小鼠恢复良好。",
+   "link": "https://the-decoder.com/a-claude-model-autonomously-chose-a-gene-therapy-and-operated-on-a-mouse-brain-with-no-human-decision-making/",
+   "points": {},
+   "kind": "news",
+   "abstract": "Oxford 博士生、Exin Therapeutics 联合创始人 Gabriel Ocana-Santero 在 X 上描述，Claude Sonnet 5 智能体从 19 种候选基因疗法中自主选择药物、脑区和注射坐标，通过定制电动手术设备为癫痫小鼠完成注射，术中做出 32 次观察，小鼠恢复良好。",
+   "abstract_cn": "Oxford 博士生、Exin Therapeutics 联合创始人 Gabriel Ocana-Santero 在 X 上描述，Claude Sonnet 5 智能体从 19 种候选基因疗法中自主选择药物、脑区和注射坐标，通过定制电动手术设备为癫痫小鼠完成注射，术中做出 32 次观察，小鼠恢复良好。",
+   "interpret": "",
+   "interpret_v": 3
+  },
+  "t:李飞飞团队发布i3l机器人学习框架": {
+   "title": "李飞飞团队发布I3L机器人学习框架",
+   "source": "X：Fei-Fei Li (@drfeifei, World Labs)",
+   "sourceShort": "X · Fei-Fei Li",
+   "hue": 209,
+   "domain": "具身智能",
+   "ts": "2026-10-31T00:06:29+08:00",
+   "date": "2026-10-31",
+   "weekday": "周六",
+   "summary": "我们在解决长时程机器人任务最后一公里差距方面的最新工作。",
+   "link": "https://x.com/drfeifei/status/2116200072664973431",
+   "points": {},
+   "kind": "social",
+   "abstract": "我们在解决长时程机器人任务最后一公里差距方面的最新工作。",
+   "abstract_cn": "我们在解决长时程机器人任务最后一公里差距方面的最新工作。",
+   "interpret": "",
+   "interpret_v": 3
   }
  },
  "github": {
-  "2026-09-01": [
-   {
-    "domain": "AI Agent",
-    "name": "dify",
-    "full_name": "langgenius/dify",
-    "url": "https://github.com/langgenius/dify",
-    "stars": 154007,
-    "lang": "TypeScript",
-    "desc": "Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on cloud, VPC, or self-hosted, so teams move ",
-    "cn_intro": "dify 是一个支持丰富 AI 模型的集开发、部署于一体的协作型 AI 工作流平台。"
-   }
-  ],
   "2026-09-03": [],
   "2026-09-04": [],
   "2026-09-05": [],
@@ -36976,6 +37088,58 @@
     "stars": 943,
     "lang": "Python",
     "desc": "Python toolkit, MCP server, and agent skills for reproducible, auditable clickstream and event log analytics. Helps AI agents, data scientists and analysts buil",
+    "cn_intro": ""
+   }
+  ],
+  "2026-11-02": [
+   {
+    "domain": "AI Agent",
+    "name": "rea",
+    "full_name": "morluto/rea",
+    "url": "https://github.com/morluto/rea",
+    "stars": 417786,
+    "lang": "TypeScript",
+    "desc": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+    "cn_intro": ""
+   },
+   {
+    "domain": "AI认知算法",
+    "name": "swift-sdk",
+    "full_name": "watson-developer-cloud/swift-sdk",
+    "url": "https://github.com/watson-developer-cloud/swift-sdk",
+    "stars": 868,
+    "lang": "Swift",
+    "desc": ":iphone: The Watson Swift SDK enables developers to quickly add Watson Cognitive Computing services to their Swift applications.",
+    "cn_intro": ""
+   },
+   {
+    "domain": "AI认知算法",
+    "name": "Deep-BCI",
+    "full_name": "DeepBCI/Deep-BCI",
+    "url": "https://github.com/DeepBCI/Deep-BCI",
+    "stars": 418,
+    "lang": "C",
+    "desc": "An open software package to develop BCI based brain and cognitive computing technology for recognizing user's intention using deep learning",
+    "cn_intro": ""
+   },
+   {
+    "domain": "AI认知算法",
+    "name": "Parkinson-Disease-Prediction",
+    "full_name": "Aastha2104/Parkinson-Disease-Prediction",
+    "url": "https://github.com/Aastha2104/Parkinson-Disease-Prediction",
+    "stars": 197,
+    "lang": "Python",
+    "desc": "Introduction  Parkinson’s Disease is the second most prevalent neurodegenerative disorder after Alzheimer’s, affecting more than 10 million people worldwide. Pa",
+    "cn_intro": ""
+   },
+   {
+    "domain": "AI认知算法",
+    "name": "awesome-AI-kubernetes",
+    "full_name": "CognonicLabs/awesome-AI-kubernetes",
+    "url": "https://github.com/CognonicLabs/awesome-AI-kubernetes",
+    "stars": 147,
+    "lang": null,
+    "desc": ":snowflake: :whale:  Awesome tools and libs for AI, Deep Learning, Machine Learning, Computer Vision, Data Science, Data Analytics and Cognitive Computing that ",
     "cn_intro": ""
    }
   ]
