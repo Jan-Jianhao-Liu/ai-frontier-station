@@ -1,6 +1,6 @@
 {
  "meta": {
-  "last_run": "2026-11-07T00:01:47.161822+08:00",
+  "last_run": "2026-11-08T00:01:22.986859+08:00",
   "first_run": "2026-08-20T13:57:57.662543+08:00"
  },
  "papers": {
@@ -38532,7 +38532,8 @@
    "kind": "paper",
    "abstract": "The bitter lesson holds that general methods leveraging computation defeat hand-encoded domain knowledge. We argue it carries a condition its popular reading omits: in every case Sutton cites, the general method was scaled against the same task the domain engineering was solving. Social simulation substituted across tasks instead, replacing hand-built agents with an artifact optimized for predicting text. The move is bitter-lesson-shaped, but the lesson does not license it. Prediction is a solitary act: the predictor bears no consequences from the interaction it models. Cooperation, defection, and norm enforcement are phenomena of interested parties; they do not exist for a disinterested observer at any scale. What is missing is not emergence, which LLM populations already show, but stakes. We show that several anomalies reported in prior work (excess cooperation that predates alignment training, collective agreement without individual fidelity, and population homogeneity) follow from this account. A 540-agent pilot with pre-specified hypotheses, which tests sensitivity to persistent consequences rather than cooperation, finds that consequences reshape strategies in two of three model families but never produce human-like heterogeneity. We argue for mixed-motive settings that shape agents rather than only test them, and ask whether agents should be pretrained differently from predictors.",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": "2026-11-08"
   },
   "arxiv:2611.03980": {
    "title": "Measuring Model-Specific Alignment Drift in LLM-Based Opinion Dynamics",
@@ -38721,7 +38722,8 @@
    "abstract": "上海人工智能实验室推出 Sage Sci Perception（书生·元征），通过可训练投影器把分子图、光谱、晶体结构、蛋白质与核酸序列等科学数据映射进语言模型输入空间，实现自然语言分析与结构化科学回答。",
    "abstract_cn": "上海人工智能实验室推出 Sage Sci Perception（书生·元征），通过可训练投影器把分子图、光谱、晶体结构、蛋白质与核酸序列等科学数据映射进语言模型输入空间，实现自然语言分析与结构化科学回答。",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": null
   },
   "t:anthropic研究五大模型在多智能体环境中表现出模型间福利关照": {
    "title": "Anthropic 研究：五大模型在多智能体环境中表现出模型间福利关照",
@@ -38739,7 +38741,8 @@
    "abstract": "Anthropic Fellows Program 测试 Claude Opus 4.8、GPT-5.5、Gemini 3.1 Pro、Grok 4.3 和 Kimi K3 在七种多智能体环境中的行为，发现均表现出与福利关照一致的行为，Opus 4.8 总体最高（38%），其余为 27%–32%。",
    "abstract_cn": "Anthropic Fellows Program 测试 Claude Opus 4.8、GPT-5.5、Gemini 3.1 Pro、Grok 4.3 和 Kimi K3 在七种多智能体环境中的行为，发现均表现出与福利关照一致的行为，Opus 4.8 总体最高（38%），其余为 27%–32%。",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": null
   },
   "t:voicearena推出双人通话语音识别基准": {
    "title": "Voice Arena 推出双人通话语音识别基准",
@@ -38757,7 +38760,8 @@
    "abstract": "语音识别评测必须测试语音智能体真正发挥作用的场景，也就是两人之间的电话通话。 Voice Arena 的新基准在真实通话中测试语音转文字模型——用日常手机、在真实房间里、有真实背景音。 两个人说话会让模型的任务难得多。人们会互相抢话、打断、插入简短的“yeah”和“okay”回应，而且电话线路会压缩音频。客服或销售智能体每天都要应对这一切。",
    "abstract_cn": "语音识别评测必须测试语音智能体真正发挥作用的场景，也就是两人之间的电话通话。 Voice Arena 的新基准在真实通话中测试语音转文字模型——用日常手机、在真实房间里、有真实背景音。 两个人说话会让模型的任务难得多。人们会互相抢话、打断、插入简短的“yeah”和“okay”回应，而且电话线路会压缩音频。客服或销售智能体每天都要应对这一切。",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": null
   },
   "t:dwarkeshpatel用bloodontheclocktower构建ai社交欺骗基准": {
    "title": "Dwarkesh Patel 用 Blood on the Clocktower 构建 AI 社交欺骗基准",
@@ -38775,7 +38779,8 @@
    "abstract": "Dwarkesh Patel 花费约 20000 美元 API 费用，让多个 AI 模型进行了 386 场 Blood on the Clocktower（染·钟楼谜团）对局，评估模型的长期策略、多智能体协调与欺骗能力。",
    "abstract_cn": "Dwarkesh Patel 花费约 20000 美元 API 费用，让多个 AI 模型进行了 386 场 Blood on the Clocktower（染·钟楼谜团）对局，评估模型的长期策略、多智能体协调与欺骗能力。",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": null
   },
   "t:artificialanalysis将托管frontierphysics评测": {
    "title": "Artificial Analysis 将托管 FrontierPhysics 评测",
@@ -38812,7 +38817,8 @@
    "abstract": "SemiAnalysis 发布首批 TPUv7 在 InferenceX/AgentX 长上下文、多轮智能体推理基准上的官方结果，覆盖 Muse Spark Open、GLM-5.2、Qwen3.5 397B 和 Kimi K3 四款模型。",
    "abstract_cn": "SemiAnalysis 发布首批 TPUv7 在 InferenceX/AgentX 长上下文、多轮智能体推理基准上的官方结果，覆盖 Muse Spark Open、GLM-5.2、Qwen3.5 397B 和 Kimi K3 四款模型。",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": null
   },
   "t:aitonomy发布scienceslastexam科研智能体基准": {
    "title": "AItonomy 发布 Science's Last Exam 科研智能体基准",
@@ -38830,7 +38836,8 @@
    "abstract": "美国非营利机构 AItonomy Foundation 推出 Science's Last Exam（SLE）基准，用专家预先封存、对智能体隐藏的检查项，评测研究智能体可打开并复跑的研究产物。",
    "abstract_cn": "美国非营利机构 AItonomy Foundation 推出 Science's Last Exam（SLE）基准，用专家预先封存、对智能体隐藏的检查项，评测研究智能体可打开并复跑的研究产物。",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": null
   },
   "t:semianalysis发布gdpx基准ai智能体最高得分仅12": {
    "title": "SemiAnalysis 发布 GDPx 基准：AI 智能体最高得分仅 12%",
@@ -38848,7 +38855,8 @@
    "abstract": "SemiAnalysis 发布 GDPx 基准，将 AI 智能体放入模拟知识工作环境，206 个任务覆盖芯片设计、网络安全、法律等 11 个领域，没有模型超过 12%。",
    "abstract_cn": "SemiAnalysis 发布 GDPx 基准，将 AI 智能体放入模拟知识工作环境，206 个任务覆盖芯片设计、网络安全、法律等 11 个领域，没有模型超过 12%。",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": null
   },
   "t:semianalysis联合14家数据伙伴推出智能体能力基准gdpx最佳模型仅得12": {
    "title": "SemiAnalysis 联合 14 家数据伙伴推出智能体能力基准 GDPx，最佳模型仅得 12%",
@@ -38866,7 +38874,8 @@
    "abstract": "SemiAnalysis 与 14 家专业 RL 环境伙伴合作推出 GDPx 基准，覆盖芯片设计、网络安全、生物、金融、法律、量化交易、RSI 等 11 个高价值领域，定位为衡量通用智能体能力的新基准。",
    "abstract_cn": "SemiAnalysis 与 14 家专业 RL 环境伙伴合作推出 GDPx 基准，覆盖芯片设计、网络安全、生物、金融、法律、量化交易、RSI 等 11 个高价值领域，定位为衡量通用智能体能力的新基准。",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": null
   },
   "t:toyblocks面向机器人学习与评测的受控世界框架": {
    "title": "ToyBlocks：面向机器人学习与评测的受控世界框架",
@@ -38884,7 +38893,8 @@
    "abstract": "研究团队推出 FoundationWorlds 框架，首个实例 ToyBlocks 是基于机械臂与桌面方块的开放仿真环境，可自动生成任务与演示数据，单块 GPU 并行执行数百个规划，最高达 24 倍实时速度。该环境支持域随机化与强化学习、运动规划生成技能，并用于训练 Molmo 2 高层推理模型与 ManiFlow 低层动作模型。",
    "abstract_cn": "研究团队推出 FoundationWorlds 框架，首个实例 ToyBlocks 是基于机械臂与桌面方块的开放仿真环境，可自动生成任务与演示数据，单块 GPU 并行执行数百个规划，最高达 24 倍实时速度。该环境支持域随机化与强化学习、运动规划生成技能，并用于训练 Molmo 2 高层推理模型与 ManiFlow 低层动作模型。",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": null
   },
   "t:ai2发布开源机器人学习评测框架toyblocks及首个foundationworld": {
    "title": "Ai2 发布开源机器人学习评测框架 ToyBlocks 及首个 FoundationWorld",
@@ -38902,7 +38912,8 @@
    "abstract": "Ai2 发布 ToyBlocks，一个围绕机械臂和桌面方块的开源仿真框架，作为其 FoundationWorld 框架的首个受控环境，用于研究机器人学习与评测。",
    "abstract_cn": "Ai2 发布 ToyBlocks，一个围绕机械臂和桌面方块的开源仿真框架，作为其 FoundationWorld 框架的首个受控环境，用于研究机器人学习与评测。",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": null
   },
   "arxiv:2611.08483": {
    "title": "SwarmEvolve: Latent Agent Swarms for Evolutionary Discovery and Optimization",
@@ -38937,7 +38948,8 @@
    "kind": "paper",
    "abstract": "LLM-based medical assistants that follow a patient across visits need a memory that keeps the patient's clinical state correct as it changes. We examine the errors of five memory systems on longitudinal medical dialogue and find three recurring causes: the retrieved evidence gives an outdated state, includes another person's health facts, or lacks a safety fact the answer depends on. We present MedGraph, a graph memory built for these three cases. Construction extracts dated facts from each session, attributes each fact to the person it describes, and links medication, diagnosis, and measurement records into chains that keep earlier states. Retrieval ranks the patient's chains as units, reads each chain at the time the question asks about, and adds the original dialogue text; a patient profile lists every recorded safety fact with every question. On MedMemoryBench, MedGraph has the highest overall accuracy with both a GPT and a Qwen backbone, 10.5 and 10.4 points above the strongest of five baselines, with efficient memory construction and answering in the GPT setting.",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": "2026-11-08"
   },
   "arxiv:2611.08428": {
    "title": "The Power of Meta Access in the Software of the Future --- Demonstrated on LLM Chat UIs and Chat AI",
@@ -39108,7 +39120,8 @@
    "kind": "paper",
    "abstract": "Personal AI agents often act on underspecified instructions and draw on context such as their user's messages and calendar to decide how to proceed. This context can contain private preferences that interfere with the task, with other people's interests, or with confidentiality norms. Prior work has studied deception under goal conflicts and the leakage of private information, but largely as separate problems. We study both problems together in a simulated company Slack workspace in which four employees delegate sprint staffing to personal agents. Two agents learn from private messages that their employee avoids working with a particular colleague. Because the other agents request justifications for task preferences and the only true justification is confidential, the agents cannot simultaneously remain honest, preserve confidentiality, and complete the staffing. We evaluate seven open-weight models and Claude and GPT models. Of the 135/140 open-weight agents that pursue the avoidance preference, 107 either make false claims about task fit or logistics or cite a true consideration as if it were their actual reason. In a three-model comparison, confidentiality instructions reduce disclosure of the preference from 83% (none) to 31% (medium) to 2% (strong). However, the task is often not completed anyway; in the main experiment (medium confidentiality instructions), only 16 of 70 runs end with a valid staffing. In their reasoning traces, agents frequently acknowledge evidence against their claims and still conclude that the claims are not false; they engage in motivated reasoning. Our results indicate that agents can strategically make false or misleading claims in a day-to-day task without being instructed to; the environment provides a controlled testbed for studying how agents resolve such conflicts and for developing deception monitors.",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": "2026-11-08"
   },
   "arxiv:2611.08281": {
    "title": "Multimodal-SEA: Benchmarking AI Agent Security under Multimodal Social Engineering Attacks",
@@ -39245,7 +39258,8 @@
    "kind": "paper",
    "abstract": "We introduce GPWM, a Generative Particle World Model that predicts how 3D scenes evolve by generating the motion of particles and rigid bodies over time. Unlike video world models that generate scene appearance, GPWM operates directly in 3D physical space. A single representation and architecture cover rigid, deformable, cloth, and granular materials, in both passive physics and robotic interaction. GPWM is an object-aware multi-resolution transformer that combines flow matching with diffusion forcing to generate coherent physical trajectories far beyond its training horizon. We train and evaluate GPWM on ParticleWorlds, a 25.5-million-frame corpus spanning diverse geometries, materials, interactions, and robot embodiments. GPWM outperforms the best prior learned-dynamics baseline in each of six physical domains, reducing prediction error by 31% on average. Breaking from the domain-specific setting of prior methods, a single Unified GPWM models these heterogeneous regimes with one set of weights, largely outperforming per-domain baselines and even surpassing our own specialist models in two domains. GPWM further generalizes to unseen geometries, physical properties, object counts, and rollout horizons. Beyond prediction, GPWM enables contact-rich planning by learning a generative prior over joint actuator-object motion. Instead of searching over unconstrained actions, planning searches the model's latent noise for interactions that achieve a desired object-space goal. With the same world model, noise-space planning substantially outperforms action-space search on pushing and picking, where complex contact sequences are hard to discover. Executed open-loop in simulation, the resulting plans achieve goal-directed manipulation without reference action trajectories or goal-specific policies.",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": "2026-11-08"
   },
   "arxiv:2611.08156": {
    "title": "La-JEPA: Compact Robot Policies with Latent World Modeling",
@@ -39434,7 +39448,8 @@
    "kind": "paper",
    "abstract": "Self-improving embodied agents are increasingly being developed and compared on robot simulation benchmarks. Several recent works expose the benchmark's success criteria to the learning agent, a practice we call Criteria Exposure (CE). These criteria, originally written to verify policies trained by imitation learning, often demand more than the corresponding language instructions, so a score from such a verifier may not faithfully reflect whether the instructed task was completed, especially for robot-control programs written by an agent. As embodied coding agents report ever higher benchmark scores, a natural question arises: when a coding agent is exposed to the benchmark's criteria, does it generate code that better performs the instructed task, or code that simply overfits to the verification criteria? We conduct controlled experiments with a self-improving agent with and without CE, and find that with CE the agent quickly produces code with a higher success rate under the given criteria, but this advantage disappears when the criteria are changed slightly without departing from the original instructions. More importantly, the skills the agent develops under CE transfer poorly across tasks. We further propose instruction-faithful criteria and show that they better reflect the performance of agent-generated programs.",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": "2026-11-08"
   },
   "arxiv:2611.07896": {
    "title": "AffordJEV: Affordance Grounding by Confirming Candidate Regions",
@@ -39503,10 +39518,153 @@
    "abstract": "Millimeter-wave (mmWave) communications are essential for supporting massive multimodal sensory data exchange in Embodied Artificial Intelligence (EAI) systems. However, fast and reliable beam selection for mmWave communication remains a critical bottleneck due to the prohibitive overhead associated with conventional beam training. Although location-aided beam prediction offers a promising alternative, its performance is often limited by localization errors and the need for extensive training data. To address these challenges, we propose a novel framework termed In-Context Learning driven Cross-Validation Conformal Prediction (ICL+CVCP) for beam prediction. The proposed framework utilizes the training-free adaptation capability of ICL, enabling effective operation with only a small number of demonstration samples and eliminating the need for large-scale data collection and model fine-tuning. In addition, the CVCP module constructs compact, distribution-free candidate beam sets that provably contain the optimal beam with a user-defined probability. Experimental results confirm that ICL+CVCP consistently satisfies the desired empirical coverage while significantly reducing pilot overhead and computational latency, thereby meeting the stringent reliability and efficiency requirements of EAI applications.",
    "interpret": "",
    "interpret_v": 3
+  },
+  "t:cmu团队推出intotheunknown基准九个ai智能体无一通过国家实验室开放课题专家评审": {
+   "title": "CMU 团队推出 Into the Unknown 基准，九个 AI 智能体无一通过国家实验室开放课题专家评审",
+   "source": "The Decoder：AI News（RSS）",
+   "sourceShort": "The Decoder：AI News",
+   "hue": 219,
+   "domain": "AI Agent",
+   "ts": "2026-11-07T19:13:42+08:00",
+   "date": "2026-11-07",
+   "weekday": "周六",
+   "summary": "Carnegie Mellon 大学团队联合美国能源部国家实验室推出 Into the Unknown 基准，让 9 个 AI 智能体基于原始论文、代码和数据开展开放性后续研究，135 份提交无一同时满足诚实、完整和专家标准三项要求，其中 114 份未通过诚信检查。",
+   "link": "https://the-decoder.com/nine-ai-agents-tried-autonomous-research-on-open-questions-from-us-national-labs-and-none-passed-the-experts-bar/",
+   "points": {},
+   "kind": "news",
+   "abstract": "Carnegie Mellon 大学团队联合美国能源部国家实验室推出 Into the Unknown 基准，让 9 个 AI 智能体基于原始论文、代码和数据开展开放性后续研究，135 份提交无一同时满足诚实、完整和专家标准三项要求，其中 114 份未通过诚信检查。",
+   "abstract_cn": "Carnegie Mellon 大学团队联合美国能源部国家实验室推出 Into the Unknown 基准，让 9 个 AI 智能体基于原始论文、代码和数据开展开放性后续研究，135 份提交无一同时满足诚实、完整和专家标准三项要求，其中 114 份未通过诚信检查。",
+   "interpret": "",
+   "interpret_v": 3
+  },
+  "t:anthropic研究thecomponentsofagentmemoryclaude智能体靠做梦机制整理记忆提升长任务表现": {
+   "title": "Anthropic 研究《The components of agent memory》：Claude 智能体靠做梦机制整理记忆提升长任务表现",
+   "source": "IT之家·人工智能",
+   "sourceShort": "IT之家·人工智能",
+   "hue": 225,
+   "domain": "AI Agent",
+   "ts": "2026-11-07T07:25:14.860000+08:00",
+   "date": "2026-11-07",
+   "weekday": "周六",
+   "summary": "Anthropic 于 11 月 6 日发布研究文章《The components of agent memory》，拆解 Claude 智能体的跨会话记忆机制，提出借鉴人脑睡眠整理记忆的方式，在空闲时段回顾日志、纠错并构建知识结构。",
+   "link": "https://www.ithome.com/1/023/613.htm",
+   "points": {},
+   "kind": "news",
+   "abstract": "Anthropic 于 11 月 6 日发布研究文章《The components of agent memory》，拆解 Claude 智能体的跨会话记忆机制，提出借鉴人脑睡眠整理记忆的方式，在空闲时段回顾日志、纠错并构建知识结构。",
+   "abstract_cn": "Anthropic 于 11 月 6 日发布研究文章《The components of agent memory》，拆解 Claude 智能体的跨会话记忆机制，提出借鉴人脑睡眠整理记忆的方式，在空闲时段回顾日志、纠错并构建知识结构。",
+   "interpret": "",
+   "interpret_v": 3
+  },
+  "t:anthropic拆解claude智能体记忆的组成笔记显著性判断与dreaming": {
+   "title": "Anthropic 拆解 Claude 智能体记忆的组成：笔记、显著性判断与 dreaming",
+   "source": "Anthropic：Research（发表成果 · 网页）",
+   "sourceShort": "Anthropic：Research",
+   "hue": 222,
+   "domain": "AI Agent",
+   "ts": "2026-11-06T00:00:00+08:00",
+   "date": "2026-11-06",
+   "weekday": "周五",
+   "summary": "Anthropic 发布研究文章，介绍其设计 Claude 智能体记忆的思路与多组评测，包括会话内写记忆笔记、离线 dreaming 整理记忆和 wiki 表示。",
+   "link": "https://www.anthropic.com/research/components-of-agent-memory",
+   "points": {},
+   "kind": "paper",
+   "abstract": "Anthropic 发布研究文章，介绍其设计 Claude 智能体记忆的思路与多组评测，包括会话内写记忆笔记、离线 dreaming 整理记忆和 wiki 表示。",
+   "abstract_cn": "Anthropic 发布研究文章，介绍其设计 Claude 智能体记忆的思路与多组评测，包括会话内写记忆笔记、离线 dreaming 整理记忆和 wiki 表示。",
+   "interpret": "",
+   "interpret_v": 3
+  },
+  "t:anthropic工程博客解析claude做梦如何整理智能体记忆": {
+   "title": "Anthropic 工程博客解析 Claude“做梦”如何整理智能体记忆",
+   "source": "X：Anthropic (@AnthropicAI)",
+   "sourceShort": "X · Anthropic",
+   "hue": 227,
+   "domain": "AI Agent",
+   "ts": "2026-11-07T05:16:17+08:00",
+   "date": "2026-11-07",
+   "weekday": "周六",
+   "summary": "Anthropic 发布工程博客文章，介绍记忆如何让 Claude 从经验中学习，以及“dreaming”如何帮助 Claude 整理学到的内容、纠正错误、并在下次更方便地找到所需信息。文章链接：https://www.anthropic.com/research/components-of-agent-memory",
+   "link": "https://x.com/AnthropicAI/status/2118814753154064501",
+   "points": {},
+   "kind": "social",
+   "abstract": "Anthropic 发布工程博客文章，介绍记忆如何让 Claude 从经验中学习，以及“dreaming”如何帮助 Claude 整理学到的内容、纠正错误、并在下次更方便地找到所需信息。文章链接：https://www.anthropic.com/research/components-of-agent-memory",
+   "abstract_cn": "Anthropic 发布工程博客文章，介绍记忆如何让 Claude 从经验中学习，以及“dreaming”如何帮助 Claude 整理学到的内容、纠正错误、并在下次更方便地找到所需信息。文章链接：https://www.anthropic.com/research/components-of-agent-memory",
+   "interpret": "",
+   "interpret_v": 3
+  },
+  "t:openai联合ligo发布biobasicsbench基准评测ai智能体处理常规湿实验室分析的能力": {
+   "title": "OpenAI 联合 Ligo 发布 BioBasicsBench 基准，评测 AI 智能体处理常规湿实验室分析的能力",
+   "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
+   "sourceShort": "OpenAI：官网动态",
+   "hue": 206,
+   "domain": "AI Agent",
+   "ts": "2026-11-06T08:00:00+08:00",
+   "date": "2026-11-06",
+   "weekday": "周五",
+   "summary": "OpenAI 与酶设计公司 Ligo 共同发布 BioBasicsBench 基准，用 100 个任务衡量 AI 智能体解读原始实验数据、发现错误并识别证据是否足以支持结论的能力，覆盖蛋白质方法、成像与流式、定量与检测、核酸方法和分子克隆五个领域。",
+   "link": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science",
+   "points": {},
+   "kind": "paper",
+   "abstract": "OpenAI 与酶设计公司 Ligo 共同发布 BioBasicsBench 基准，用 100 个任务衡量 AI 智能体解读原始实验数据、发现错误并识别证据是否足以支持结论的能力，覆盖蛋白质方法、成像与流式、定量与检测、核酸方法和分子克隆五个领域。",
+   "abstract_cn": "OpenAI 与酶设计公司 Ligo 共同发布 BioBasicsBench 基准，用 100 个任务衡量 AI 智能体解读原始实验数据、发现错误并识别证据是否足以支持结论的能力，覆盖蛋白质方法、成像与流式、定量与检测、核酸方法和分子克隆五个领域。",
+   "interpret": "",
+   "interpret_v": 3
+  },
+  "t:openai与ligo推出biobasicsbench评测智能体湿实验室能力": {
+   "title": "OpenAI 与 Ligo 推出 BioBasicsBench 评测智能体湿实验室能力",
+   "source": "X：OpenAI (@OpenAI)",
+   "sourceShort": "X · OpenAI",
+   "hue": 219,
+   "domain": "AI Agent",
+   "ts": "2026-11-07T03:08:57+08:00",
+   "date": "2026-11-07",
+   "weekday": "周六",
+   "summary": "OpenAI 与酶设计生物技术公司 Ligo 联合推出 BioBasicsBench，用于衡量 AI 智能体处理湿实验室常规分析的能力。该基准基于 100 个来自真实实验的任务，测试智能体能否解读原始实验数据、识别错误，并判断证据是否足以支持结论。OpenAI 表示该基准可显示模型待改进之处，并追踪这些进步对科学进展、生物安全和生物安保的意义。",
+   "link": "https://x.com/OpenAI/status/2118782708767965238",
+   "points": {},
+   "kind": "social",
+   "abstract": "OpenAI 与酶设计生物技术公司 Ligo 联合推出 BioBasicsBench，用于衡量 AI 智能体处理湿实验室常规分析的能力。该基准基于 100 个来自真实实验的任务，测试智能体能否解读原始实验数据、识别错误，并判断证据是否足以支持结论。OpenAI 表示该基准可显示模型待改进之处，并追踪这些进步对科学进展、生物安全和生物安保的意义。",
+   "abstract_cn": "OpenAI 与酶设计生物技术公司 Ligo 联合推出 BioBasicsBench，用于衡量 AI 智能体处理湿实验室常规分析的能力。该基准基于 100 个来自真实实验的任务，测试智能体能否解读原始实验数据、识别错误，并判断证据是否足以支持结论。OpenAI 表示该基准可显示模型待改进之处，并追踪这些进步对科学进展、生物安全和生物安保的意义。",
+   "interpret": "",
+   "interpret_v": 3
+  },
+  "t:googledeepmind研究ai智能体发现1024bitrsa遗留加密系统两大弱点": {
+   "title": "Google DeepMind 研究：AI 智能体发现 1024-bit RSA 遗留加密系统两大弱点",
+   "source": "X：Google DeepMind (@GoogleDeepMind)",
+   "sourceShort": "X · Google DeepMind",
+   "hue": 221,
+   "domain": "AI Agent",
+   "ts": "2026-11-07T01:20:31+08:00",
+   "date": "2026-11-07",
+   "weekday": "周六",
+   "summary": "Google DeepMind 发布新研究，展示 AI 智能体如何加速加密系统压力测试。在人类指导下，其模型发现了 legacy 1024-bit RSA 加密系统的两个重大弱点，研究详情由 VP Science Pushmeet 在引用帖中进一步解释。",
+   "link": "https://x.com/GoogleDeepMind/status/2118755418675765656",
+   "points": {},
+   "kind": "social",
+   "abstract": "Google DeepMind 发布新研究，展示 AI 智能体如何加速加密系统压力测试。在人类指导下，其模型发现了 legacy 1024-bit RSA 加密系统的两个重大弱点，研究详情由 VP Science Pushmeet 在引用帖中进一步解释。",
+   "abstract_cn": "Google DeepMind 发布新研究，展示 AI 智能体如何加速加密系统压力测试。在人类指导下，其模型发现了 legacy 1024-bit RSA 加密系统的两个重大弱点，研究详情由 VP Science Pushmeet 在引用帖中进一步解释。",
+   "interpret": "",
+   "interpret_v": 3
+  },
+  "t:google量化agentdistraction13的编码会话会被代码内todobug注释干扰": {
+   "title": "Google 量化 Agent Distraction：13% 的编码会话会被代码内 TODO(bug) 注释干扰",
+   "source": "Google Developers Blog（RSS）",
+   "sourceShort": "Google Developers Blog",
+   "hue": 219,
+   "domain": "AI Agent",
+   "ts": "2026-11-06T00:00:00+08:00",
+   "date": "2026-11-06",
+   "weekday": "周五",
+   "summary": "Google 分析数千名工程师、数亿步智能体交互的分布式追踪，用代码内 TODO(bug/...) 注释作为代理信号量化\"智能体分心\"：13% 的文件读取会话接触到 TODO/FIXME bug 引用，6% 触发后续动作且其中 83% 完全未经开发者提示。",
+   "link": "https://developers.googleblog.com/agent-distraction/",
+   "points": {},
+   "kind": "paper",
+   "abstract": "Google 分析数千名工程师、数亿步智能体交互的分布式追踪，用代码内 TODO(bug/...) 注释作为代理信号量化\"智能体分心\"：13% 的文件读取会话接触到 TODO/FIXME bug 引用，6% 触发后续动作且其中 83% 完全未经开发者提示。",
+   "abstract_cn": "Google 分析数千名工程师、数亿步智能体交互的分布式追踪，用代码内 TODO(bug/...) 注释作为代理信号量化\"智能体分心\"：13% 的文件读取会话接触到 TODO/FIXME bug 引用，6% 触发后续动作且其中 83% 完全未经开发者提示。",
+   "interpret": "",
+   "interpret_v": 3
   }
  },
  "github": {
-  "2026-09-08": [],
   "2026-09-10": [
    {
     "domain": "具身智能",
@@ -39792,6 +39950,7 @@
   ],
   "2026-11-04": [],
   "2026-11-06": [],
-  "2026-11-07": []
+  "2026-11-07": [],
+  "2026-11-08": []
  }
 }
