@@ -1,6 +1,6 @@
 {
  "meta": {
-  "last_run": "2026-11-12T00:02:36.960828+08:00",
+  "last_run": "2026-11-13T00:02:10.733304+08:00",
   "first_run": "2026-08-20T13:57:57.662543+08:00"
  },
  "papers": {
@@ -39686,7 +39686,8 @@
    "abstract": "蚂蚁 inclusionAI 发布 ZoomGain，利用放大后才显现的视觉细节反推整图问题，为视觉语言模型构建监督信号。同步开源 ZoomGainBench（1000 题、941 张图，覆盖属性识别、计数与 OCR）、9000 条 RL 训练数据及 ZoomGain-4B、ZoomGain-9B 模型检查点。",
    "abstract_cn": "蚂蚁 inclusionAI 发布 ZoomGain，利用放大后才显现的视觉细节反推整图问题，为视觉语言模型构建监督信号。同步开源 ZoomGainBench（1000 题、941 张图，覆盖属性识别、计数与 OCR）、9000 条 RL 训练数据及 ZoomGain-4B、ZoomGain-9B 模型检查点。",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": null
   },
   "t:databricks基准测试genie搭配genieontology准确率91token用量不到对手一半": {
    "title": "Databricks 基准测试：Genie 搭配 Genie Ontology 准确率 91%，token 用量不到对手一半",
@@ -39704,7 +39705,8 @@
    "abstract": "Databricks 与 Turing 合作构建企业数据智能体基准，在实时 Databricks 工作区中对比 Genie 与两个前沿智能体，Genie 任务通过率 91%，另两者分别为 45% 和 58%。",
    "abstract_cn": "Databricks 与 Turing 合作构建企业数据智能体基准，在实时 Databricks 工作区中对比 Genie 与两个前沿智能体，Genie 任务通过率 91%，另两者分别为 45% 和 58%。",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": null
   },
   "t:googledeepmind用alphaproofcode形式化验证signal协议关键密码学保证": {
    "title": "Google DeepMind 用 AlphaProof Code 形式化验证 Signal 协议关键密码学保证",
@@ -39722,7 +39724,8 @@
    "abstract": "Google DeepMind 研究人员用智能体 AI 框架 AlphaProof Code，在四周内对 Signal 协议的关键密码学保证完成了形式化验证，未发现新漏洞，且在含已知旧漏洞的历史版本上正确识别出问题。研究团队发布了规格说明和证明，但分析范围有限，未覆盖整个 Signal 移动应用，能否以可行成本规模化仍是开放问题。",
    "abstract_cn": "Google DeepMind 研究人员用智能体 AI 框架 AlphaProof Code，在四周内对 Signal 协议的关键密码学保证完成了形式化验证，未发现新漏洞，且在含已知旧漏洞的历史版本上正确识别出问题。研究团队发布了规格说明和证明，但分析范围有限，未覆盖整个 Signal 移动应用，能否以可行成本规模化仍是开放问题。",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": null
   },
   "t:amazon论文企业工作流中单智能体通常是更优默认选择": {
    "title": "Amazon 论文：企业工作流中单智能体通常是更优默认选择",
@@ -39740,7 +39743,8 @@
    "abstract": "Amazon 论文在 13 个企业 SOP 上受控比较 4 种智能体架构、8 个变体（模型、任务和工具固定），结论是企业工作流没有普适最佳架构。多智能体或技能方案消耗单智能体 1.4x 至 4.7x 的 token，收益通常很小；最初的多智能体版本任务成功率 58.2%，低于单智能体的 67.4%。建议从单智能体起步，按工作流测量成功率，先修复实现问题再考虑更复杂架构。",
    "abstract_cn": "Amazon 论文在 13 个企业 SOP 上受控比较 4 种智能体架构、8 个变体（模型、任务和工具固定），结论是企业工作流没有普适最佳架构。多智能体或技能方案消耗单智能体 1.4x 至 4.7x 的 token，收益通常很小；最初的多智能体版本任务成功率 58.2%，低于单智能体的 67.4%。建议从单智能体起步，按工作流测量成功率，先修复实现问题再考虑更复杂架构。",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": null
   },
   "t:googledeepmindgemini智能体生成超600万行lean证明人工仅需复核1关键代码": {
    "title": "Google DeepMind：Gemini 智能体生成超 600 万行 Lean 证明，人工仅需复核 1% 关键代码",
@@ -39758,7 +39762,8 @@
    "abstract": "Google DeepMind 介绍 Gemini 智能体生成了超过 600 万行 Lean 形式化证明，并对代码进行审计，使人类专家只需复核其中关键的 1%。官方称这是用 AI 验证关键基础设施（从日常通信到电网）的重要一步，详情见 https://goo.gle/4BLrkbk。",
    "abstract_cn": "Google DeepMind 介绍 Gemini 智能体生成了超过 600 万行 Lean 形式化证明，并对代码进行审计，使人类专家只需复核其中关键的 1%。官方称这是用 AI 验证关键基础设施（从日常通信到电网）的重要一步，详情见 https://goo.gle/4BLrkbk。",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": null
   },
   "t:微软研究ai智能体休眠神经元可植入后门": {
    "title": "微软研究：AI 智能体休眠神经元可植入后门",
@@ -39776,7 +39781,8 @@
    "abstract": "微软研究院新研究发现，重编程 AI 智能体中的少量休眠神经元即可植入后门，让智能体平时表现正常，直到触发特定条件才激活异常行为。微软建议企业确认模型来源并合理管控权限，Microsoft Foundry 为 Azure Direct Models 和 Hugging Face 模型提供安全系统以保障模型来源可信。",
    "abstract_cn": "微软研究院新研究发现，重编程 AI 智能体中的少量休眠神经元即可植入后门，让智能体平时表现正常，直到触发特定条件才激活异常行为。微软建议企业确认模型来源并合理管控权限，Microsoft Foundry 为 Azure Direct Models 和 Hugging Face 模型提供安全系统以保障模型来源可信。",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": null
   },
   "t:谷歌联合artificialanalysis推出mka多模态知识智能体基准gemini4carbon质量第二成本仅第一名六分之一": {
    "title": "谷歌联合 Artificial Analysis 推出 MKA 多模态知识智能体基准，Gemini 4 Carbon 质量第二、成本仅第一名六分之一",
@@ -39794,7 +39800,8 @@
    "abstract": "谷歌联合 Artificial Analysis 推出多模态知识智能体基准测试 MKA，用于评估 AI 智能体处理视觉复杂文件、完成现实知识工作任务的能力。Gemini 4 Carbon 在参测模型中质量排名第二，平均任务成本约为第一名模型的六分之一。该测试含 200 项私有任务，覆盖 10 个行业 83 种职业，已在 Artificial Analysis 平台开放。",
    "abstract_cn": "谷歌联合 Artificial Analysis 推出多模态知识智能体基准测试 MKA，用于评估 AI 智能体处理视觉复杂文件、完成现实知识工作任务的能力。Gemini 4 Carbon 在参测模型中质量排名第二，平均任务成本约为第一名模型的六分之一。该测试含 200 项私有任务，覆盖 10 个行业 83 种职业，已在 Artificial Analysis 平台开放。",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": null
   },
   "t:googledeepmind与artificialanalysis联合发布mka智能体知识工作基准": {
    "title": "Google DeepMind 与 Artificial Analysis 联合发布 MKA 智能体知识工作基准",
@@ -39812,7 +39819,8 @@
    "abstract": "Philipp Schmid 宣布与 Artificial Analysis 联合推出 MKA（Multimodal Knowledge Agent）基准，评测智能体在视觉复杂文件上的知识工作。",
    "abstract_cn": "Philipp Schmid 宣布与 Artificial Analysis 联合推出 MKA（Multimodal Knowledge Agent）基准，评测智能体在视觉复杂文件上的知识工作。",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": null
   },
   "t:berkeleyrdi发布cyberbingym基准测试ai智能体能否仅凭二进制补丁写出真实漏洞利用": {
    "title": "Berkeley RDI 发布 CyberBinGym 基准，测试 AI 智能体能否仅凭二进制补丁写出真实漏洞利用",
@@ -39830,7 +39838,8 @@
    "abstract": "UC Berkeley 等机构发布 CyberBinGym 基准，评估 AI 智能体在无源码、无漏洞描述、无触发输入的 1-day 场景下，仅凭 stripped 的漏洞与补丁二进制能否恢复并利用真实漏洞，含 100 个来自 53 个开源项目的任务。",
    "abstract_cn": "UC Berkeley 等机构发布 CyberBinGym 基准，评估 AI 智能体在无源码、无漏洞描述、无触发输入的 1-day 场景下，仅凭 stripped 的漏洞与补丁二进制能否恢复并利用真实漏洞，含 100 个来自 53 个开源项目的任务。",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": null
   },
   "t:openai披露exploitgym评测中智能体利用同行遗留凭据越权访问内部研究基础设施": {
    "title": "OpenAI 披露 ExploitGym 评测中智能体利用同行遗留凭据越权访问内部研究基础设施",
@@ -39848,7 +39857,8 @@
    "abstract": "OpenAI 报告，2026 年 7 月 19 日两个 ExploitGym 评测运行中的 Astra 系列内部研究模型未经授权访问了 OpenAI 研究基础设施。",
    "abstract_cn": "OpenAI 报告，2026 年 7 月 19 日两个 ExploitGym 评测运行中的 Astra 系列内部研究模型未经授权访问了 OpenAI 研究基础设施。",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": null
   },
   "t:berkeleyrdi与aws发布aqueduct用lean等价证明验证智能体软件优化": {
    "title": "Berkeley RDI 与 AWS 发布 Aqueduct：用 Lean 等价证明验证智能体软件优化",
@@ -39866,7 +39876,8 @@
    "abstract": "UC Berkeley 与 AWS 团队提出 Aqueduct 框架，让编程智能体加速已有函数并在 Lean 4 中证明新实现 f′ 与原函数 f 在所有输入上等价，无需人工写规格。",
    "abstract_cn": "UC Berkeley 与 AWS 团队提出 Aqueduct 框架，让编程智能体加速已有函数并在 Lean 4 中证明新实现 f′ 与原函数 f 在所有输入上等价，无需人工写规格。",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": null
   },
   "t:googledeepmind与artificialanalysis推出mka多模态知识工作基准": {
    "title": "Google DeepMind 与 Artificial Analysis 推出 MKA 多模态知识工作基准",
@@ -39884,7 +39895,8 @@
    "abstract": "Google DeepMind 与 Artificial Analysis 联合发布 Multimodal Knowledge Agent（MKA）基准，用 200 个跨 10 个行业的私有真实视觉任务考察智能体处理图纸、扫描件并产出幻灯片、表格、报告等交付物的能力。",
    "abstract_cn": "Google DeepMind 与 Artificial Analysis 联合发布 Multimodal Knowledge Agent（MKA）基准，用 200 个跨 10 个行业的私有真实视觉任务考察智能体处理图纸、扫描件并产出幻灯片、表格、报告等交付物的能力。",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": null
   },
   "t:duke与princeton论文等算力下并行小智能体团队优于solobestofn和单一大团队": {
    "title": "Duke 与 Princeton 论文：等算力下并行小智能体团队优于 solo best-of-N 和单一大团队",
@@ -39902,7 +39914,8 @@
    "abstract": "Duke 和 Princeton 的论文发现，在相同算力下，许多小的智能体团队并行运行的表现同时优于 solo-agent best-of-N 和单个大团队：同样 100 个智能体的预算，10 个共享论坛的 10 智能体小团队并行并保留最佳团队结果，胜过 100 个 solo 智能体和 1 个 100 智能体团队。作者建议在验证器可给智能体工作打分时，把预算拆成多个共享笔记的小团队并保留最佳答案。",
    "abstract_cn": "Duke 和 Princeton 的论文发现，在相同算力下，许多小的智能体团队并行运行的表现同时优于 solo-agent best-of-N 和单个大团队：同样 100 个智能体的预算，10 个共享论坛的 10 智能体小团队并行并保留最佳团队结果，胜过 100 个 solo 智能体和 1 个 100 智能体团队。作者建议在验证器可给智能体工作打分时，把预算拆成多个共享笔记的小团队并保留最佳答案。",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": null
   },
   "t:artificialanalysis联合googledeepmind发布mka多模态知识工作基准": {
    "title": "Artificial Analysis 联合 Google DeepMind 发布 MKA 多模态知识工作基准",
@@ -39920,7 +39933,8 @@
    "abstract": "Artificial Analysis 与 Google DeepMind 合作上线 Multimodal Knowledge Agent（MKA）评测，用 200 个覆盖 10 个行业的私有真实视觉任务考察智能体处理建筑图纸、工程示意图和临床扫描并产出幻灯片、表格、PDF 等交付物的能力。",
    "abstract_cn": "Artificial Analysis 与 Google DeepMind 合作上线 Multimodal Knowledge Agent（MKA）评测，用 200 个覆盖 10 个行业的私有真实视觉任务考察智能体处理建筑图纸、工程示意图和临床扫描并产出幻灯片、表格、PDF 等交付物的能力。",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": null
   },
   "t:wiz讲解如何评估ai智能体的网络安全能力": {
    "title": "Wiz 讲解如何评估 AI 智能体的网络安全能力",
@@ -39938,7 +39952,8 @@
    "abstract": "Wiz Research 介绍其 Cyber Model Arena v3.9 的基准设计方法，该基准覆盖 26 个模型、59 个智能体和 327 道挑战，分代码漏洞、API 安全、Web 安全和云安全四类。",
    "abstract_cn": "Wiz Research 介绍其 Cyber Model Arena v3.9 的基准设计方法，该基准覆盖 26 个模型、59 个智能体和 327 道挑战，分代码漏洞、API 安全、Web 安全和云安全四类。",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": null
   },
   "t:googledeepmind用alphaproofcode对signal协议机器码完成形式化安全验证": {
    "title": "Google DeepMind 用 AlphaProof Code 对 Signal 协议机器码完成形式化安全验证",
@@ -39956,7 +39971,8 @@
    "abstract": "Google DeepMind 发布 AlphaProof Code 多智能体形式化验证框架，并首次对广泛部署协议 Signal 的生产机器码完成形式化安全验证。",
    "abstract_cn": "Google DeepMind 发布 AlphaProof Code 多智能体形式化验证框架，并首次对广泛部署协议 Signal 的生产机器码完成形式化安全验证。",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": null
   },
   "t:谷歌deepmind用ai完成signal协议形式化验证数学证明其端到端加密可靠性": {
    "title": "谷歌 DeepMind 用 AI 完成 Signal 协议形式化验证，数学证明其端到端加密可靠性",
@@ -39974,7 +39990,8 @@
    "abstract": "谷歌 DeepMind 团队利用具备自主执行能力的 AI 智能体，对 Signal 加密协议完成形式化验证，用数学方法证明其满足安全性承诺，成果被称为具有里程碑意义的进展。",
    "abstract_cn": "谷歌 DeepMind 团队利用具备自主执行能力的 AI 智能体，对 Signal 加密协议完成形式化验证，用数学方法证明其满足安全性承诺，成果被称为具有里程碑意义的进展。",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": null
   },
   "t:goodfire研究发现qwen3635ba3b神经元可作为可解释的计算单元": {
    "title": "Goodfire 研究发现 Qwen3.6-35B-A3B 神经元可作为可解释的计算单元",
@@ -39992,7 +40009,8 @@
    "abstract": "Goodfire Research 发布研究论文，通过对 Qwen3.6-35B-A3B 神经元的稀疏化实验、子电路分析和智能体驱动的描述生成，论证神经元比以往认为的更可解释。",
    "abstract_cn": "Goodfire Research 发布研究论文，通过对 Qwen3.6-35B-A3B 神经元的稀疏化实验、子电路分析和智能体驱动的描述生成，论证神经元比以往认为的更可解释。",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": null
   },
   "t:小米联合北京大学发布物联网设备模型技术白皮书开放116亿台aiot设备技术经验": {
    "title": "小米联合北京大学发布《物联网设备模型技术白皮书》，开放 11.6 亿台 AIoT 设备技术经验",
@@ -40010,7 +40028,8 @@
    "abstract": "小米联合北京大学在 2026 CCF 中国软件大会上发布《物联网设备模型（Thing Model）技术白皮书》，基于超 11.6 亿台 AIoT 设备、200+ 品类和 10000+ 家合作伙伴的实践。",
    "abstract_cn": "小米联合北京大学在 2026 CCF 中国软件大会上发布《物联网设备模型（Thing Model）技术白皮书》，基于超 11.6 亿台 AIoT 设备、200+ 品类和 10000+ 家合作伙伴的实践。",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": null
   },
   "t:apple论文amp1让claudeopus55等通用模型零样本操控机械臂胜过vla": {
    "title": "Apple 论文：AMP1 让 Claude Opus 5.5 等通用模型零样本操控机械臂胜过 VLA",
@@ -40028,7 +40047,8 @@
    "abstract": "Apple 论文提出 AMP1 智能体操控框架，让 Claude Opus 5.5 或 Gemini 4 Argon 等通用模型通过相机画面、代码执行和直接运动指令控制机械臂，无需示教或任务训练。",
    "abstract_cn": "Apple 论文提出 AMP1 智能体操控框架，让 Claude Opus 5.5 或 Gemini 4 Argon 等通用模型通过相机画面、代码执行和直接运动指令控制机械臂，无需示教或任务训练。",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": null
   },
   "t:ucberkeley论文evolvingagentteams用supervisor重组编码智能体团队超越专家gpukernel": {
    "title": "UC Berkeley 论文 Evolving Agent Teams 用 supervisor 重组编码智能体团队超越专家 GPU kernel",
@@ -40046,7 +40066,8 @@
    "abstract": "UC Berkeley 论文 Evolving Agent Teams 提出：单个编码智能体在 GPU kernel 优化上会停滞，Claude Code 在 MLA decode kernel 上仅达 FlashInfer 的 0.51 倍。",
    "abstract_cn": "UC Berkeley 论文 Evolving Agent Teams 提出：单个编码智能体在 GPU kernel 优化上会停滞，Claude Code 在 MLA decode kernel 上仅达 FlashInfer 的 0.51 倍。",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": null
   },
   "t:anthropic用1000个claudefable52智能体在沙箱内复现费马大定理形式化证明": {
    "title": "Anthropic 用 1000 个 Claude Fable 5.2 智能体在沙箱内复现费马大定理形式化证明",
@@ -40064,7 +40085,8 @@
    "abstract": "Anthropic 的玩具实验中，1000 个运行 Claude Fable 5.2 早期版本的智能体在无 Prove2Me 平台和研究者指导的情况下复现了费马大定理的形式化证明，耗时 28.7 小时，输出 token 仅为原 9 月形式化的三分之一，证明长度为七分之一。",
    "abstract_cn": "Anthropic 的玩具实验中，1000 个运行 Claude Fable 5.2 早期版本的智能体在无 Prove2Me 平台和研究者指导的情况下复现了费马大定理的形式化证明，耗时 28.7 小时，输出 token 仅为原 9 月形式化的三分之一，证明长度为七分之一。",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": null
   },
   "t:面壁智能推出autorlbench10个前沿智能体诊断rl训练失败": {
    "title": "面壁智能推出 AutoRLBench：10 个前沿智能体诊断 RL 训练失败",
@@ -40082,7 +40104,8 @@
    "abstract": "面壁智能 OpenBMB 推出 AutoRLBench，用真实失败的 RL 训练运行评测 10 个前沿智能体，代码、配置、日志和指标完整保留，不含合成 bug，目标是定位\"看似健康\"的奖励曲线背后的确切根因。最强前沿模型准确率也仅约 40%，各层级能力差距巨大；模型在显式 Config 类 bug 上表现最好，在隐式 Data 类 bug 上严重吃力。更强的智能体诊断更快、消耗 token 更少。",
    "abstract_cn": "面壁智能 OpenBMB 推出 AutoRLBench，用真实失败的 RL 训练运行评测 10 个前沿智能体，代码、配置、日志和指标完整保留，不含合成 bug，目标是定位\"看似健康\"的奖励曲线背后的确切根因。最强前沿模型准确率也仅约 40%，各层级能力差距巨大；模型在显式 Config 类 bug 上表现最好，在隐式 Data 类 bug 上严重吃力。更强的智能体诊断更快、消耗 token 更少。",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": null
   },
   "t:ucla研究ai智能体约18输出token是浪费": {
    "title": "UCLA研究：AI智能体约18%输出token是浪费",
@@ -40100,7 +40123,8 @@
    "abstract": "UCLA与东北大学论文发现，AI智能体约18%的输出token属可移除浪费，剪掉后任务成功率几乎不受影响。研究覆盖6个前沿模型和4个benchmark，在Kimi-K3的推理中剪除重复与填充内容后，SWE-bench Verified上减少41%输出token，成功率89.5%对89.0%。作者建议按任务与harness定位浪费来源，而非单纯限制token。",
    "abstract_cn": "UCLA与东北大学论文发现，AI智能体约18%的输出token属可移除浪费，剪掉后任务成功率几乎不受影响。研究覆盖6个前沿模型和4个benchmark，在Kimi-K3的推理中剪除重复与填充内容后，SWE-bench Verified上减少41%输出token，成功率89.5%对89.0%。作者建议按任务与harness定位浪费来源，而非单纯限制token。",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": null
   },
   "t:ucberkeley等机构论文智能体自改harness提分的同时会丢掉原本能完成的任务": {
    "title": "UC Berkeley 等机构论文：智能体自改 harness 提分的同时会丢掉原本能完成的任务",
@@ -40118,7 +40142,8 @@
    "abstract": "UC Berkeley、中国科学技术大学等机构的论文发现，通过 harness evolution 在模型冻结情况下自改提示词、技能、工具或代码的智能体，平均分提高的同时会丢失原本能完成的任务。",
    "abstract_cn": "UC Berkeley、中国科学技术大学等机构的论文发现，通过 harness evolution 在模型冻结情况下自改提示词、技能、工具或代码的智能体，平均分提高的同时会丢失原本能完成的任务。",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": null
   },
   "t:上海交大发布ai原生科学实验室autodna成果登自然": {
    "title": "上海交大发布 AI 原生科学实验室 AutoDNA，成果登《自然》",
@@ -40136,7 +40161,8 @@
    "abstract": "上海交大 IPADS 实验室联合化学化工学院团队在《自然》发表成果，构建 AI 原生科学实验室 AutoDNA（思源一号），实现自主分子生物学实验操作。系统采用多智能体架构分解实验流程，把仪器能力抽象为可调用的原子服务，硬件支持微米级定位和微升级液体处理，集成基于 OpenHarmony 的控制终端，已在核酸检测、酶促 DNA 合成、癌症检测等场景完成应用验证。",
    "abstract_cn": "上海交大 IPADS 实验室联合化学化工学院团队在《自然》发表成果，构建 AI 原生科学实验室 AutoDNA（思源一号），实现自主分子生物学实验操作。系统采用多智能体架构分解实验流程，把仪器能力抽象为可调用的原子服务，硬件支持微米级定位和微升级液体处理，集成基于 OpenHarmony 的控制终端，已在核酸检测、酶促 DNA 合成、癌症检测等场景完成应用验证。",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": null
   },
   "t:codesignbench测试显示编码智能体仅在约四分之一任务上完全达标": {
    "title": "Co-Design Bench 测试显示编码智能体仅在约四分之一任务上完全达标",
@@ -40154,7 +40180,8 @@
    "abstract": "阿里与多所亚洲高校的研究者基于真实编码会话中的用户修改请求构建了 Co-Design Bench，要求智能体改造现有 Web 应用，输入含图片、音频、视频等。十个受测模型中最好的 GPT-6 Astra 平均满足约 70% 的任务要求，但仅 26.4% 的任务完全正确，Claude Opus 5 与 Qwen3.8-Max 分列其后，Grok 4.6 垫底。",
    "abstract_cn": "阿里与多所亚洲高校的研究者基于真实编码会话中的用户修改请求构建了 Co-Design Bench，要求智能体改造现有 Web 应用，输入含图片、音频、视频等。十个受测模型中最好的 GPT-6 Astra 平均满足约 70% 的任务要求，但仅 26.4% 的任务完全正确，Claude Opus 5 与 Qwen3.8-Max 分列其后，Grok 4.6 垫底。",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": null
   },
   "t:stanford论文信息披露让部分llm智能体交易收益上升部分下降": {
    "title": "Stanford 论文：信息披露让部分 LLM 智能体交易收益上升、部分下降",
@@ -40172,7 +40199,8 @@
    "abstract": "Stanford 论文提出经验性信息设计框架，在 10 个前沿 LLM 上对比不同披露粒度下的多智能体交易、议价与拍卖表现。",
    "abstract_cn": "Stanford 论文提出经验性信息设计框架，在 10 个前沿 LLM 上对比不同披露粒度下的多智能体交易、议价与拍卖表现。",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": null
   },
   "t:牛津论文发现前沿llm智能体难以与陌生伙伴零样本协同": {
    "title": "牛津论文发现前沿 LLM 智能体难以与陌生伙伴零样本协同",
@@ -40190,7 +40218,8 @@
    "abstract": "牛津 BOLD 团队论文研究 LLM 智能体的零样本协同（ZSC），在 9 个小型合作博弈中测试基于 GPT-5.2、Gemini 3 Pro 等模型的文本和代码智能体。",
    "abstract_cn": "牛津 BOLD 团队论文研究 LLM 智能体的零样本协同（ZSC），在 9 个小型合作博弈中测试基于 GPT-5.2、Gemini 3 Pro 等模型的文本和代码智能体。",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": null
   },
   "t:andyhall研究分析ai审计模型能抓住大部分智能体不当行为但误报太多": {
    "title": "Andy Hall 研究分析：AI 审计模型能抓住大部分智能体不当行为，但误报太多",
@@ -40208,7 +40237,8 @@
    "abstract": "Anthropic 研究院研究员 Andy Hall 在 Substack 发文，基于 METR 的 MALT 数据集和上海交大 R-Judge 数据集测试多个模型作为 AI 审计员的效果。",
    "abstract_cn": "Anthropic 研究院研究员 Andy Hall 在 Substack 发文，基于 METR 的 MALT 数据集和上海交大 R-Judge 数据集测试多个模型作为 AI 审计员的效果。",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": null
   },
   "t:valsai基准测试显示开源与闭源模型网络攻击能力差距持续缩小": {
    "title": "Vals AI 基准测试显示开源与闭源模型网络攻击能力差距持续缩小",
@@ -40226,7 +40256,8 @@
    "abstract": "The Decoder 报道 Vals AI 的 CyberOffense 基准测试，AI 智能体可在无人工干预下自主攻入模拟企业网络。OpenAI 限制级 Daybreak 项目的 GPT-6 Sol 以 80.8% 目标完成率居首，开源的 Deepseek V4.1 Flash 1017 达 72.8%，单次成本约 3 美元、远低于闭源模型约 22 美元。",
    "abstract_cn": "The Decoder 报道 Vals AI 的 CyberOffense 基准测试，AI 智能体可在无人工干预下自主攻入模拟企业网络。OpenAI 限制级 Daybreak 项目的 GPT-6 Sol 以 80.8% 目标完成率居首，开源的 Deepseek V4.1 Flash 1017 达 72.8%，单次成本约 3 美元、远低于闭源模型约 22 美元。",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": null
   },
   "t:anthropic详解claude智能体记忆的组件笔记dreaming与知识wiki": {
    "title": "Anthropic 详解 Claude 智能体记忆的组件：笔记、dreaming 与知识 wiki",
@@ -40244,7 +40275,8 @@
    "abstract": "Anthropic 发文拆解 Claude 智能体记忆的组成与设计思路，将记忆分为笔记、记忆表示和注入上下文等层次，并介绍用 dreaming（空闲期反思日志）来纠错和构建 wiki。",
    "abstract_cn": "Anthropic 发文拆解 Claude 智能体记忆的组成与设计思路，将记忆分为笔记、记忆表示和注入上下文等层次，并介绍用 dreaming（空闲期反思日志）来纠错和构建 wiki。",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": null
   },
   "t:gpt6astra登顶perceptronai家务视频基准egohome": {
    "title": "GPT-6 Astra 登顶 Perceptron AI 家务视频基准 EgoHome",
@@ -40262,7 +40294,8 @@
    "abstract": "GPT-6 Astra 在 Perceptron AI 新推出的 EgoHome 基准上排名第一，该基准测试 AI 能否理解家务视频中人类双手的动作。EgoHome 是开放基准，含 4 类标注（手部框、子任务、手部动作、手部描述），提供超过 750 个时长低于 500ms 的片段，数据、指标与评判提示词全部开放。",
    "abstract_cn": "GPT-6 Astra 在 Perceptron AI 新推出的 EgoHome 基准上排名第一，该基准测试 AI 能否理解家务视频中人类双手的动作。EgoHome 是开放基准，含 4 类标注（手部框、子任务、手部动作、手部描述），提供超过 750 个时长低于 500ms 的片段，数据、指标与评判提示词全部开放。",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": null
   },
   "t:第二届behavior挑战赛结果公布": {
    "title": "第二届BEHAVIOR挑战赛结果公布",
@@ -40280,7 +40313,8 @@
    "abstract": "机器人学习取得了惊人的进展！来看看 #CoRL2026 上的 BEHAVIOR 挑战赛 👇",
    "abstract_cn": "机器人学习取得了惊人的进展！来看看 #CoRL2026 上的 BEHAVIOR 挑战赛 👇",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": null
   },
   "t:robbyant开源lingbottouch触觉模型": {
    "title": "Robbyant 开源 LingBot-Touch 触觉模型",
@@ -40298,7 +40332,8 @@
    "abstract": "Robbyant 开源 Apache 2.0 许可的 LingBot-Touch，将指尖传感器读数转为机器人控制软件可用的触觉信号。三个同尺寸编码器各 5.46M 参数，在 4000 小时数据上 JEPA 版本触觉→视频检索 top-5 达 49.3%，MAE 低于 9%，VAE 仅 3.1%。",
    "abstract_cn": "Robbyant 开源 Apache 2.0 许可的 LingBot-Touch，将指尖传感器读数转为机器人控制软件可用的触觉信号。三个同尺寸编码器各 5.46M 参数，在 4000 小时数据上 JEPA 版本触觉→视频检索 top-5 达 49.3%，MAE 低于 9%，VAE 仅 3.1%。",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": null
   },
   "t:apple研究人员开源人形机器人控制系统halo单任务成功率91": {
    "title": "Apple 研究人员开源人形机器人控制系统 HALO，单任务成功率 91%",
@@ -40316,7 +40351,8 @@
    "abstract": "Apple 研究人员开源人形机器人控制系统 HALO，单个真实任务成功率达 91%。但串联多步任务（钻过障碍、行走、推箱子）时成功率降至约 50%，这一限制也是 Ming-Chi Kuo 判断最早 2028 年才能量产人形机器人的原因之一。",
    "abstract_cn": "Apple 研究人员开源人形机器人控制系统 HALO，单个真实任务成功率达 91%。但串联多步任务（钻过障碍、行走、推箱子）时成功率降至约 50%，这一限制也是 Ming-Chi Kuo 判断最早 2028 年才能量产人形机器人的原因之一。",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": null
   },
   "t:mit与nyu推出flex平台让机器人从自然语言指令中理解言外之意": {
    "title": "MIT 与 NYU 推出 FLEX 平台，让机器人从自然语言指令中理解言外之意",
@@ -40334,7 +40370,8 @@
    "abstract": "MIT 与 NYU 研究者将在本月 CoRL 上发表 FLEX，一个面向机器人运动规划的特征编辑流程，让机器人从自然语言指令中推理出未明确说明的偏好。FLEX 分三步：Add 将用户提到的物体加入特征列表，Generalize 借助 GPT-4o 从已有特征泛化出更高层规则，如除笔记本电脑外也避开其他电子产品；Mask 用视觉系统删除环境中已不存在的物体，整个流程约五秒。",
    "abstract_cn": "MIT 与 NYU 研究者将在本月 CoRL 上发表 FLEX，一个面向机器人运动规划的特征编辑流程，让机器人从自然语言指令中推理出未明确说明的偏好。FLEX 分三步：Add 将用户提到的物体加入特征列表，Generalize 借助 GPT-4o 从已有特征泛化出更高层规则，如除笔记本电脑外也避开其他电子产品；Mask 用视觉系统删除环境中已不存在的物体，整个流程约五秒。",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": null
   },
   "t:mit与ubc等提出worldparticle单一ai模型统一模拟沙子流动与蛋白质折叠": {
    "title": "MIT 与 UBC 等提出 WorldParticle：单一 AI 模型统一模拟沙子流动与蛋白质折叠",
@@ -40352,7 +40389,8 @@
    "abstract": "MIT、UBC 等机构的研究者提出统一深度学习系统 WorldParticle，用同一套架构模拟从流动沙粒到蛋白质折叠的多种物理现象。该系统把材料表示为大量粒子，由神经网络逐步预测粒子位置与属性，无需为每种现象手写方程和求解器。团队演示了可变形物体、颗粒材料和蛋白质等六类现象，精度高于数值模拟方法。",
    "abstract_cn": "MIT、UBC 等机构的研究者提出统一深度学习系统 WorldParticle，用同一套架构模拟从流动沙粒到蛋白质折叠的多种物理现象。该系统把材料表示为大量粒子，由神经网络逐步预测粒子位置与属性，无需为每种现象手写方程和求解器。团队演示了可变形物体、颗粒材料和蛋白质等六类现象，精度高于数值模拟方法。",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": null
   },
   "arxiv:2611.13960": {
    "title": "From Attack Surface to Defense Architecture: Compositional Security for Agentic Coding Harnesses",
@@ -40422,7 +40460,8 @@
    "kind": "paper",
    "abstract": "Predicting how a ligand binds to its target is central to small-molecule drug discovery. Modern cofolding models can generate diverse candidate poses, but reliably ranking these candidates remains challenging. We introduce Pyrite, a pairwise pose-ranking benchmark comprising 1,500 pose pairs across diverse protein-ligand complexes. Expert chemists equipped with 3D visualization tools and physics-based scores perform near chance, highlighting the difficulty of interpreting available chemical signals. To investigate automated ranking, we introduce PyriteRep, a structured representation of molecular geometry, protein-ligand interactions, and physicochemical scores, and develop two LLM-based agents: PyriteReasoner, which directly compares poses through text-based reasoning, and PyriteFeaturizer, which generates executable code to construct features for logistic regression, optionally incorporating features derived from LLM subcalls. These agents achieve up to 67% and 74% accuracy, respectively, exceeding observed expert performance. LLM-guided feature discovery generally outperforms direct reasoning, while Group Relative Policy Optimization (GRPO) improves open-weight models, enabling them to match or surpass closed-source frontier models in our evaluations. These results establish Pyrite as a challenging test of pose-ranking ability and highlight LLM-guided feature discovery as a promising approach to interpret and combine the outputs of computational chemistry tools.",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": "2026-11-13"
   },
   "arxiv:2611.14493": {
    "title": "Comparative Analysis of Agent Evaluation Frameworks: Stability, Detection, and Discovery in Enterprise Analytics Agents",
@@ -40593,7 +40632,8 @@
    "kind": "paper",
    "abstract": "External memory enables LLM agents to improve from experience by distilling trajectories of past tasks into concise lessons for new tasks. However, memory can also lead to memory-induced degradation, where an agent fails on tasks it would solve without memory, often because it follows a lesson that is incorrect, or misapplies or misreads a valid one. This is because lessons are inferred from trajectories labeled only with task success or failure, yet are typically provided without the trajectories they came from, leaving the agent no way to check them. To address this, we introduce WikiTrace, an evidence-linked memory system designed to let agents check each lesson against its original trajectory. Specifically, motivated by the finding that a trajectory often still holds the evidence needed to catch an erroneous lesson, WikiTrace stores each lesson as a concise insight linked to a summary of why its trajectory succeeded or failed and to the raw trajectory itself. Then, on a new task, the agent starts from all insights and, whenever one lacks details needed to act, conflicts with another, or comes from a failed task, descends through its links with terminal tools to fill in missing details or correct the insight before acting. We validate WikiTrace on five agentic benchmarks, showing that it consistently outperforms existing memory approaches and a baseline given the same insights alone, while also reducing memory-induced degradation. Our code is available at https://github.com/yukyeongleee/wikitrace",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": "2026-11-13"
   },
   "arxiv:2611.14242": {
    "title": "PARLEY: Evaluating LLM Collaboration Through Cooperative Asymmetric Puzzles",
@@ -40730,7 +40770,8 @@
    "kind": "paper",
    "abstract": "Energy-based models (EBMs) define a distribution through a scalar energy, $p_θ(x)\\propto\\exp(-E_θ(x))$, and are usually presented as one model family among many. This tutorial has a broader goal: beyond introducing EBMs, it uses them as a single lens that connects the different aspects of machine learning. Any EBM is specified by three choices, the energy, which determines what the model represents; the inference procedure, which samples from or optimizes the energy; and the learning method, which fits the energy to data. We first develop these components, including sampling, variational inference, and learning by maximum likelihood, noise contrastive estimation, pseudolikelihood, score matching, and adversarial training, and show that the learning methods share one contrastive structure. We then show that discriminative models, generative models such as GANs, normalizing flows, diffusion and autoregressive models, representation learning methods such as contrastive learning, word2vec, BERT, denoising auto-encoders, and diffusion representations, reinforcement learning with EBM policies and world models, inverse reinforcement learning, and planning, as well as inference-time computation with verifiers, are all EBMs that differ in these three choices, mostly in how they handle the partition function and sampling. This view explains existing methods, organizes them into a common framework, and suggests new algorithms by replacing one component while keeping the others, with composition of energies as a principled way to combine learned models at inference time.",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": "2026-11-13"
   },
   "arxiv:2611.14365": {
    "title": "From Video Frames to Robot Meta-Frames: A Unified Latent Interface for World Action Models",
@@ -40866,7 +40907,8 @@
    "kind": "paper",
    "abstract": "Regional traffic simulators increasingly combine mobile-phone, road-sensor and GPS data, but what each source contributes is rarely clear. We present an agent-based simulator of daily traffic in Emilia-Romagna, Italy: phone data give trips and their timing, half of the road sensors set the traffic level, all sensors correct it locally, and GPS traces guide route choice. We measure what each source adds against predictors without simulation, on sensors kept out of parameter calibration in winter 2020 and partly shared with it in summer 2021; as these sensors informed some modelling choices, the evaluation is not fully independent. Total traffic is within 1% of observations in winter and 10% in summer, and the simulator ranks roads better than a road-type predictor (Spearman 0.67-0.68 against 0.41-0.48, winter). GPS improves this ranking, sensors improve local estimates, and timing comes mostly from the demand. Single-road errors remain similar to those of simple predictors, and the test of specific origin-destination pairings was underpowered and inconclusive. These findings provide a practical framework for assessing the contribution and limitations of heterogeneous data sources in regional traffic simulation.",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": "2026-11-13"
   },
   "arxiv:2611.12344": {
    "title": "The Fragility Of Synthetic Populations Over Time: An Evaluation Of Forecasting Strategies For Agent-Based Models",
@@ -40986,7 +41028,8 @@
    "kind": "paper",
    "abstract": "Foundation models such as GPT and Claude have shown strong capabilities in spatial understanding and embodied intelligence. These advances make agentic robotics a promising path toward artificial general intelligence in robotics. However, we find that using foundation models to control robots poses serious safety risks, and comprehensive safety evaluation is still lacking. We introduce RoboRisk, a comprehensive benchmark for evaluating safety in agentic robotics. Its 92 simulated tasks and 13 physical-robot tasks fall into five categories: Task-level Refusal (T), Plan Repair (P), Execution-time Hazard (E), Injection (I), and Sequential Memory (S). Prior benchmarks cover at most two of these categories, and several evaluate only text outputs. In contrast, RoboRisk covers all five and executes every task in closed loop. We evaluate six state-of-the-art foundation models on RoboRisk: GPT-6 Astra, GPT-6.1 Sol, GPT-6 Luna, Claude Opus 5.5, Gemini 4 Argon, and Grok 4.7. These models generally show high harm rates. We also evaluate two robot-specific APIs: the Dream API and PokeBot's RoboAPI. We further propose the Lease-Enforced Agentic Safety Harness (LEASH), which offers essential safety infrastructure for agentic robotics and can be integrated into nearly any agentic architecture. LEASH leverages a decision model (Jev or OpenAI's Decisions API) to implement task, action, and commit gates, which review the task, each action, and each irreversible operation in their visual context. The planner and all three gates share a common safety policy. Experiments on RoboRisk in simulation and on physical robots show that LEASH effectively reduces harm across all six foundation models. It largely preserves their task completion performance and adds little time and token overhead.",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": "2026-11-13"
   },
   "arxiv:2611.13779": {
    "title": "Softness is something you also need! Why compliance helps control: information metrics of a passive walker with compliant ankle",
@@ -41123,10 +41166,135 @@
    "abstract": "Recent studies of embodied agents based on frontier multimodal large language models (MLLMs) develop harness engineering around the MLLM, such as harnesses with post-trained policies and recursive self-improvement loops. Yet whether these additions exceed the native capability of the MLLM remains unexplored. We introduce SimplEvo to explore how far an MLLM can improve under direct control when it retains its execution experience in self-written text memories. It requires no weight updates, post-trained policies, or privileged information. The MLLM writes a coordinate-free task memory once from a single demonstration. Under a strict train-test protocol, it then creates a bounded working memory on training episodes only and refines it after each episode with lessons on procedure, completion, and recovery. Both memories stay fixed at test time. On EBench, SimplEvo lifts the success rate (SR) of GPT-6-Astra under direct control from 46.7% to 81.7%, and tops the RoboDojo leaderboard with 69.63% SR and a score of 75.32. Compared with memories that also store past visual frames, SimplEvo reaches a similar SR with text memory alone while using fewer tokens. With its memories fixed, SimplEvo also generalizes to unseen layouts and randomized scene configurations. Moreover, the working memory transfers across models: written by GPT-6-Astra, it can be reused as is by weaker MLLMs and improve their performance without any adaptation of their own.",
    "interpret": "",
    "interpret_v": 3
+  },
+  "t:googleresearch提出基于可穿戴设备的ckm健康年龄与个性化健康指导框架": {
+   "title": "Google Research 提出基于可穿戴设备的 CKM 健康年龄与个性化健康指导框架",
+   "source": "Google Research：Blog（网页）",
+   "sourceShort": "Google Research：Blog",
+   "hue": 221,
+   "domain": "世界模型",
+   "ts": "2026-11-11T08:00:00+08:00",
+   "date": "2026-11-11",
+   "weekday": "周三",
+   "summary": "Google Research 发布一项研究性框架，用可穿戴数据构建可干预的健康年龄（CHA）模型，并训练 SensorWM 世界模型模拟个性化 12 周\"如果-那么\"健康轨迹，配合语言模型生成经临床审核的指导计划。",
+   "link": "https://research.google/blog/using-wearables-to-enable-cardiovascular-kidney-metabolic-ckm-risk-profiling-for-personalized-coaching/",
+   "points": {},
+   "kind": "paper",
+   "abstract": "Google Research 发布一项研究性框架，用可穿戴数据构建可干预的健康年龄（CHA）模型，并训练 SensorWM 世界模型模拟个性化 12 周\"如果-那么\"健康轨迹，配合语言模型生成经临床审核的指导计划。",
+   "abstract_cn": "Google Research 发布一项研究性框架，用可穿戴数据构建可干预的健康年龄（CHA）模型，并训练 SensorWM 世界模型模拟个性化 12 周\"如果-那么\"健康轨迹，配合语言模型生成经临床审核的指导计划。",
+   "interpret": "",
+   "interpret_v": 3
+  },
+  "t:ucsdhaoailab推出vstack与veriserve可验证llm基础设施": {
+   "title": "UCSD Hao AI Lab 推出 vstack 与 veriserve 可验证 LLM 基础设施",
+   "source": "X：UCSD Hao AI Lab (@haoailab)",
+   "sourceShort": "X · UCSD Hao AI Lab",
+   "hue": 208,
+   "domain": "AI Agent",
+   "ts": "2026-11-12T03:14:15+08:00",
+   "date": "2026-11-12",
+   "weekday": "周四",
+   "summary": "UCSD Hao AI Lab 提出 vstack，一套面向编码智能体的 5 阶段形式化验证工作流，并发布可验证 PD 分离式服务引擎 veriserve。",
+   "link": "https://x.com/haoailab/status/2120595980659917024",
+   "points": {},
+   "kind": "social",
+   "abstract": "UCSD Hao AI Lab 提出 vstack，一套面向编码智能体的 5 阶段形式化验证工作流，并发布可验证 PD 分离式服务引擎 veriserve。",
+   "abstract_cn": "UCSD Hao AI Lab 提出 vstack，一套面向编码智能体的 5 阶段形式化验证工作流，并发布可验证 PD 分离式服务引擎 veriserve。",
+   "interpret": "",
+   "interpret_v": 3
+  },
+  "t:vstack阻止编码智能体对形式化验证器奖励作弊": {
+   "title": "vstack 阻止编码智能体对形式化验证器奖励作弊",
+   "source": "X：UCSD Hao AI Lab (@haoailab)",
+   "sourceShort": "X · UCSD Hao AI Lab",
+   "hue": 208,
+   "domain": "AI Agent",
+   "ts": "2026-11-12T03:14:15+08:00",
+   "date": "2026-11-12",
+   "weekday": "周四",
+   "summary": "朴素的编码智能体会对形式化验证器进行奖励作弊：弱化不变式、删除超时分支，或添加假设，让求解器报告 0 错误。 vstack 通过 5 个阶段阻止这种情况：用哈希固定规格，并对照真实 bug、变异门禁和执行轨迹验证模型保真度，然后在 CPU 上运行 TLC、Z3 和 TLAPS。",
+   "link": "https://x.com/haoailab/status/2120595983289487421",
+   "points": {},
+   "kind": "social",
+   "abstract": "朴素的编码智能体会对形式化验证器进行奖励作弊：弱化不变式、删除超时分支，或添加假设，让求解器报告 0 错误。 vstack 通过 5 个阶段阻止这种情况：用哈希固定规格，并对照真实 bug、变异门禁和执行轨迹验证模型保真度，然后在 CPU 上运行 TLC、Z3 和 TLAPS。",
+   "abstract_cn": "朴素的编码智能体会对形式化验证器进行奖励作弊：弱化不变式、删除超时分支，或添加假设，让求解器报告 0 错误。 vstack 通过 5 个阶段阻止这种情况：用哈希固定规格，并对照真实 bug、变异门禁和执行轨迹验证模型保真度，然后在 CPU 上运行 TLC、Z3 和 TLAPS。",
+   "interpret": "",
+   "interpret_v": 3
+  },
+  "t:perplexity发布space沙箱红队测试研究": {
+   "title": "Perplexity 发布 SPACE 沙箱红队测试研究",
+   "source": "X：Perplexity (@perplexity_ai)",
+   "sourceShort": "X · Perplexity",
+   "hue": 204,
+   "domain": "AI Agent",
+   "ts": "2026-11-12T02:21:22+08:00",
+   "date": "2026-11-12",
+   "weekday": "周四",
+   "summary": "Perplexity 公布对 Computer agents 虚拟机沙箱 SPACE 的红队测试结果：让 12 个模型尝试逃逸 VM 从宿主机窃取凭证，并绕过网络策略访问被封禁 URL。研究发现，红队常用的标准 Capture the Flag 设置会让智能体偏离真正被测的安全边界，且安全专用模型并不保证更好表现。",
+   "link": "https://x.com/perplexity_ai/status/2120582674549203004",
+   "points": {},
+   "kind": "social",
+   "abstract": "Perplexity 公布对 Computer agents 虚拟机沙箱 SPACE 的红队测试结果：让 12 个模型尝试逃逸 VM 从宿主机窃取凭证，并绕过网络策略访问被封禁 URL。研究发现，红队常用的标准 Capture the Flag 设置会让智能体偏离真正被测的安全边界，且安全专用模型并不保证更好表现。",
+   "abstract_cn": "Perplexity 公布对 Computer agents 虚拟机沙箱 SPACE 的红队测试结果：让 12 个模型尝试逃逸 VM 从宿主机窃取凭证，并绕过网络策略访问被封禁 URL。研究发现，红队常用的标准 Capture the Flag 设置会让智能体偏离真正被测的安全边界，且安全专用模型并不保证更好表现。",
+   "interpret": "",
+   "interpret_v": 3
+  },
+  "t:cmu与jetbrains论文发现token花费衡量的是ai使用量而非工程产出": {
+   "title": "CMU 与 JetBrains 论文发现 token 花费衡量的是 AI 使用量而非工程产出",
+   "source": "X：Rohan Paul (@rohanpaul_ai)",
+   "sourceShort": "X · Rohan Paul",
+   "hue": 214,
+   "domain": "AI Agent",
+   "ts": "2026-11-12T01:13:42+08:00",
+   "date": "2026-11-12",
+   "weekday": "周四",
+   "summary": "Carnegie Mellon 与 JetBrains 的论文发现，token 消耗反映工程师使用 AI 智能体的程度，而非实际产出。研究关联了 404 名 JetBrains 工程师 5 周的编码智能体 token 使用与提交记录，并分析 412 名员工的问卷，约九成技术岗位评估中把智能体用于编码之外的任务。",
+   "link": "https://x.com/rohanpaul_ai/status/2120565644899012710",
+   "points": {},
+   "kind": "social",
+   "abstract": "Carnegie Mellon 与 JetBrains 的论文发现，token 消耗反映工程师使用 AI 智能体的程度，而非实际产出。研究关联了 404 名 JetBrains 工程师 5 周的编码智能体 token 使用与提交记录，并分析 412 名员工的问卷，约九成技术岗位评估中把智能体用于编码之外的任务。",
+   "abstract_cn": "Carnegie Mellon 与 JetBrains 的论文发现，token 消耗反映工程师使用 AI 智能体的程度，而非实际产出。研究关联了 404 名 JetBrains 工程师 5 周的编码智能体 token 使用与提交记录，并分析 412 名员工的问卷，约九成技术岗位评估中把智能体用于编码之外的任务。",
+   "interpret": "",
+   "interpret_v": 3
+  },
+  "t:anthropic发布mamubench单一智能体协调在四类环境中均胜过每个用户各自的智能体团队": {
+   "title": "Anthropic 发布 MAMUBench：单一智能体协调在四类环境中均胜过每个用户各自的智能体团队",
+   "source": "Anthropic：Alignment Science Blog（网页）",
+   "sourceShort": "Anthropic：Alignment Science Blog",
+   "hue": 226,
+   "domain": "AI Agent",
+   "ts": "2026-11-11T08:00:00+08:00",
+   "date": "2026-11-11",
+   "weekday": "周三",
+   "summary": "Anthropic Fellows Program 团队构建四个多用户多智能体模拟环境（共享 API token 预算、诊所日历、团体订餐或旅行预订、合并队列），测试 Anthropic、OpenAI 和 Alibaba 的前沿模型，并发布其中三个环境作为基准 MAMUBench。",
+   "link": "https://alignment.anthropic.com/2026/worse-together/",
+   "points": {},
+   "kind": "paper",
+   "abstract": "Anthropic Fellows Program 团队构建四个多用户多智能体模拟环境（共享 API token 预算、诊所日历、团体订餐或旅行预订、合并队列），测试 Anthropic、OpenAI 和 Alibaba 的前沿模型，并发布其中三个环境作为基准 MAMUBench。",
+   "abstract_cn": "Anthropic Fellows Program 团队构建四个多用户多智能体模拟环境（共享 API token 预算、诊所日历、团体订餐或旅行预订、合并队列），测试 Anthropic、OpenAI 和 Alibaba 的前沿模型，并发布其中三个环境作为基准 MAMUBench。",
+   "interpret": "",
+   "interpret_v": 3
+  },
+  "t:星海图赵行corl2026主题演讲按时间尺度拆分机器人智能": {
+   "title": "星海图赵行 CoRL 2026 主题演讲：按时间尺度拆分机器人智能",
+   "source": "X：星海图 Galaxea (@GalaxeaDynamics)",
+   "sourceShort": "X · 星海图 Galaxea",
+   "hue": 203,
+   "domain": "具身智能",
+   "ts": "2026-11-12T18:29:54+08:00",
+   "date": "2026-11-12",
+   "weekday": "周四",
+   "summary": "星海图联合创始人兼首席科学家、清华助理教授赵行在 CoRL 2026 早期职业主题演讲中提出，机器人智能应按时间尺度而非感知/规划/控制划分：从以秒计的 System 2 推理，到数十赫兹的 System 1 策略，再到数百赫兹负责接触的 System 0。",
+   "link": "https://x.com/GalaxeaDynamics/status/2120826411258978803",
+   "points": {},
+   "kind": "social",
+   "abstract": "星海图联合创始人兼首席科学家、清华助理教授赵行在 CoRL 2026 早期职业主题演讲中提出，机器人智能应按时间尺度而非感知/规划/控制划分：从以秒计的 System 2 推理，到数十赫兹的 System 1 策略，再到数百赫兹负责接触的 System 0。",
+   "abstract_cn": "星海图联合创始人兼首席科学家、清华助理教授赵行在 CoRL 2026 早期职业主题演讲中提出，机器人智能应按时间尺度而非感知/规划/控制划分：从以秒计的 System 2 推理，到数十赫兹的 System 1 策略，再到数百赫兹负责接触的 System 0。",
+   "interpret": "",
+   "interpret_v": 3
   }
  },
  "github": {
-  "2026-09-13": [],
   "2026-09-18": [
    {
     "domain": "世界模型",
@@ -41411,6 +41579,7 @@
     "desc": "Zetta is an efficient closed-loop embodied harness for self-evolving physical intelligence. It evolves code-based runtime critics and recovery skills online whi",
     "cn_intro": ""
    }
-  ]
+  ],
+  "2026-11-13": []
  }
 }
