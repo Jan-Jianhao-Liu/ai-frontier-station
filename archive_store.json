@@ -1,6 +1,6 @@
 {
  "meta": {
-  "last_run": "2026-11-16T00:01:08.400218+08:00",
+  "last_run": "2026-11-17T00:01:04.879481+08:00",
   "first_run": "2026-08-20T13:57:57.662543+08:00"
  },
  "papers": {
@@ -40943,7 +40943,8 @@
    "kind": "paper",
    "abstract": "Historical social simulation faces a fundamental reproducibility challenge: the stochastic nature of large language models (LLMs) introduces a digital butterfly effect that prevents exact replication across multi-turn runs. Furthermore, the inability to control low-level server parameters in commercial LLM hosting environments severely limits reproducibility. To overcome this opacity, we present a deterministic multi-agent framework coupling LLMs to an Agent-Based Modelling (ABM) pipeline grounded in Theory of Mind (ToM) and Cognitive Archaeology, and validate exact artifact identity within local, pinned execution environments using SHA-256 hashing. Run locally at temperature zero with clean per-call model reloads, the system injects differentiated cognitive states per turn through dissonance-driven behavioural modes and gated internal voices. Evaluating seven model configurations spanning 4B to 31B parameters against an ablated baseline reveals clear operational boundaries. Small models ($\\leq$8B) suffer from context capacity overload, producing repetitive, specular dialogue loops. However, at $\\geq$12B parameters, the ABM scaffolding breaks the monotonous response patterns seen in ablation. Crucially, these scaffolded models exhibit spontaneous diegetic expansion: they coherently expand scenario lore through tactically motivated, anachronism-free details rather than escalating into aggression. By resisting the structural pull toward premature scene closure, scaffolded sessions sustain an open terminal Narrative Vector ($V_N = \\mathrm{Open}$ in 12/21 overall; 9/9 in official $\\geq$12B configurations) whereas unscaffolded ablation never does (0/21). This framework provides a transparent, auditable benchmark architecture for virtual archaeology, with the full pipeline released as open-source software to enable independent replication.",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": "2026-11-17"
   },
   "arxiv:2611.11029": {
    "title": "Evolutionary games on networks with negative edge-based environmental feedback",
@@ -41447,7 +41448,8 @@
    "kind": "paper",
    "abstract": "We investigate whether and how LLMs encode goals: internal neural representations that precede and guide action, and that are flexible enough to be realized through many different execution paths. We construct a coding setting with multiple sub-tasks that allows us to evaluate goal-seeking behavior and the selection of sub-goals. In this setting, we localize an encoding of the next sub-goal in the outputs of a sparse set of attention heads. The same heads can be used to decode the LM's future actions in natural language (e.g., \"I'm checking if a word is a palindrome\"). We verify that this encoding is causal for next action and is plastic: transplanting it into a different environment, e.g., another programming language, triggers the same operation realized with a different sequence of tokens. The LM also sustains the encoding throughout the action's execution, which is puzzling because a transformer LM without recurrence cannot carry a state forward for more tokens than it has layers left. We propose that it does not need to. Under a non-recurrent goal-seeking (NRGS) account, the LM frequently re-reads the goal from the task specification, compares it with the progress visible in the growing context, and pursues what remains. We test the predictions of this account with targeted causal interventions.",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": "2026-11-17"
   },
   "arxiv:2611.17287": {
    "title": "Negative-Only Policy Optimization for One-Sided Verifiable Rewards",
@@ -41619,7 +41621,8 @@
    "kind": "paper",
    "abstract": "Typed System-1 (S1) decision models are increasingly deployed in LLM agents for routing, moderation, and authorization to cut inference cost, yet untrusted context can still manipulate typed outputs and alter execution branches. Unlike autoregressive System-2 (S2) models, S1 interfaces score dynamic rules and options without token-by-token decoding, mismatching attacks targeting text continuation or explicit override commands. We propose S1-Evo, a self-evolving framework tailored to S1's contract-based option competition and margin feedback. S1-Evo perturbs untrusted fields via contract-aware evidence channels to induce \\emph{evidence competition} with original task evidence while preserving fact invariance. Offline on seed tasks, it optimizes candidates via feedback search guided by directional margins and re-verification, distilling verified flips into experience cards. At test time, S1-Evo retrieves relevant cards to construct perturbations for unseen tasks. Across four benchmarks and three S1 models, S1-Evo reaches 71.99\\% mean ASR and 57.47\\% high-confidence ASR on \\texttt{jev-1.14}, and causes up to 24.00\\% E2E agent violations.",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": "2026-11-17"
   },
   "arxiv:2611.16867": {
    "title": "ControlHarbor: A Benchmark for Control Design by Coding Agents",
@@ -41757,7 +41760,8 @@
    "kind": "paper",
    "abstract": "Actions in expert demonstrations exhibit temporal structure. An ordered-versus-shuffled analysis across five environments confirms this dependence. We ask whether action proposals that better reflect expert continuity can improve visual world-model planning. Rather than imposing generic smoothness, we learn continuations from the temporal structure of demonstrated actions. Our locality-gated deep-kernel Gaussian-process prior, LG-DKGP, combines recent and longer-range executed action history, predicts a neural continuation, and learns a temporal Gaussian-process (GP) residual. A training-derived exploration scale initializes search around the corrected mean; a frozen world model evaluates progress toward the goal. Training first fits the neural mean, then jointly optimizes the prior with the GP residual using expert future actions. The resulting planner achieves 87.07\\% macro success across five simulated tasks spanning native and fragment-level goal attainment, compared with 71.03\\% for INTACT, 61.66\\% for PRISM, and 58.66\\% for LeWM. Component interventions and expert-relative action-structure comparisons support demonstration-informed continuations and reveal task-dependent effects of visual conditioning, history length, and planning horizon.",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": "2026-11-17"
   },
   "arxiv:2611.16579": {
    "title": "ActWorld-JEPA: Action-Conditioned JEPA World Models Meet Latent Planning for End-to-End Autonomous Driving",
@@ -41947,7 +41951,8 @@
    "kind": "paper",
    "abstract": "Long-term spacecraft autonomy requires embodied agents to use operational history under communication delays, time-critical operations, environmental uncertainty, complex physical interactions, power and computational constraints, and safety and reliability requirements. We introduce AstroMemBench and a Scenario-Challenge-Capability design method that maps these requirements to executable memory tests. The benchmark covers 16 memory subchallenges through 140 templates and 2240 instances across nine tasks in planetary surface operations, on-orbit servicing, and deep-space exploration. A deterministic environment scores actions for task completion, state changes, safety, and resource use. Ablations under nine conditions show that the benchmark is sensitive to how accurately agents recover and use historical information and to differences in memory-system design. Main experiments compare six configurations. Mem0, Chain-of-Memory, LightMem, and retrieval-augmented generation (RAG) improve same-session mean scores over native Pi Agent, with no clear advantage of the three memory systems over RAG. After a session restart, Mem0 outperforms RAG by 12.25 points. Benefits favor instruction retention and result reuse over ongoing state tracking and energy reservation. AstroMemBench supports the design, development, and selection of memory systems for embodied spacecraft agents. AstroMemBench 1.0 and its evaluation code are publicly available: https://github.com/flyingView/AstroMemBench-v1.",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": "2026-11-17"
   },
   "arxiv:2611.16487": {
    "title": "HeMeR: Heterogeneous Memory Reconciliation for Embodied Agents via Structured KV Reuse",
@@ -42067,7 +42072,8 @@
    "abstract": "据 THE DECODER 报道，澳大利亚储备银行研究显示，自 2022 年底 ChatGPT 推出以来各职业招聘量均下降，AI 影响程度最高的编程、文职和客服岗位降幅最大，15 至 24 岁年轻劳动者就业率更低、失业率更高。",
    "abstract_cn": "据 THE DECODER 报道，澳大利亚储备银行研究显示，自 2022 年底 ChatGPT 推出以来各职业招聘量均下降，AI 影响程度最高的编程、文职和客服岗位降幅最大，15 至 24 岁年轻劳动者就业率更低、失业率更高。",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": null
   },
   "t:卡内基梅隆大学展示oats给日常物品装上会撒娇的ai虚拟宠物": {
    "title": "卡内基梅隆大学展示 OATs：给日常物品装上会撒娇的 AI 虚拟宠物",
@@ -42085,7 +42091,8 @@
    "abstract": "卡内基梅隆大学博士生金大华在 UIST 2026 展示 OATs（物体智能体双生体）系统，用电子墨水屏为日常物品赋予能表达情绪的虚拟形象，主模块成本约 20 美元。系统通过内外传感器监测湿度、温度、光照和使用状态，角色形象由谷歌 Gemini 旗下 Nano Banana 生成，续航约 3 至 4 天。目前仍是概念验证，金大华尚未决定是否商业化。",
    "abstract_cn": "卡内基梅隆大学博士生金大华在 UIST 2026 展示 OATs（物体智能体双生体）系统，用电子墨水屏为日常物品赋予能表达情绪的虚拟形象，主模块成本约 20 美元。系统通过内外传感器监测湿度、温度、光照和使用状态，角色形象由谷歌 Gemini 旗下 Nano Banana 生成，续航约 3 至 4 天。目前仍是概念验证，金大华尚未决定是否商业化。",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": null
   },
   "t:northwestern与google论文提出harness2无需答案键自动改进智能体harness": {
    "title": "Northwestern 与 Google 论文提出 Harness2：无需答案键自动改进智能体 harness",
@@ -42103,7 +42110,8 @@
    "abstract": "Northwestern 与 Google 的论文 Harness² 提出 plug-and-play 的递归 harnessing 框架，让智能体 harness（提示词、工具、技能与记忆的封装）在新任务上无答案键自我改进：编辑模型提出修改，重跑任务只保留有效的修改，经验存入库指导后续任务。",
    "abstract_cn": "Northwestern 与 Google 的论文 Harness² 提出 plug-and-play 的递归 harnessing 框架，让智能体 harness（提示词、工具、技能与记忆的封装）在新任务上无答案键自我改进：编辑模型提出修改，重跑任务只保留有效的修改，经验存入库指导后续任务。",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": null
   },
   "t:浙大研究弱模型也能当教练提升智能体表现": {
    "title": "浙大研究：弱模型也能当教练提升智能体表现",
@@ -42121,7 +42129,8 @@
    "abstract": "浙江大学论文提出，本身不擅长任务的决策模型 JEV 单独执行 ALFWorld 任务成功率仅 42.9%，但作为步骤评分器可将 Qwen2.5-1.5B 策略的成功率从 72.8% 提升至 82.9%。",
    "abstract_cn": "浙江大学论文提出，本身不擅长任务的决策模型 JEV 单独执行 ALFWorld 任务成功率仅 42.9%，但作为步骤评分器可将 Qwen2.5-1.5B 策略的成功率从 72.8% 提升至 82.9%。",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": null
   },
   "t:cmu论文singularitybenchopus55claudecode得分125领先11个智能体": {
    "title": "CMU 论文 Singularity-Bench：Opus 5.5 + Claude Code 得分 1.25 领先 11 个智能体",
@@ -42139,7 +42148,8 @@
    "abstract": "CMU 等机构 11 月 12 日发布 arXiv 论文 Singularity-Bench，让智能体完成预训练、推理引擎、集群编排等 6 项端到端任务，并在相同 GPU 上与 SGLang、Claude Code 等生产系统对比打分。",
    "abstract_cn": "CMU 等机构 11 月 12 日发布 arXiv 论文 Singularity-Bench，让智能体完成预训练、推理引擎、集群编排等 6 项端到端任务，并在相同 GPU 上与 SGLang、Claude Code 等生产系统对比打分。",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": null
   },
   "t:vstack对vllm做智能体形式化验证发现17个bug": {
    "title": "vstack 对 vLLM 做智能体形式化验证，发现 17 个 bug",
@@ -42157,7 +42167,8 @@
    "abstract": "UCSD Hao AI Lab 用本周推出的 vstack 对 vLLM 做智能体形式化验证，已发现 17 个（且仍在增加）bug，涵盖静默错误输出到服务器锁死等问题。团队公开了其中 5 个 bug 及对应修复 PR，并放出 vstack 插件与 bug 追踪表链接。",
    "abstract_cn": "UCSD Hao AI Lab 用本周推出的 vstack 对 vLLM 做智能体形式化验证，已发现 17 个（且仍在增加）bug，涵盖静默错误输出到服务器锁死等问题。团队公开了其中 5 个 bug 及对应修复 PR，并放出 vstack 插件与 bug 追踪表链接。",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": null
   },
   "t:radixarkmiles在nvidiaveracpu上运行智能体rl训练沙箱更快训练更快": {
    "title": "RadixArk Miles 在 NVIDIA Vera CPU 上运行智能体 RL 训练：沙箱更快、训练更快",
@@ -42174,6 +42185,61 @@
    "kind": "paper",
    "abstract": "RadixArk 与 NVIDIA 合作，将开源 RL 后训练框架 Miles 的全部沙箱跑在 NVIDIA Vera CPU 上，并称这是首个端到端智能体 RL 训练沙箱运行于 Vera CPU 服务器的公开结果。",
    "abstract_cn": "RadixArk 与 NVIDIA 合作，将开源 RL 后训练框架 Miles 的全部沙箱跑在 NVIDIA Vera CPU 上，并称这是首个端到端智能体 RL 训练沙箱运行于 Vera CPU 服务器的公开结果。",
+   "interpret": "",
+   "interpret_v": 3,
+   "featured_date": null
+  },
+  "t:面壁智能提出长上下文训练新缩放定律": {
+   "title": "面壁智能提出长上下文训练新缩放定律",
+   "source": "X：面壁智能 OpenBMB (@OpenBMB)",
+   "sourceShort": "X · 面壁智能 OpenBMB",
+   "hue": 205,
+   "domain": "AI Agent",
+   "ts": "2026-11-16T21:30:06+08:00",
+   "date": "2026-11-16",
+   "weekday": "周一",
+   "summary": "面壁智能（OpenBMB）发布长上下文性能的新经验缩放定律，对 log(LongPPL) 建模为 N、Ds、Dl 的加性幂律，在留出规模上外推 R²=0.97。配套的 Constant-Last4 协议可在单条可扩展训练轨迹上稳定监控，收益可从 32K 迁移到 128K，并在 SFT 后及长上下文与智能体任务中保持。",
+   "link": "https://x.com/OpenBMB/status/2122321310974198025",
+   "points": {},
+   "kind": "social",
+   "abstract": "面壁智能（OpenBMB）发布长上下文性能的新经验缩放定律，对 log(LongPPL) 建模为 N、Ds、Dl 的加性幂律，在留出规模上外推 R²=0.97。配套的 Constant-Last4 协议可在单条可扩展训练轨迹上稳定监控，收益可从 32K 迁移到 128K，并在 SFT 后及长上下文与智能体任务中保持。",
+   "abstract_cn": "面壁智能（OpenBMB）发布长上下文性能的新经验缩放定律，对 log(LongPPL) 建模为 N、Ds、Dl 的加性幂律，在留出规模上外推 R²=0.97。配套的 Constant-Last4 协议可在单条可扩展训练轨迹上稳定监控，收益可从 32K 迁移到 128K，并在 SFT 后及长上下文与智能体任务中保持。",
+   "interpret": "",
+   "interpret_v": 3
+  },
+  "t:sakanaai发布基于日本金融资格考试的基准jfinbench": {
+   "title": "Sakana AI 发布基于日本金融资格考试的基准 JFinBench",
+   "source": "Sakana AI：Blog（网页）",
+   "sourceShort": "Sakana AI：Blog",
+   "hue": 220,
+   "domain": "AI Agent",
+   "ts": "2026-11-16T23:00:00+08:00",
+   "date": "2026-11-16",
+   "weekday": "周一",
+   "summary": "Sakana AI 基于公認会計士、税理士等日本6项金融资格考试2026年版共321题构建日语金融基准 JFinBench，并公开数据集、代码与排行榜。用 mostly 编码智能体加人工全量校验的 human-in-the-loop pipeline 构建，后续可低成本更新。",
+   "link": "https://sakana.ai/jfinbench/",
+   "points": {},
+   "kind": "paper",
+   "abstract": "Sakana AI 基于公認会計士、税理士等日本6项金融资格考试2026年版共321题构建日语金融基准 JFinBench，并公开数据集、代码与排行榜。用 mostly 编码智能体加人工全量校验的 human-in-the-loop pipeline 构建，后续可低成本更新。",
+   "abstract_cn": "Sakana AI 基于公認会計士、税理士等日本6项金融资格考试2026年版共321题构建日语金融基准 JFinBench，并公开数据集、代码与排行榜。用 mostly 编码智能体加人工全量校验的 human-in-the-loop pipeline 构建，后续可低成本更新。",
+   "interpret": "",
+   "interpret_v": 3
+  },
+  "t:googledeepmind与哥伦比亚大学提出bttf框架用sql数据库让智能体调试芯片仿真": {
+   "title": "Google DeepMind 与哥伦比亚大学提出 BTTF 框架，用 SQL 数据库让智能体调试芯片仿真",
+   "source": "X：Rohan Paul (@rohanpaul_ai)",
+   "sourceShort": "X · Rohan Paul",
+   "hue": 214,
+   "domain": "虚拟仿真社会",
+   "ts": "2026-11-16T07:46:30+08:00",
+   "date": "2026-11-16",
+   "weekday": "周一",
+   "summary": "Google DeepMind 与哥伦比亚大学的论文提出 Back-to-the-Future（BTTF）框架，将超过 10GB 的芯片仿真波形转储转换为紧凑 SQLite 数据库，多智能体把自然语言问题转成 SQL、检查设计规则并审计答案。",
+   "link": "https://x.com/rohanpaul_ai/status/2122114049353908599",
+   "points": {},
+   "kind": "social",
+   "abstract": "Google DeepMind 与哥伦比亚大学的论文提出 Back-to-the-Future（BTTF）框架，将超过 10GB 的芯片仿真波形转储转换为紧凑 SQLite 数据库，多智能体把自然语言问题转成 SQL、检查设计规则并审计答案。",
+   "abstract_cn": "Google DeepMind 与哥伦比亚大学的论文提出 Back-to-the-Future（BTTF）框架，将超过 10GB 的芯片仿真波形转储转换为紧凑 SQLite 数据库，多智能体把自然语言问题转成 SQL、检查设计规则并审计答案。",
    "interpret": "",
    "interpret_v": 3
   }
@@ -42466,6 +42532,7 @@
   ],
   "2026-11-13": [],
   "2026-11-14": [],
-  "2026-11-16": []
+  "2026-11-16": [],
+  "2026-11-17": []
  }
 }
