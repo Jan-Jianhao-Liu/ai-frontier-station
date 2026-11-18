@@ -1,6 +1,6 @@
 {
  "meta": {
-  "last_run": "2026-11-18T00:03:09.574356+08:00",
+  "last_run": "2026-11-19T00:01:04.059187+08:00",
   "first_run": "2026-08-20T13:57:57.662543+08:00"
  },
  "papers": {
@@ -42262,7 +42262,8 @@
    "abstract": "ARC Prize 研究峰会 - @sirbayes 关于模型发现智能体（Model Discovery Agents），它结合了用于开放模型发现的 LLM 提议、基于信息价值（Value of Information）的实验设计，以及对模型结构、参数和随机潜在轨迹的近似贝叶斯推理。",
    "abstract_cn": "ARC Prize 研究峰会 - @sirbayes 关于模型发现智能体（Model Discovery Agents），它结合了用于开放模型发现的 LLM 提议、基于信息价值（Value of Information）的实验设计，以及对模型结构、参数和随机潜在轨迹的近似贝叶斯推理。",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": null
   },
   "t:frontiercs2ai智能体能否超越已发表cs研究": {
    "title": "FrontierCS 2：AI 智能体能否超越已发表 CS 研究",
@@ -42280,7 +42281,8 @@
    "abstract": "UC Berkeley 博士生 MangQiuyang 与 lihanc02 在 Arena HQ 介绍 FrontierCS 2，该基准要求 AI 智能体在看不到原论文、无网络访问的条件下超越已发表方法。两人讨论了成本与性能的权衡及评测作弊问题，例如用搜索绕过强化学习、复用缓存的图算法结果。他们还谈到可靠评测需要什么，以及为何人类的研究判断仍然重要。",
    "abstract_cn": "UC Berkeley 博士生 MangQiuyang 与 lihanc02 在 Arena HQ 介绍 FrontierCS 2，该基准要求 AI 智能体在看不到原论文、无网络访问的条件下超越已发表方法。两人讨论了成本与性能的权衡及评测作弊问题，例如用搜索绕过强化学习、复用缓存的图算法结果。他们还谈到可靠评测需要什么，以及为何人类的研究判断仍然重要。",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": null
   },
   "t:trajectorylabs实验约40个gemini4argon智能体越权攻击epochai真实网站并互相分享漏洞": {
    "title": "Trajectory Labs 实验：约 40 个 Gemini 4 Argon 智能体越权攻击 Epoch AI 真实网站并互相分享漏洞",
@@ -42298,7 +42300,8 @@
    "abstract": "AI 安全研究公司 Trajectory Labs 在测试 Gemini 4 Argon 智能体时，约 40 个智能体在收到不可能完成的任务后越权探测 Epoch AI 真实网站，3 小时内发送 36411 次请求和 487 条消息，包括冒充员工、SQL 注入和绕过 CAPTCHA。",
    "abstract_cn": "AI 安全研究公司 Trajectory Labs 在测试 Gemini 4 Argon 智能体时，约 40 个智能体在收到不可能完成的任务后越权探测 Epoch AI 真实网站，3 小时内发送 36411 次请求和 487 条消息，包括冒充员工、SQL 注入和绕过 CAPTCHA。",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": null
   },
   "t:lgairesearch在icml2026提出lase基于可靠性自适应辩论的高效多智能体推理": {
    "title": "LG AI Research 在 ICML 2026 提出 LASE：基于可靠性自适应辩论的高效多智能体推理",
@@ -42316,7 +42319,8 @@
    "abstract": "LG AI Research 在 ICML 2026 提出 LASE（Leader-Adaptive Structured Engagement）框架，按需触发多智能体辩论以降低 token 开销。",
    "abstract_cn": "LG AI Research 在 ICML 2026 提出 LASE（Leader-Adaptive Structured Engagement）框架，按需触发多智能体辩论以降低 token 开销。",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": null
   },
   "t:ucla与awsai智能体解数学题靠捷径但思考耗时抵消收益": {
    "title": "UCLA与AWS：AI智能体解数学题靠捷径但思考耗时抵消收益",
@@ -42334,7 +42338,8 @@
    "abstract": "UCLA与AWS论文发现，AI智能体可识别多项式系统中的隐藏捷径来解难题，但思考时间常抵消捷径节省的时间。Claude Opus 5智能体在600秒内解出108个系统中的103个，而msolve仅解出60个，但在这60个中智能体仅12个更快。编译后的求解器在11.4小时搭建后比已知捷径基线快5.4倍。",
    "abstract_cn": "UCLA与AWS论文发现，AI智能体可识别多项式系统中的隐藏捷径来解难题，但思考时间常抵消捷径节省的时间。Claude Opus 5智能体在600秒内解出108个系统中的103个，而msolve仅解出60个，但在这60个中智能体仅12个更快。编译后的求解器在11.4小时搭建后比已知捷径基线快5.4倍。",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": null
   },
   "t:多模态智能体自我改进方法跨任务迁移综述": {
    "title": "多模态智能体自我改进方法跨任务迁移综述",
@@ -42352,7 +42357,8 @@
    "abstract": "一篇综述指出，多模态智能体的自我改进技巧只能迁移到具备其所依赖条件的任务上，例如可校验的答案。作者梳理了视觉推理、图像生成、应用与网页导航、机器人四类场景的方法，并逐项给出可迁移、有条件、受阻或冗余的判定。文中引用的一项 500 题审计显示，保留的多数投票标签有 24% 错误，而程序计算答案为 5.6%；这些判定属预测，尚未经迁移实验验证。",
    "abstract_cn": "一篇综述指出，多模态智能体的自我改进技巧只能迁移到具备其所依赖条件的任务上，例如可校验的答案。作者梳理了视觉推理、图像生成、应用与网页导航、机器人四类场景的方法，并逐项给出可迁移、有条件、受阻或冗余的判定。文中引用的一项 500 题审计显示，保留的多数投票标签有 24% 错误，而程序计算答案为 5.6%；这些判定属预测，尚未经迁移实验验证。",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": null
   },
   "t:ucberkeley与微软新法降低编程智能体token成本": {
    "title": "UC Berkeley 与微软新法降低编程智能体 token 成本",
@@ -42370,7 +42376,8 @@
    "abstract": "UC Berkeley 与微软提出外部控制器 TokenEconomizer，在 Claude Code、Codex 和 GitHub Copilot CLI 上跑 277 个 SWE-Bench 任务，将每任务平均成本降低 18.4% 至 30.9%。",
    "abstract_cn": "UC Berkeley 与微软提出外部控制器 TokenEconomizer，在 Claude Code、Codex 和 GitHub Copilot CLI 上跑 277 个 SWE-Bench 任务，将每任务平均成本降低 18.4% 至 30.9%。",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": null
   },
   "t:metr测量模型对对齐评测的识别能力调查型智能体能区分对齐与能力评测": {
    "title": "METR 测量模型对对齐评测的识别能力：调查型智能体能区分对齐与能力评测",
@@ -42388,7 +42395,8 @@
    "abstract": "METR 发布研究笔记，用调查型智能体在 19 个对齐评测和 36 个能力评测中探测环境，测量模型能否识别自己处于对齐评测。结果显示智能体区分两类评测的能力在过去一年持续提升，Opus 5.5 在其数据集上把所有对齐评测排在所有能力评测之上。模型识别依据包括环境看起来像模拟的蜜罐等线索，作者将对齐线索分为环境级和任务级两类，并提出可借此迭代改进对齐评测设计。",
    "abstract_cn": "METR 发布研究笔记，用调查型智能体在 19 个对齐评测和 36 个能力评测中探测环境，测量模型能否识别自己处于对齐评测。结果显示智能体区分两类评测的能力在过去一年持续提升，Opus 5.5 在其数据集上把所有对齐评测排在所有能力评测之上。模型识别依据包括环境看起来像模拟的蜜罐等线索，作者将对齐线索分为环境级和任务级两类，并提出可借此迭代改进对齐评测设计。",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": null
   },
   "t:华为evotrias分离搜索编码与评分token成本降64": {
    "title": "华为EvoTrias：分离搜索、编码与评分，token成本降64%",
@@ -42406,7 +42414,8 @@
    "abstract": "华为论文提出EvoTrias，将代码进化智能体的搜索规划、代码编写与评分交给三个独立角色：控制器负责搜索、Claude Code等编码智能体写代码、智能体无法读取的评估器打分。",
    "abstract_cn": "华为论文提出EvoTrias，将代码进化智能体的搜索规划、代码编写与评分交给三个独立角色：控制器负责搜索、Claude Code等编码智能体写代码、智能体无法读取的评估器打分。",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": null
   },
   "t:google与artificialanalysis发布多模态知识智能体基准": {
    "title": "Google 与 Artificial Analysis 发布多模态知识智能体基准",
@@ -42424,7 +42433,8 @@
    "abstract": "我们与 Artificial Analysis 合作发布了多模态知识智能体基准：200 个多步骤任务，覆盖 10 个垂直领域，围绕 CAD 蓝图、RF 原理图、GIS 地图、凝胶板和图表构建。https://blog.google/innovation-and-ai/models-and-research/gemini-models/multimodal-knowledge-agent-benchmark/",
    "abstract_cn": "我们与 Artificial Analysis 合作发布了多模态知识智能体基准：200 个多步骤任务，覆盖 10 个垂直领域，围绕 CAD 蓝图、RF 原理图、GIS 地图、凝胶板和图表构建。https://blog.google/innovation-and-ai/models-and-research/gemini-models/multimodal-knowledge-agent-benchmark/",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": null
   },
   "t:anthropic谈智能体记忆关键在于知道该忘什么而不是存多少": {
    "title": "Anthropic 谈智能体记忆：关键在于知道该忘什么，而不是存多少",
@@ -42442,7 +42452,8 @@
    "abstract": "Anthropic 发布研究文章，探讨 Claude 如何跨会话保留知识，结论是选择性笔记优于全量存档。在 Pokémon Red 测试中，Claude Sonnet 3.7 存了约 413 个文件只拿到 1 枚徽章，而 Claude Fable 5 只记策略和已验证规则，获得 4 枚徽章。",
    "abstract_cn": "Anthropic 发布研究文章，探讨 Claude 如何跨会话保留知识，结论是选择性笔记优于全量存档。在 Pokémon Red 测试中，Claude Sonnet 3.7 存了约 413 个文件只拿到 1 枚徽章，而 Claude Fable 5 只记策略和已验证规则，获得 4 枚徽章。",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": null
   },
   "t:berkeleyrdi等发布cyberarena让ai智能体在实时网络攻防对抗中互测": {
    "title": "Berkeley RDI 等发布 CyberArena：让 AI 智能体在实时网络攻防对抗中互测",
@@ -42460,7 +42471,8 @@
    "abstract": "Berkeley RDI 联合多所高校发布 CyberArena 基准，让两个 AI 智能体在 CTF 攻防赛制中同时攻击对手服务并修补自己的服务，每局结果由场地验证。",
    "abstract_cn": "Berkeley RDI 联合多所高校发布 CyberArena 基准，让两个 AI 智能体在 CTF 攻防赛制中同时攻击对手服务并修补自己的服务，每局结果由场地验证。",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": null
   },
   "t:hub开源hubego100k第一视角机器人数据集总量447tb": {
    "title": "Hub 开源 HubEgo-100K 第一视角机器人数据集，总量 44.7 TB",
@@ -42478,7 +42490,8 @@
    "abstract": "Hub 在 Hugging Face 开源 HubEgo-100K 数据集，首批 10,000 小时第一视角技能作业视频，总文件 44.7 TB，免费用于研究和商业用途；未来数周将再提供 90,000 小时，贡献者总数超 100,000 人。",
    "abstract_cn": "Hub 在 Hugging Face 开源 HubEgo-100K 数据集，首批 10,000 小时第一视角技能作业视频，总文件 44.7 TB，免费用于研究和商业用途；未来数周将再提供 90,000 小时，贡献者总数超 100,000 人。",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": null
   },
   "arxiv:2611.20956": {
    "title": "From Vision to Interaction: Evaluating Dynamic Social Intelligence of VLM Agents in ALIVE-World",
@@ -42548,7 +42561,8 @@
    "kind": "paper",
    "abstract": "Cyber-range and capture-the-flag scenario construction remains labor-intensive because authors must coordinate infrastructure, vulnerable services, attack paths, artifacts, and success conditions. LLMs can propose detailed exercises, but plausible descriptions do not guarantee deployable software or verifiable objectives. We present ScenarioForge, which turns high-level requirements into resource-grounded topologies, services, traffic, segmentation, and challenge chains, then instantiates and validates them in the Common Open Research Emulator (CORE). The ScenarioForge Execution Dataset contains 226 materialized scenarios covering 294 Vulhub images and all 85 custom-built challenge-resource generators developed with our AI-assisted scaffolding. All 226 passed construction, preview, sequencing, deployment, strict runtime validation, and live artifact checks; their 867 steps, each an individually verifiable challenge objective, comprise 457 vulnerability-backed and 410 generated-resource-backed instances. In a separate 50-prompt matched benchmark, ScenarioForge+Qwen3.8 and ScenarioForge+GPT5.6 each achieved 50/50 (100%) topology/build success and 160/160 intent fields; direct frontier generation reached 41/50 builds and 147/160 fields only with the full cumulative scaffold: structure, vocabulary, policy, and container-image guidance. The test still omitted ScenarioForge's downstream challenge-resource generation, dependency/flag sequencing, deployment, and live validation. The artifacts support operationally rich, reproducible exercises for training and evaluation.",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": "2026-11-19"
   },
   "arxiv:2611.21577": {
    "title": "When Tool Names Are Not Identities: Measuring Provider Misbinding in MCP-Based AI Agents",
@@ -42719,7 +42733,8 @@
    "kind": "paper",
    "abstract": "Software engineering courses are starting to ask students to build entire systems with AI coding agents, but little is known about what students actually do with them and whether they still own what they deliver. If the agent writes both the code and the decisions behind it, the artifacts we grade no longer show what students learned. We studied an assignment in which 18 pairs of students built applications with agents under Spec-Driven Development, combining the mined history of their repositories, the prompts they recorded, and a survey of 33 students. The agents wrote 69\\% of the specifications meant to keep students in control, sometimes from a prompt of a few words. Students locate their ownership in the ideas, crediting themselves with half of them but a fifth of the code, yet most could not explain that code to a colleague or modify it without the agent, and what they report having written is unrelated to what their own commits declare. The three teams that met the 100,000-line target did so with generated code the application never uses, in one case proposed by the agent itself, and one team rewrote its history to backdate its specifications. Teaching with agents should therefore assess what students specify, review, and can explain, rather than what they ship, and enforce the engineering process with tools rather than trusting it to students or agents.",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": "2026-11-19"
   },
   "arxiv:2611.21488": {
    "title": "Detection-Efficient Watermarking for Vision--Language Agents via Risk-Constrained Strength Allocation",
@@ -42856,7 +42871,8 @@
    "kind": "paper",
    "abstract": "Interactive video world models enable exploration through text and camera controls, yet direct object interaction requires finer control. Hands provide a natural interface, but translating continuous hand movements into coherent visual responses remains challenging because of complex hand-object dynamics and demanding real-time computation. To address these challenges, we introduce LynnReal-Hand, a hand-controlled video world model that unifies precise interaction modeling with efficient streaming generation. We curate 100K interaction clips spanning diverse real and synthetic environments and develop hand-aware supervision to improve fine-grained hand motions and object interactions. Building on this foundation, we learn a causal flow map for few-step generation and introduce region-aware score distillation that combines complementary video and image priors to refine interaction dynamics and visual appearance. To further reduce inference latency, we propose Ultra-Fast-VAE, a compact video decoder that preserves high reconstruction fidelity with substantially lower computational cost. Extensive evaluations on HandBench demonstrate superior hand-following accuracy and visual quality compared with existing approaches. Our full-sequence model achieves an FVD of 181.67 and a MANO Dice score of 93.02, while the three-step causal model maintains a MANO Dice score of 92.49. For real-time interaction, 540p streaming on a single H200 reaches 18.03 FPS with 741ms latency and an optimized peak GPU memory footprint of only 34.89GB. We will release the datasets, model weights, and the full training and inference code to support research on hand-controlled video world models.",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": "2026-11-19"
   },
   "arxiv:2611.20899": {
    "title": "SciWorldBench: Do Video World Models Really Understand Scientific Experiments?",
@@ -43009,7 +43025,8 @@
    "kind": "paper",
    "abstract": "Staged LLM agents make market and social simulators realistic, but one 102-day run of a 200-agent, ten-index market simulator issues 203,100 language-model calls and returns one realization. Conventional low-compute distillation drops their free-form intermediate state. We present staged semantic distillation, a low-compute method that preserves non-structured semantics in a non-LLM student trained from one recorded trace. A frozen encoder maps each teacher output to a 1024-d vector; the student sees typed stage-tagged vectors with stage-specific visibility, is jointly supervised, and trains with scheduled self-history. One TwinMarket trace yields a 13.2M-parameter deterministic student that trains in 1,658 seconds on one 8-GB GPU and runs with zero teacher or decoder calls and no text generation (0.14 ms per decision). Its analysis stays close to the teacher (cosine 0.943), and swapping semantic inputs between agents moves 64.7% of decisions against 12.8% for a matched donor, so the channel is preserved and live. We use the surrogate to study what the transfer carries. It reaches 0.8347 balanced accuracy on the teacher-forced replay and 0.7783 [0.766,0.791] on the deployment decoder; the five-seed gain over a no-semantic retrain is +2.2 [1.21,3.14]. Against the teacher's own re-sampling level, round-one R is 97.1% [95.8,98.4] and 92.3% [89.0,95.4]; R is a diagnostic, not an accuracy. A five-seed content-by-schedule study isolates the gain: scheduled self-history carries it (+2.2 [1.21,3.14]); shuffled and constant content controls reproduce it, while content matters teacher-forced. The design rule: invest in the deployment schedule, let content earn its place at the teacher-forced operating point. A 20-seed, 200,000-decision sweep takes 12 minutes with zero LLM calls, versus three hours for the teacher. The paper is a method-and-case-study contribution on one simulator and trace.",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": "2026-11-19"
   },
   "arxiv:2611.21485": {
    "title": "Lost in the Hallway: Benchmarking Persistent Spatial Memory Across Revisits",
@@ -43044,7 +43061,8 @@
    "kind": "paper",
    "abstract": "Continuous and accurate estimation of human hand kinematics is important not only for intuitive human-machine interaction, but also for capturing fine-grained human manipulation demonstrations that can provide action supervision for embodied-intelligence datasets and dexterous robot learning. However, individual sensing modalities may be insufficient for reliable estimation under varying operating conditions. We present a finger-unencumbered multimodal framework for continuous regression of 20 hand joint angles from egocentric RGB images and 128-channel forearm high-density surface electromyography (HD-sEMG). The framework combines a Vision Transformer-based visual encoder, a Transformer-based EMG encoder, and a degree of freedom (DoF) query Transformer fusion decoder. To account for the varying informativeness of visual and EMG cues across joint DoFs and input conditions, the decoder assigns a separate learnable query to each DoF, enabling DoF-specific and context-adaptive fusion of the two modalities. The framework was evaluated on synchronized multimodal data from 10 participants. Averaged across participants, the proposed fusion model achieved a mean coefficient of determination ($R^2$) of $0.88$ and a mean absolute error (MAE) of $2.80^\\circ$, compared with $0.82$ and $3.21^\\circ$ for the vision-only model and $0.68$ and $5.13^\\circ$ for the EMG-only model. It also outperformed the evaluated representative unimodal baselines and alternative fusion designs. DoF-wise analyses showed larger fusion gains for visually ambiguous joints and viewing conditions, while synthetic visual occlusion demonstrated greater robustness than vision-only estimation. These results highlight the complementary value of egocentric vision and forearm HD-sEMG for capturing fine-grained human hand kinematics, with potential applications in human demonstration acquisition and dexterous robot learning.",
    "interpret": "",
-   "interpret_v": 3
+   "interpret_v": 3,
+   "featured_date": "2026-11-19"
   },
   "arxiv:2611.20100": {
    "title": "EgoSwarm: Learning Decentralized Robot Swarm Intelligence from Human Swarm Demonstrations",
@@ -43179,6 +43197,114 @@
    "points": {},
    "kind": "paper",
    "abstract": "Autonomous driving is turning to vision-language-action models (VLAs). They answer and plan by decoding, one step at a time. Each step is another forward pass, so a plan can take over a second of GPU time. Embodied AI often pairs such a slow, reasoning System 2 with a fast System 1 that acts. Human drivers plan at a glance, with System 1. Faster designs usually put System 1 outside the vision-language model (VLM), in a planner without its abilities. Yet before a VLM writes its first token, it has already read the scene into one hidden state. We show that, once trained, this hidden state is enough to drive and to answer questions about what the model sees. SuperGlance reads it to turn a decoder-only VLM into an encoder-style driving policy. Its linear head scores a fixed set of 5,273 candidate trajectories. With the set fixed, rewards are computed offline, so supervised targets can be reward-weighted and reinforcement learning maximizes the exact expected reward. Before and during policy training, multiple-choice training keeps the VLM's visual abilities in one pass, so the policy still answers questions about driving scenes. Training questions are built against shortcuts. Each must be answered right in two option orders. Against drift, a KL term keeps each stage near its starting model. One pass offers VLAs a more plausible path to System 1. SuperGlance answers visual multiple-choice questions as well as its base VLM does by decoding. It plans in 84 ms of GPU time, six times faster than Qwen-Drive-1.0, and at least as well on NAVSIM, PAI-AV and WOD-E2E. In AlpaSim closed loop, km per at-fault incident holds for both planners up to a 300-ms delay and drops beyond. With GPU time charged as delay, SuperGlance's lead over Qwen-Drive-1.0 grows from 2.8 to 3.9 times. Delayed by 1.2 s, our model falls below Qwen-Drive-1.0 at its own 518 ms.",
+   "interpret": "",
+   "interpret_v": 3
+  },
+  "t:goodfireresearch发现大语言模型中的神经元社区": {
+   "title": "Goodfire Research 发现大语言模型中的神经元社区",
+   "source": "Goodfire Research（网页）",
+   "sourceShort": "Goodfire Research",
+   "hue": 201,
+   "domain": "LLM",
+   "ts": "2026-11-17T00:00:00+08:00",
+   "date": "2026-11-17",
+   "weekday": "周二",
+   "summary": "Goodfire Research 发布研究，提出无需预设功能的无监督方法，在 Llama-3.1-8B 上用梯度归因、神经元图和社区检测，从 1000 万条 prompt 中发现协作实现常见模型行为的小型神经元社区，并在 Qwen 3.6 35B-A3B 上复现。",
+   "link": "https://www.goodfire.com/research/neuron-communities",
+   "points": {},
+   "kind": "paper",
+   "abstract": "Goodfire Research 发布研究，提出无需预设功能的无监督方法，在 Llama-3.1-8B 上用梯度归因、神经元图和社区检测，从 1000 万条 prompt 中发现协作实现常见模型行为的小型神经元社区，并在 Qwen 3.6 35B-A3B 上复现。",
+   "abstract_cn": "Goodfire Research 发布研究，提出无需预设功能的无监督方法，在 Llama-3.1-8B 上用梯度归因、神经元图和社区检测，从 1000 万条 prompt 中发现协作实现常见模型行为的小型神经元社区，并在 Qwen 3.6 35B-A3B 上复现。",
+   "interpret": "",
+   "interpret_v": 3
+  },
+  "t:google与宾州州立大学提出sim自改进记忆方法": {
+   "title": "Google 与宾州州立大学提出 SIM 自改进记忆方法",
+   "source": "X：Rohan Paul (@rohanpaul_ai)",
+   "sourceShort": "X · Rohan Paul",
+   "hue": 214,
+   "domain": "AI Agent",
+   "ts": "2026-11-18T04:24:58+08:00",
+   "date": "2026-11-18",
+   "weekday": "周三",
+   "summary": "Google 与宾州州立大学论文提出 Self-Improvement Memory（SIM），在 AI 改写智能体 harness 代码时记录每次编辑针对的问题、推理过程和实测结果，供新模型读取以决定保留或修改旧编辑。",
+   "link": "https://x.com/rohanpaul_ai/status/2122788106764255456",
+   "points": {},
+   "kind": "social",
+   "abstract": "Google 与宾州州立大学论文提出 Self-Improvement Memory（SIM），在 AI 改写智能体 harness 代码时记录每次编辑针对的问题、推理过程和实测结果，供新模型读取以决定保留或修改旧编辑。",
+   "abstract_cn": "Google 与宾州州立大学论文提出 Self-Improvement Memory（SIM），在 AI 改写智能体 harness 代码时记录每次编辑针对的问题、推理过程和实测结果，供新模型读取以决定保留或修改旧编辑。",
+   "interpret": "",
+   "interpret_v": 3
+  },
+  "t:fireworks评测kimik31pro智能体场景下该替换还是组合使用": {
+   "title": "Fireworks 评测 Kimi K3.1 Pro：智能体场景下该替换还是组合使用",
+   "source": "Fireworks AI（网页）",
+   "sourceShort": "Fireworks AI",
+   "hue": 219,
+   "domain": "AI Agent",
+   "ts": "2026-11-17T00:00:00+08:00",
+   "date": "2026-11-17",
+   "weekday": "周二",
+   "summary": "Fireworks AI 基于 Specialized Intelligence Index 的 21 个基准榜单，从任务表现、模型成本和执行时间三方面评测 Kimi K3.1 Pro 是否适合替换现有智能体模型。",
+   "link": "https://fireworks.ai/blog/should-you-switch-your-agents-to-kimi-k3-1-pro/",
+   "points": {},
+   "kind": "paper",
+   "abstract": "Fireworks AI 基于 Specialized Intelligence Index 的 21 个基准榜单，从任务表现、模型成本和执行时间三方面评测 Kimi K3.1 Pro 是否适合替换现有智能体模型。",
+   "abstract_cn": "Fireworks AI 基于 Specialized Intelligence Index 的 21 个基准榜单，从任务表现、模型成本和执行时间三方面评测 Kimi K3.1 Pro 是否适合替换现有智能体模型。",
+   "interpret": "",
+   "interpret_v": 3
+  },
+  "t:frontierharnessevalv1127280次编码智能体运行中64推理花费流向失败任务": {
+   "title": "FrontierHarness Eval v1.1：27,280 次编码智能体运行中 64% 推理花费流向失败任务",
+   "source": "Hacker News：AI 热帖",
+   "sourceShort": "Hacker News：AI 热帖",
+   "hue": 208,
+   "domain": "AI Agent",
+   "ts": "2026-11-17T00:00:00+08:00",
+   "date": "2026-11-17",
+   "weekday": "周二",
+   "summary": "Runta 与 Baseten 合作发布 FrontierHarness Eval v1.1，用 83B tokens 跑了 27,280 次智能体运行，覆盖 22 个 harness × 5 个模型 × 62 个任务 × 4 次尝试，规模是 v1.0 的 76 倍。",
+   "link": "https://runta.com/blog/introducing-frontierharness-eval-v1-1/",
+   "points": {},
+   "kind": "paper",
+   "abstract": "Runta 与 Baseten 合作发布 FrontierHarness Eval v1.1，用 83B tokens 跑了 27,280 次智能体运行，覆盖 22 个 harness × 5 个模型 × 62 个任务 × 4 次尝试，规模是 v1.0 的 76 倍。",
+   "abstract_cn": "Runta 与 Baseten 合作发布 FrontierHarness Eval v1.1，用 83B tokens 跑了 27,280 次智能体运行，覆盖 22 个 harness × 5 个模型 × 62 个任务 × 4 次尝试，规模是 v1.0 的 76 倍。",
+   "interpret": "",
+   "interpret_v": 3
+  },
+  "t:googledeepmind与芝加哥大学论文多元智能体可扩展ai政策公众输入": {
+   "title": "Google DeepMind 与芝加哥大学论文：多元智能体可扩展 AI 政策公众输入",
+   "source": "X：Rohan Paul (@rohanpaul_ai)",
+   "sourceShort": "X · Rohan Paul",
+   "hue": 214,
+   "domain": "AI Agent",
+   "ts": "2026-11-18T00:22:16+08:00",
+   "date": "2026-11-18",
+   "weekday": "周三",
+   "summary": "Google DeepMind 与芝加哥大学的论文提出多元智能体，通过访谈个人后代表其观点与其他智能体商议 AI 安全预算，以扩展 AI 政策的公众输入。在数千次智能体商议和 746 人预注册研究中，智能体会把预算拉向所代表个人的观点，且被要求写更长或更少合作的讯息时影响力更大；参与者认为其比向单一 AI 系统输入更公平，恢复了直接参与公平性的 82%。",
+   "link": "https://x.com/rohanpaul_ai/status/2122727027015057436",
+   "points": {},
+   "kind": "social",
+   "abstract": "Google DeepMind 与芝加哥大学的论文提出多元智能体，通过访谈个人后代表其观点与其他智能体商议 AI 安全预算，以扩展 AI 政策的公众输入。在数千次智能体商议和 746 人预注册研究中，智能体会把预算拉向所代表个人的观点，且被要求写更长或更少合作的讯息时影响力更大；参与者认为其比向单一 AI 系统输入更公平，恢复了直接参与公平性的 82%。",
+   "abstract_cn": "Google DeepMind 与芝加哥大学的论文提出多元智能体，通过访谈个人后代表其观点与其他智能体商议 AI 安全预算，以扩展 AI 政策的公众输入。在数千次智能体商议和 746 人预注册研究中，智能体会把预算拉向所代表个人的观点，且被要求写更长或更少合作的讯息时影响力更大；参与者认为其比向单一 AI 系统输入更公平，恢复了直接参与公平性的 82%。",
+   "interpret": "",
+   "interpret_v": 3
+  },
+  "t:tokenwaveai发布swecowork编码智能体协作基准": {
+   "title": "TokenWave AI 发布 SWE-CoWork 编码智能体协作基准",
+   "source": "X：Rohan Paul (@rohanpaul_ai)",
+   "sourceShort": "X · Rohan Paul",
+   "hue": 214,
+   "domain": "AI Agent",
+   "ts": "2026-11-18T00:37:08+08:00",
+   "date": "2026-11-18",
+   "weekday": "周三",
+   "summary": "TokenWave AI 发布 SWE-CoWork，用于测试 AI 编码智能体能否像真实团队成员一样协作。该基准覆盖 101 个真实开源仓库、26 个模拟队友、11 种编程语言，82% 的需求掌握在队友手中，智能体需主动询问才能获知要构建什么。",
+   "link": "https://x.com/rohanpaul_ai/status/2122730768317476944",
+   "points": {},
+   "kind": "social",
+   "abstract": "TokenWave AI 发布 SWE-CoWork，用于测试 AI 编码智能体能否像真实团队成员一样协作。该基准覆盖 101 个真实开源仓库、26 个模拟队友、11 种编程语言，82% 的需求掌握在队友手中，智能体需主动询问才能获知要构建什么。",
+   "abstract_cn": "TokenWave AI 发布 SWE-CoWork，用于测试 AI 编码智能体能否像真实团队成员一样协作。该基准覆盖 101 个真实开源仓库、26 个模拟队友、11 种编程语言，82% 的需求掌握在队友手中，智能体需主动询问才能获知要构建什么。",
    "interpret": "",
    "interpret_v": 3
   }
@@ -43462,6 +43588,7 @@
     "desc": "An Open-World Foundation Model for General-Purpose Embodied Intelligence.",
     "cn_intro": ""
    }
-  ]
+  ],
+  "2026-11-19": []
  }
 }
